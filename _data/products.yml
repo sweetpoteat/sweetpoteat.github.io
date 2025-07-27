@@ -1,0 +1,16 @@
+- name: Chocolate Chip Cookie
+  description: Classic and chewy
+  category: cookies
+  image: /assets/images/products/choco_chip.png
+
+- name: Red Velvet Cupcake
+  description: With cream cheese frosting
+  category: cupcakes
+  image: /assets/images/products/red_velvet.png
+
+- name: Salted Caramel Truffle
+  description: Rich and decadent
+  category: truffles
+  image: /assets/images/products/salted_caramel.png
+
+# Add more as needed

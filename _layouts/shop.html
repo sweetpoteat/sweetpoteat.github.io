@@ -1,0 +1,23 @@
+---
+layout: home
+---
+
+<div class="shop-label">Treat Menu</div>
+<div class="striped-line"></div>
+
+{% include secondary-nav.html %}
+
+<h1>{{ page.title }}</h1>
+
+<div class="product-grid">
+  {% assign category = page.category %}
+  {% for product in site.data.products %}
+    {% if product.category == category %}
+      <div class="product-card">
+        <img src="{{ product.image }}" alt="{{ product.name }}">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

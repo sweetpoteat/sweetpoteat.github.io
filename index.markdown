@@ -1,0 +1,152 @@
+---
+layout: home
+title: Welcome to Sweet Poteat Bakery
+---
+
+
+<!-- fc78b5 -->
+
+<!-- Carousel with Shop Now Button -->
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<div style="padding: 2rem 0;">
+  <div
+    class="swiper-container"
+    style="
+      max-width: 900px;
+      width: 90%;
+      height: 350px;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    "
+  >
+    <!-- Centered Shop Now Button -->
+    <a
+      href="/shop"
+      style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        background-color: #fc78b5;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 999px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+      "
+      onmouseover="this.style.backgroundColor='#ffc4ea'"
+      onmouseout="this.style.backgroundColor='#fc78b5'"
+    >
+      Shop Now
+    </a>
+
+    <!-- Slides -->
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img
+          src="assets/images/banner1.jpg"
+          alt="Delicious treats"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="assets/images/banner2.jpg"
+          alt="Cookies"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="assets/images/banner3.jpg"
+          alt="Cupcakes"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper Initialization -->
+<script>
+  var swiper = new Swiper(".swiper-container", {
+    loop: true,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+
+<!-- Ribbon with slogan -->
+
+<div class="slogan-ribbon">
+  <p>Your Favorite Treats, Made With Love</p>
+</div>
+
+
+<!-- Grid of item categories -->
+
+<div class="category-grid">
+  <a href="/cookies/" class="category-card">
+    <img src="{{ site.baseurl }}/assets/images/cookies.png" alt="Cookies" />
+    <span>Cookies</span>
+  </a>
+  <a href="/truffles/" class="category-card">
+    <img src="{{ site.baseurl }}/assets/images/truffles.png" alt="Truffles" />
+    <span>Truffles</span>
+  </a>
+  <a href="/cupcakes/" class="category-card">
+    <img src="{{ site.baseurl }}/assets/images/cupcakes.png" alt="Cupcakes" />
+    <span>Cupcakes</span>
+  </a>
+  <a href="/pies/" class="category-card">
+    <img src="{{ site.baseurl }}/assets/images/pies.png" alt="Pies" />
+    <span>Pies</span>
+  </a>
+</div>
+
+
+
+<!-- Featured products grid -->
+<!-- <section class="featured-products" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px;">
+  <div class="product">
+    <img src="/images/product1.jpg" alt="Chocolate Cake" style="width:100%; border-radius: 8px;">
+    <h3>Chocolate Cake</h3>
+    <p>Rich and moist chocolate layers.</p>
+  </div>
+  <div class="product">
+    <img src="/images/product2.jpg" alt="Lemon Tart" style="width:100%; border-radius: 8px;">
+    <h3>Lemon Tart</h3>
+    <p>Tart, tangy and refreshing.</p>
+  </div>
+  <div class="product">
+    <img src="/images/product3.jpg" alt="Cupcakes" style="width:100%; border-radius: 8px;">
+    <h3>Assorted Cupcakes</h3>
+    <p>Variety of flavors, perfect for any occasion.</p>
+  </div>
+</section> -->

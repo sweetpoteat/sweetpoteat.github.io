@@ -1,0 +1,196 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Slogan Ribbon */
+
+.slogan-ribbon {
+  position: relative;
+  background-color: #ffc4ea; /* stronger pink */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  width: fit-content;
+  margin: 2rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+}
+
+.slogan-ribbon::before,
+.slogan-ribbon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1rem solid transparent;
+  z-index: -1;
+}
+
+.slogan-ribbon::before {
+  left: -2rem;
+  border-right-color: #ffc4ea;
+}
+
+.slogan-ribbon::after {
+  right: -2rem;
+  border-left-color: #ffc4ea;
+}
+
+.slogan-ribbon p {
+  margin: 0;
+}
+
+
+/* Category Grid */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffc4ea;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-decoration: none;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.category-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.category-card span {
+  font-size: 1rem;
+  color: #fafafa;
+  font-weight: bold;
+}
+
+/* Secondary Navigation Bar */
+
+.secondary-nav {
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.secondary-nav ul {
+  list-style: none;           /* Remove bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;              /* Make horizontal */
+  justify-content: center;    /* Center the items */
+  flex-wrap: wrap;            /* Wrap on small screens */
+  gap: 24px;                  /* Space between links */
+}
+
+.secondary-nav li {
+  margin: 0;
+}
+
+.secondary-nav a {
+  text-decoration: none;
+  color: #fc78b5;            
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.secondary-nav a.highlight {
+  color: #ffc4ea;
+}
+
+.shop-label {
+  text-align: center;
+  font-size: 75px;
+  font-weight: 300;
+  color: #fc78b5; 
+  font-family: 'Italiana', cursive;
+  margin-top: 40px;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.striped-line {
+  height: 4px;
+  width: 175px; /* or any width you want */
+  margin: 8px auto 0 auto; /* top margin, center horizontally */
+  background: repeating-linear-gradient(
+    45deg,
+    #fc78b5,
+    #fc78b5 10px,
+    #f0f0f0 10px,
+    #f0f0f0 20px
+  );
+  border-radius: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+
+
+/* Top Nav */
+.top-nav {
+  background-color: #ffc4ea;
+  padding: 1.5rem 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+}
+
+.nav-list li {
+  margin: 0;
+}
+
+.nav-list a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  white-space: nowrap;
+  border-left: 2px solid white;
+}
+
+.nav-list li:last-child a {
+  border-right: 2px solid white;
+}
+
+.nav-logo img {
+  height: 200px;
+  display: block;
+}
+
+
