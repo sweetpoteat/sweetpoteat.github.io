@@ -629,6 +629,11 @@ body {
     max-height: 400px;
     overflow-y: auto;
     transition: all 0.3s ease;
+
+    position: absolute;  
+    right: 0; 
+    transform: translateX(-15%); 
+    z-index: 1000;
 }
 
 #floating-cart.open #cart-dropdown {
