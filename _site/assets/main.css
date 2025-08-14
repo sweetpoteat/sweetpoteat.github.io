@@ -585,16 +585,18 @@ body {
 
 
 /* Floating Cart */
+
 #floating-cart {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 280px;
+    position: absolute;
+    top: 5%;
+    right: 1px; /* was 1px */
+    width: 260px;
     z-index: 1000;
     font-family: inherit;
 }
 
 #cart-toggle {
+    margin-left: 28%;
     display: flex;
     justify-content: space-between;
     align-items: center;
