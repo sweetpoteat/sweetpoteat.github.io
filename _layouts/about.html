@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  {% include top-nav.html %}
+
+  <!-- Floating Mini Cart -->
+  <div id="floating-cart">
+  <button id="cart-toggle">
+    Cart <span id="cart-count">0</span>
+  </button>
+  <div id="cart-dropdown">
+    <p>Your cart is empty</p>
+  </div>
+  </div>
+
+  <main>
+    <div class="shop-label">Beginnings</div>
+    <div class="striped-line"></div>
+
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+</body>
+
+<script src="{{ '/assets/js/cart.js' | relative_url }}"></script>
+
+</html>

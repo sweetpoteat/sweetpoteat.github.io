@@ -1,0 +1,25 @@
+---
+layout: home
+title: Contact
+permalink: /contact/
+---
+
+<div class="contact-wrapper">
+  <h1 class="page-title">Place an Order or Ask a Question</h1>
+  <p class="contact-intro">Fill out the form below and we’ll get back to you as soon as possible.</p>
+
+  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <label for="name">Name*</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email*</label>
+    <input type="email" id="email" name="_replyto" required>
+
+    <label for="order">Order / Message*</label>
+    <textarea id="order" name="order" rows="6" required></textarea>
+
+    <button type="submit" class="submit-button">Send</button>
+  </form>
+</div>
+
+<script src="{{ '/assets/js/cart.js' | relative_url }}"></script>

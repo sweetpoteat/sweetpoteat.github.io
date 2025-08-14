@@ -9,6 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
+
+<!-- Floating Mini Cart -->
+<div id="floating-cart">
+  <button id="cart-toggle">
+    Cart <span id="cart-count">0</span>
+  </button>
+  <div id="cart-dropdown">
+    <p>Your cart is empty</p>
+  </div>
+</div>
+
 <body>
   {% include top-nav.html %}
 
@@ -20,4 +31,7 @@
     <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
   </footer>
 </body>
+
+<script src="{{ '/assets/js/cart.js' | relative_url }}"></script>
+
 </html>

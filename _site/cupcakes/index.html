@@ -9,13 +9,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
+
+<!-- Floating Mini Cart -->
+<div id="floating-cart">
+  <button id="cart-toggle">
+    Cart <span id="cart-count">0</span>
+  </button>
+  <div id="cart-dropdown">
+    <p>Your cart is empty</p>
+  </div>
+</div>
+
 <body>
   <nav class="top-nav">
   <div class="nav-wrapper">
     <ul class="nav-list left">
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
-      <li><a href="/shop">Shop</a></li>
+      <li><a href="/all">Shop</a></li>
     </ul>
 
     <a href="/" class="nav-logo">
@@ -37,19 +48,19 @@
 
 <nav class="secondary-nav">
   <ul>
-    <li><a href="/shop/">All</a></li>
-    <li><a href="/cookies">Cookies</a></li>
-    <li><a href="/truffles/">Truffles</a></li>
-    <li><a href="/holiday/">Holiday</a></li>
-    <li><a href="/cookie-dough/">Cookie Dough</a></li>
-    <li><a href="/pies/">Pies</a></li>
-    <li><a href="/cupcakes/">Cupcakes</a></li>
+    <li><a href="/all/">All</a></li>
     <li><a href="/bars/">Bars</a></li>
+    <li><a href="/cookies">Cookies</a></li>
+    <li><a href="/cookie-dough/">Cookie Dough</a></li>
+    <li><a href="/cupcakes/">Cupcakes</a></li>
+    <li><a href="/holiday/">Holiday</a></li>
+    <li><a href="/pies/">Pies</a></li>
+    <li><a href="/truffles/">Truffles</a></li>
   </ul>
 </nav>
 
 
-<h1>Cupcakes</h1>
+<h1 class="page-title">Cupcakes</h1>
 
 <div class="product-grid">
   
@@ -57,11 +68,17 @@
     
   
     
-      <div class="product-card">
-        <img src="/assets/images/products/red_velvet.png" alt="Red Velvet Cupcake">
+      <a href="/products/red-velvet/" class="product-card">
+        <div class="product-image">
+          <img src="/assets/images/products/red_velvet.png" alt="Red Velvet Cupcake">
+        </div>
         <h3>Red Velvet Cupcake</h3>
-        <p>With cream cheese frosting</p>
-      </div>
+        <p class="price">$20</p>
+      </a>
+    
+  
+    
+  
     
   
     
@@ -74,4 +91,7 @@
     <p>&copy; 2025 Sweet Poteat</p>
   </footer>
 </body>
+
+<script src="/assets/js/cart.js"></script>
+
 </html>

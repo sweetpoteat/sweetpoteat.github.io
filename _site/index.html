@@ -9,13 +9,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
+
+<!-- Floating Mini Cart -->
+<div id="floating-cart">
+  <button id="cart-toggle">
+    Cart <span id="cart-count">0</span>
+  </button>
+  <div id="cart-dropdown">
+    <p>Your cart is empty</p>
+  </div>
+</div>
+
 <body>
   <nav class="top-nav">
   <div class="nav-wrapper">
     <ul class="nav-list left">
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
-      <li><a href="/shop">Shop</a></li>
+      <li><a href="/all">Shop</a></li>
     </ul>
 
     <a href="/" class="nav-logo">
@@ -50,7 +61,7 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     ">
     <!-- Centered Shop Now Button -->
-    <a href="/shop" style="
+    <a href="/all" style="
         position: absolute;
         top: 50%;
         left: 50%;
@@ -116,41 +127,28 @@
 
 <div class="category-grid">
   <a href="/cookies/" class="category-card">
-    <img src="/assets/images/cookies.png" alt="Cookies" />
+    <img src="/assets/images/icons/cookie.png" alt="Cookies" />
     <span>Cookies</span>
   </a>
   <a href="/truffles/" class="category-card">
-    <img src="/assets/images/truffles.png" alt="Truffles" />
+    <img src="/assets/images/icons/truffle.png" alt="Truffles" />
     <span>Truffles</span>
   </a>
   <a href="/cupcakes/" class="category-card">
-    <img src="/assets/images/cupcakes.png" alt="Cupcakes" />
+    <img src="/assets/images/icons/cupcake.png" alt="Cupcakes" />
     <span>Cupcakes</span>
   </a>
-  <a href="/pies/" class="category-card">
-    <img src="/assets/images/pies.png" alt="Pies" />
-    <span>Pies</span>
+  <a href="/holiday/" class="category-card">
+    <img src="/assets/images/icons/holiday.png" alt="Pies" />
+    <span>Holiday</span>
   </a>
 </div>
 
-<!-- Featured products grid -->
-<!-- <section class="featured-products" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px;">
-  <div class="product">
-    <img src="/images/product1.jpg" alt="Chocolate Cake" style="width:100%; border-radius: 8px;">
-    <h3>Chocolate Cake</h3>
-    <p>Rich and moist chocolate layers.</p>
-  </div>
-  <div class="product">
-    <img src="/images/product2.jpg" alt="Lemon Tart" style="width:100%; border-radius: 8px;">
-    <h3>Lemon Tart</h3>
-    <p>Tart, tangy and refreshing.</p>
-  </div>
-  <div class="product">
-    <img src="/images/product3.jpg" alt="Cupcakes" style="width:100%; border-radius: 8px;">
-    <h3>Assorted Cupcakes</h3>
-    <p>Variety of flavors, perfect for any occasion.</p>
-  </div>
-</section> -->
+<footer>
+  <p style="font-size: 0.8rem; text-align: center;">
+    Icons by <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noopener">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank" rel="noopener">Flaticon</a>
+  </p>
+</footer>
 
   </main>
 
@@ -158,4 +156,7 @@
     <p>&copy; 2025 Sweet Poteat</p>
   </footer>
 </body>
+
+<script src="/assets/js/cart.js"></script>
+
 </html>

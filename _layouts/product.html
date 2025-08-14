@@ -1,0 +1,30 @@
+---
+layout: home
+---
+
+{% assign product = site.data.products | where: "slug", page.product_ref | first %}
+
+
+<section class="product-detail-container">
+  <div class="product-detail-card">
+    <div class="product-detail-image">
+      <img src="{{ product.image }}" alt="{{ product.name }}">
+    </div>
+
+    <div class="product-detail-info">
+      <h1 class="product-name">{{ product.name }}</h1>
+      <p class="product-price">${{ product.price }}</p>
+      <p class="product-description">Rich, homemade quality. Description or ingredients coming soon.</p>
+
+      <div class="product-actions">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" />
+
+        <button class="add-to-cart-button" data-name="{{ product.name }}" data-price="{{ product.price }}">
+          Add to Cart
+        </button>
+
+      </div>
+    </div>
+  </div>
+</section>

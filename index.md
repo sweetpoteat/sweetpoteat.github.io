@@ -29,7 +29,7 @@ title: Welcome to Sweet Poteat Bakery
   >
     <!-- Centered Shop Now Button -->
     <a
-      href="/shop"
+      href="/all"
       style="
         position: absolute;
         top: 50%;
@@ -113,40 +113,25 @@ title: Welcome to Sweet Poteat Bakery
 
 <div class="category-grid">
   <a href="/cookies/" class="category-card">
-    <img src="{{ site.baseurl }}/assets/images/cookies.png" alt="Cookies" />
+    <img src="{{ site.baseurl }}/assets/images/icons/cookie.png" alt="Cookies" />
     <span>Cookies</span>
   </a>
   <a href="/truffles/" class="category-card">
-    <img src="{{ site.baseurl }}/assets/images/truffles.png" alt="Truffles" />
+    <img src="{{ site.baseurl }}/assets/images/icons/truffle.png" alt="Truffles" />
     <span>Truffles</span>
   </a>
   <a href="/cupcakes/" class="category-card">
-    <img src="{{ site.baseurl }}/assets/images/cupcakes.png" alt="Cupcakes" />
+    <img src="{{ site.baseurl }}/assets/images/icons/cupcake.png" alt="Cupcakes" />
     <span>Cupcakes</span>
   </a>
-  <a href="/pies/" class="category-card">
-    <img src="{{ site.baseurl }}/assets/images/pies.png" alt="Pies" />
-    <span>Pies</span>
+  <a href="/holiday/" class="category-card">
+    <img src="{{ site.baseurl }}/assets/images/icons/holiday.png" alt="Pies" />
+    <span>Holiday</span>
   </a>
 </div>
 
-
-
-<!-- Featured products grid -->
-<!-- <section class="featured-products" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px;">
-  <div class="product">
-    <img src="/images/product1.jpg" alt="Chocolate Cake" style="width:100%; border-radius: 8px;">
-    <h3>Chocolate Cake</h3>
-    <p>Rich and moist chocolate layers.</p>
-  </div>
-  <div class="product">
-    <img src="/images/product2.jpg" alt="Lemon Tart" style="width:100%; border-radius: 8px;">
-    <h3>Lemon Tart</h3>
-    <p>Tart, tangy and refreshing.</p>
-  </div>
-  <div class="product">
-    <img src="/images/product3.jpg" alt="Cupcakes" style="width:100%; border-radius: 8px;">
-    <h3>Assorted Cupcakes</h3>
-    <p>Variety of flavors, perfect for any occasion.</p>
-  </div>
-</section> -->
+<footer>
+  <p style="font-size: 0.8rem; text-align: center;">
+    Icons by <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noopener">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank" rel="noopener">Flaticon</a>
+  </p>
+</footer>

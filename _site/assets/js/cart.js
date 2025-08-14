@@ -1,0 +1,105 @@
+// --- Cart object ---
+let cart = JSON.parse(localStorage.getItem('sweetPoteatCart')) || [];
+
+function saveCart() {
+    localStorage.setItem('sweetPoteatCart', JSON.stringify(cart));
+}
+
+// --- Add to Cart function ---
+function addToCart(itemName, qty = 1, price = 0) {
+    price = Number(price);
+    const existing = cart.find(i => i.item === itemName);
+    if (existing) {
+        existing.qty += qty;
+    } else {
+        cart.push({ item: itemName, qty, price });
+    }
+    saveCart();
+    updateCartDisplay();
+}
+
+// --- Remove item from cart ---
+function removeFromCart(itemName) {
+    cart = cart.filter(i => i.item !== itemName);
+    localStorage.setItem('sweetPoteatCart', JSON.stringify(cart));
+    updateCartDisplay();
+}
+
+// --- Update live cart display ---
+function updateCartDisplay() {
+    const dropdown = document.getElementById('cart-dropdown');
+    const countSpan = document.getElementById('cart-count');
+
+    if (!dropdown || !countSpan) return;
+
+    // Update total quantity
+    const totalItems = cart.reduce((sum, i) => sum + i.qty, 0);
+    countSpan.textContent = totalItems;
+
+    // Update dropdown
+    if (cart.length === 0) {
+        dropdown.innerHTML = '<p>Your cart is empty</p>';
+        return;
+    }
+
+    dropdown.innerHTML = '';
+    let totalPrice = 0;
+
+    cart.forEach(i => {
+        totalPrice += i.qty * i.price;
+        const div = document.createElement('div');
+        div.textContent = `${i.qty} x ${i.item} — $${(i.qty * i.price).toFixed(2)}`;
+        const removeBtn = document.createElement('button');
+        removeBtn.textContent = '✕';
+        removeBtn.onclick = () => removeFromCart(i.item);
+        div.appendChild(removeBtn);
+        dropdown.appendChild(div);
+    });
+
+    const totalDiv = document.createElement('div');
+    totalDiv.style.fontWeight = '600';
+    totalDiv.style.marginTop = '0.5rem';
+    totalDiv.textContent = `Total: $${totalPrice.toFixed(2)}`;
+    dropdown.appendChild(totalDiv);
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // --- Floating cart toggle ---
+    const toggle = document.getElementById('cart-toggle');
+    const cartEl = document.getElementById('floating-cart');
+    if (toggle && cartEl) {
+        toggle.addEventListener('click', () => {
+            cartEl.classList.toggle('open');
+        });
+    }
+
+    // --- Update cart display ---
+    updateCartDisplay();
+
+    // --- Prefill Contact page textarea ---
+    const orderField = document.getElementById('order');
+    if (orderField && cart.length > 0) {
+        const orderLines = cart.map(i => `${i.qty} x ${i.item}`);
+        orderField.value = orderLines.join("\n");
+    }
+
+    // --- Optional: clear cart after submission ---
+    const form = document.querySelector('.contact-form');
+    if (form) {
+        form.addEventListener('submit', () => {
+            localStorage.removeItem('sweetPoteatCart');
+        });
+    }
+});
+
+document.querySelectorAll('.add-to-cart-button').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    const parent = btn.closest('.product-actions');
+    const qtyInput = parent.querySelector('input[type="number"]');
+    const qty = parseInt(qtyInput.value) || 1;
+    const itemName = btn.dataset.name;
+    const price = Number(btn.dataset.price);
+    addToCart(itemName, qty, price);
+  });
+});

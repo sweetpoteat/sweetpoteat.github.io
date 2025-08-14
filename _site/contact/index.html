@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="/assets/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<!-- Floating Mini Cart -->
+<div id="floating-cart">
+  <button id="cart-toggle">
+    Cart <span id="cart-count">0</span>
+  </button>
+  <div id="cart-dropdown">
+    <p>Your cart is empty</p>
+  </div>
+</div>
+
+<body>
+  <nav class="top-nav">
+  <div class="nav-wrapper">
+    <ul class="nav-list left">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/all">Shop</a></li>
+    </ul>
+
+    <a href="/" class="nav-logo">
+      <img src="/assets/images/sp_logo1-removebg-preview.png" alt="Logo">
+    </a>
+
+    <ul class="nav-list right">
+      <li><a href="/favors">Favors</a></li>
+      <li><a href="/testimonials">Testimonials</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <main>
+    <div class="contact-wrapper">
+  <h1 class="page-title">Place an Order or Ask a Question</h1>
+  <p class="contact-intro">Fill out the form below and we’ll get back to you as soon as possible.</p>
+
+  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <label for="name">Name*</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email*</label>
+    <input type="email" id="email" name="_replyto" required>
+
+    <label for="order">Order / Message*</label>
+    <textarea id="order" name="order" rows="6" required></textarea>
+
+    <button type="submit" class="submit-button">Send</button>
+  </form>
+</div>
+
+<script src="/assets/js/cart.js"></script>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sweet Poteat</p>
+  </footer>
+</body>
+
+<script src="/assets/js/cart.js"></script>
+
+</html>
