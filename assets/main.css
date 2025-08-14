@@ -662,6 +662,24 @@ body {
     color: #ff90c3;
 }
 
+/* "Go to Cart" button style */
+.go-to-cart-btn {
+    display: block;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background-color: #fc78b5;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.go-to-cart-btn:hover {
+    background-color: #ff90c3;
+}
+
 /* Total Price */
 #cart-dropdown > div.total {
     font-weight: 700;
