@@ -100,14 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const orderLines = cart.map(i => `${i.qty} x ${i.item}`);
         orderField.value = orderLines.join("\n");
     }
-
-    // --- Optional: clear cart after submission ---
-    const form = document.querySelector('.contact-form');
-    if (form) {
-        form.addEventListener('submit', () => {
-            localStorage.removeItem('sweetPoteatCart');
-        });
-    }
 });
 
 
