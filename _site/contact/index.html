@@ -51,15 +51,25 @@
   <h1 class="page-title">Place an Order or Ask a Question</h1>
   <p class="contact-intro">Fill out the form below and we’ll get back to you as soon as possible.</p>
 
-  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+    <!-- Your Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="394f5017-3559-4b74-9397-a219c72752b8">
+
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
+    <!-- Form Fields -->
     <label for="name">Name*</label>
     <input type="text" id="name" name="name" required>
 
     <label for="email">Email*</label>
-    <input type="email" id="email" name="_replyto" required>
+    <input type="email" id="email" name="email" required>
 
     <label for="order">Order / Message*</label>
-    <textarea id="order" name="order" rows="6" required></textarea>
+    <textarea id="order" name="message" rows="6" required></textarea>
+
+    <!-- Optional redirect after submit -->
+    <!-- <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you"> -->
 
     <button type="submit" class="submit-button">Send</button>
   </form>
