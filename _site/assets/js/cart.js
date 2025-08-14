@@ -29,6 +29,7 @@ function removeFromCart(itemName) {
 function updateCartDisplay() {
     const dropdown = document.getElementById('cart-dropdown');
     const countSpan = document.getElementById('cart-count');
+    const cartEl = document.getElementById('floating-cart');
 
     if (!dropdown || !countSpan) return;
 
@@ -61,8 +62,19 @@ function updateCartDisplay() {
     totalDiv.style.marginTop = '0.5rem';
     totalDiv.textContent = `Total: $${totalPrice.toFixed(2)}`;
     dropdown.appendChild(totalDiv);
-}
 
+    // Add "Go to Cart" button
+    const goToCartBtn = document.createElement('a');
+    goToCartBtn.href = '/contact';
+    goToCartBtn.textContent = 'Go to Cart';
+    goToCartBtn.className = 'go-to-cart-btn';
+    goToCartBtn.addEventListener('click', () => {
+        if (cartEl) {
+            cartEl.classList.remove('open');
+        }
+    });
+    dropdown.appendChild(goToCartBtn);
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     // --- Floating cart toggle ---
@@ -71,6 +83,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (toggle && cartEl) {
         toggle.addEventListener('click', () => {
             cartEl.classList.toggle('open');
+        });
+
+        // Close cart if mouse leaves the floating cart area
+        cartEl.addEventListener('mouseleave', () => {
+            cartEl.classList.remove('open');
         });
     }
 
@@ -92,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
 
 document.querySelectorAll('.add-to-cart-button').forEach(btn => {
   btn.addEventListener('click', (e) => {
