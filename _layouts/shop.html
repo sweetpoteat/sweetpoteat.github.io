@@ -17,7 +17,7 @@ layout: home
         <div class="product-image">
           {% assign card_img = product.image | default: product.images[0] %}
           {% if card_img %}
-            <img src="{{ card_img }}" alt="{{ product.name }}" loading="lazy">
+            <img src="{{ site.baseurl }}{{ card_img }}" alt="{{ product.name }}" loading="lazy">
           {% else %}
             <div class="img-placeholder">Image coming soon</div>
           {% endif %}

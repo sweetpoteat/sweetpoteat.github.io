@@ -15,16 +15,19 @@ layout: home
       <div class="swiper" id="product-gallery">
         <div class="swiper-wrapper">
           {% if product.images %}
-            {% for img in product.images %}
-              <div class="swiper-slide">
-                <img src="{{ img }}" alt="{{ product.name }}">
-              </div>
-            {% endfor %}
-          {% elsif product.image %}
+          {% for img in product.images %}
             <div class="swiper-slide">
-              <img src="{{ product.image }}" alt="{{ product.name }}">
+              <img src="{{ site.baseurl }}{{ img }}" alt="{{ product.name }}">
             </div>
-          {% endif %}
+          {% endfor %}
+        {% elsif product.image %}
+          <div class="swiper-slide">
+            <img src="{{ site.baseurl }}{{ product.image }}" alt="{{ product.name }}">
+          </div>
+        {% endif %}
+          <div class="swiper-slide">
+            <img src="{{ site.baseurl }}/assets/images/placeholder.png" alt="Image coming soon">
+          </div>
         </div>
 
         <div class="swiper-pagination"></div>
