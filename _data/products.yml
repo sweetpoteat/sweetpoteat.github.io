@@ -27,3 +27,51 @@
   category: cookies
   image: /assets/images/products/snickerdoodle.png
   slug: snickerdoodle
+
+- name: Pecan Pie
+  price: 34
+  category: pies
+  images:
+    - /assets/images/products/pecanpie/pecanpie1.png
+    - /assets/images/products/pecanpie/pecanpie2.png
+  slug: pecan-pie
+
+- name: Chocolate Pie
+  price: 34
+  category: pies
+  images:
+    - /assets/images/products/chocopie/chocopie1.png
+    - /assets/images/products/chocopie/chocopie2.png
+  slug: choco-pie
+
+- name: Pumpkin Streusel Pie
+  price: 34
+  category: pies
+  images:
+    - /assets/images/products/pspie/pspie1.png
+    - /assets/images/products/pspie/pspie2.png
+  slug: ps-pie
+
+- name: Dutch Apple Pie
+  price: 34
+  category: pies
+  images:
+    - /assets/images/products/dapie/dapie1.png
+    - /assets/images/products/dapie/dapie2.png
+    - /assets/images/products/dapie/dapie3.png
+  slug: da-pie
+
+- name: Pumpkin Pie
+  price: 34
+  category: pies
+  images:
+    - /assets/images/products/pumpkinpie/pumpkinpie1.png
+    - /assets/images/products/pumpkinpie/pumpkinpie2.png
+  slug: p-pie
+
+
+
+
+
+
+

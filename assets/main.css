@@ -266,24 +266,23 @@ body {
 }
 
 .product-detail-card {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: minmax(280px, 560px) 1fr;
+  gap: 40px;
   background-color: #fff;
   border-radius: 16px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.07);
   overflow: hidden;
+  padding: 24px;
 }
 
 .product-detail-image {
-  flex: 1 1 350px;
-  max-width: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background: #f9f9f9;
+  padding: 0;              
+  background: transparent; 
+  display: block;
+  max-width: 560px;
 }
+
 
 .product-detail-image img {
   width: 100%;
@@ -705,5 +704,97 @@ body {
     background-color: rgba(252, 120, 181, 0.5);
     border-radius: 3px;
 }
+
+/*slides */
+
+.product-detail-image .swiper{
+  width: 100%;
+  max-width: 560px;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.10);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+.product-detail-image .swiper-slide{ display:flex; }
+.product-detail-image .swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 900px){
+  .product-detail-card{ grid-template-columns: 1fr; gap: 24px; }
+  .product-detail-image .swiper{ max-width: 100%; }
+}
+
+
+.product-card .product-image {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;   /* keeps consistent card height */
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+.product-card .product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.product-card .img-placeholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* === Slider theme (pink, not blue) === */
+:root{
+  --accent:#fc78b5;
+  --accent-soft:#ffd1e6;
+}
+
+/* Scope to this gallery only */
+#product-gallery{
+  --swiper-theme-color: var(--accent);
+  --swiper-navigation-color: var(--accent);
+  --swiper-pagination-color: var(--accent);
+}
+
+/* Pagination dots */
+#product-gallery .swiper-pagination-bullet{
+  background: var(--accent-soft);
+  opacity: 1;
+  width: 8px; height: 8px;
+}
+#product-gallery .swiper-pagination-bullet-active{
+  background: var(--accent);
+  transform: scale(1.25);
+}
+
+/* Arrows – round white chips with pink icons */
+#product-gallery .swiper-button-next,
+#product-gallery .swiper-button-prev{
+  width: 38px; height: 38px;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+#product-gallery .swiper-button-next::after,
+#product-gallery .swiper-button-prev::after{
+  font-size: 18px;
+}
+#product-gallery .swiper-button-next:focus,
+#product-gallery .swiper-button-prev:focus{ outline: none; }
+#product-gallery .swiper-button-next:focus-visible,
+#product-gallery .swiper-button-prev:focus-visible{
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+
+
 
 

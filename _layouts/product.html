@@ -1,14 +1,36 @@
 ---
 layout: home
+# make sure the page that renders this sets product_ref: pecan-pie
 ---
 
 {% assign product = site.data.products | where: "slug", page.product_ref | first %}
 
+{% if product %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 <section class="product-detail-container">
   <div class="product-detail-card">
     <div class="product-detail-image">
-      <img src="{{ product.image }}" alt="{{ product.name }}">
+      <div class="swiper" id="product-gallery">
+        <div class="swiper-wrapper">
+          {% if product.images %}
+            {% for img in product.images %}
+              <div class="swiper-slide">
+                <img src="{{ img }}" alt="{{ product.name }}">
+              </div>
+            {% endfor %}
+          {% elsif product.image %}
+            <div class="swiper-slide">
+              <img src="{{ product.image }}" alt="{{ product.name }}">
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </div>
 
     <div class="product-detail-info">
@@ -19,12 +41,32 @@ layout: home
       <div class="product-actions">
         <label for="quantity">Quantity:</label>
         <input type="number" id="quantity" name="quantity" min="1" value="1" />
-
         <button class="add-to-cart-button" data-name="{{ product.name }}" data-price="{{ product.price }}">
           Add to Cart
         </button>
-
       </div>
     </div>
   </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var el = document.querySelector('#product-gallery');
+    if (!el) return;
+    new Swiper(el, {
+      loop: true,
+      spaceBetween: 12,
+      slidesPerView: 1,
+      pagination: { el: el.querySelector('.swiper-pagination'), clickable: true },
+      navigation: {
+        nextEl: el.querySelector('.swiper-button-next'),
+        prevEl: el.querySelector('.swiper-button-prev')
+      }
+    });
+  });
+</script>
+
+{% else %}
+  <p style="color:red">Product not found for <code>{{ page.product_ref }}</code>.</p>
+{% endif %}
