@@ -22,8 +22,8 @@ title: Sweet Poteat
 email: teishapoteat@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Sweet Poteat baked goods. Delicious sweets in Utah County.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/sweet-poteat" # subpath of your repo
+url: "https://mwshumway.github.io" # your GitHub Pages URL
 twitter_username: jekyllrb
 github_username:  jekyll
 
