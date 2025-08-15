@@ -4,28 +4,93 @@ title: Favors
 permalink: /favors/
 ---
 
-
 <div class="shop-label">Favors</div>
 <div class="striped-line"></div>
 
 <div class="favors-wrapper">
 
-  <h1 class="page-title">Custom Favors</h1>
-  <p class="favors-intro">Here are some of the favors we've created in the past. Every design is handcrafted and made with care!</p>
+  <p class="favors-intro">Sweet Poteat Truffles make the perfect favor for your wedding, showers, parties or any other special occasion. 
+    We also offer cookie gift bags. If you are interested in ordering favors, please contact us and we will work with you to create the perfect treat for your event.
+  </p>
 
-  <div class="favors-grid">
-    <div class="favor-card">
-      <img src="{{ '/assets/images/favor1.jpeg' | relative_url }}" alt="Favor 1">
+  <!-- Contact CTA Box -->
+  <a href="/contact/" class="contact-cta" style="display:block;margin:2rem auto;padding:1rem 2rem;background:#fc78b5;color:#fff;font-weight:700;text-align:center;border-radius:12px;width:200px;text-decoration:none;transition:0.2s;">
+    Contact Us
+  </a>
+
+  <!-- Carousel -->
+  <div class="favors-carousel-wrapper" style="max-width:600px;margin:0 auto;position:relative;">
+    <div class="carousel-main" style="position:relative;">
+      <img id="carousel-main-img" src="{{ '/assets/images/favors/favor1.jpg' | relative_url }}" alt="Favor" style="width:100%;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+      
+      <!-- Left/Right arrows -->
+      <button id="prev-arrow" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:rgba(252,120,181,0.8);border:none;border-radius:50%;width:35px;height:35px;color:#fff;font-weight:bold;cursor:pointer;z-index:10;">‹</button>
+      <button id="next-arrow" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:rgba(252,120,181,0.8);border:none;border-radius:50%;width:35px;height:35px;color:#fff;font-weight:bold;cursor:pointer;z-index:10;">›</button>
     </div>
-    <div class="favor-card">
-      <img src="{{ '/assets/images/favor2.jpeg' | relative_url }}" alt="Favor 2">
+
+    <div class="carousel-thumbnails" style="display:flex;justify-content:center;margin-top:1rem;gap:0.5rem;">
+      <img class="thumb" src="{{ '/assets/images/favors/favor1.jpg' | relative_url }}" alt="Favor 1" style="width:60px;height:60px;object-fit:cover;border-radius:8px;cursor:pointer;border:2px solid transparent;transition:0.2s;">
+      <img class="thumb" src="{{ '/assets/images/favors/favor2.jpg' | relative_url }}" alt="Favor 2" style="width:60px;height:60px;object-fit:cover;border-radius:8px;cursor:pointer;border:2px solid transparent;transition:0.2s;">
+      <img class="thumb" src="{{ '/assets/images/favors/favor3.jpg' | relative_url }}" alt="Favor 3" style="width:60px;height:60px;object-fit:cover;border-radius:8px;cursor:pointer;border:2px solid transparent;transition:0.2s;">
+      <img class="thumb" src="{{ '/assets/images/favors/favor4.jpg' | relative_url }}" alt="Favor 4" style="width:60px;height:60px;object-fit:cover;border-radius:8px;cursor:pointer;border:2px solid transparent;transition:0.2s;">
+      <img class="thumb" src="{{ '/assets/images/favors/favor5.jpg' | relative_url }}" alt="Favor 5" style="width:60px;height:60px;object-fit:cover;border-radius:8px;cursor:pointer;border:2px solid transparent;transition:0.2s;">
     </div>
-    <div class="favor-card">
-      <img src="{{ '/assets/images/favor3.jpeg' | relative_url }}" alt="Favor 3">
-    </div>
-    <!-- Add more favor cards here -->
   </div>
 
-  <p class="favors-cta">For serious inquiries or custom arrangements, please reach out to us directly and we can craft something special just for you.</p>
-
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mainImg = document.getElementById('carousel-main-img');
+  const thumbs = document.querySelectorAll('.thumb');
+  const images = Array.from(thumbs).map(t => t.src);
+  let currentIndex = 0;
+  const intervalTime = 4000; // 4 seconds
+  let interval;
+
+  function showImage(index) {
+    mainImg.src = images[index];
+    thumbs.forEach(t => t.style.border = '2px solid transparent');
+    thumbs[index].style.border = '2px solid #fc78b5';
+    currentIndex = index;
+  }
+
+  // Thumbnail clicks
+  thumbs.forEach((thumb, i) => {
+    thumb.addEventListener('click', () => {
+      showImage(i);
+      resetInterval();
+    });
+  });
+
+  // Arrows
+  document.getElementById('prev-arrow').addEventListener('click', () => {
+    const newIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(newIndex);
+    resetInterval();
+  });
+
+  document.getElementById('next-arrow').addEventListener('click', () => {
+    const newIndex = (currentIndex + 1) % images.length;
+    showImage(newIndex);
+    resetInterval();
+  });
+
+  // Autoplay
+  function startInterval() {
+    interval = setInterval(() => {
+      const nextIndex = (currentIndex + 1) % images.length;
+      showImage(nextIndex);
+    }, intervalTime);
+  }
+
+  function resetInterval() {
+    clearInterval(interval);
+    startInterval();
+  }
+
+  // Initialize
+  showImage(0);
+  startInterval();
+});
+</script>

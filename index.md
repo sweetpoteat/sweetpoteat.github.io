@@ -105,8 +105,35 @@ title: Welcome to Sweet Poteat Bakery
 <!-- Ribbon with slogan -->
 
 <div class="slogan-ribbon">
-  <p>Your Favorite Treats, Made With Love</p>
+  <p>The Sweet Poteat Difference</p>
 </div>
+
+<!-- Holiday Specials Banner -->
+<div class="holiday-banner">
+  <h2>Celebrate With Sweet Poteat Bakery!</h2>
+  <p class="holiday-text">
+    Our seasonal treats are perfect for making the holidays extra special. Check out our limited-time goodies and order early to sweeten your celebrations!
+  </p>
+  <a href="/holiday/" class="holiday-cta">Reserve Your Holiday Treats</a>
+</div>
+
+
+<!-- Baking Classes Banner -->
+<div style="background: #ffe3f0; border-radius: 12px; margin: 2rem auto; max-width: 900px; padding: 2rem; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <h2 style="color: #fc78b5; font-size: 2rem; margin-bottom: 0.5rem;">Learn to Bake With Us!</h2>
+  <p style="color: #333; font-size: 1.1rem; margin-bottom: 1rem;">
+    Join Sweet Poteat Homemade Treats for hands-on baking classes. From truffles to cupcakes, we’ll guide you step by step.
+  </p>
+  <p style="color: #333; font-size: 0.95rem; margin-bottom: 1.5rem;">
+    Simply fill out our contact form to express your interest, and we’ll coordinate over email or text with all the details.
+  </p>
+  <a href="/contact/" style="display:inline-block; background-color: #fc78b5; color: #fff; padding: 12px 24px; border-radius: 999px; font-weight: bold; font-size: 1.1rem; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: background-color 0.3s ease; min-width: 200px;" 
+     onmouseover="this.style.backgroundColor='#ffc4ea'" 
+     onmouseout="this.style.backgroundColor='#fc78b5'">
+    Contact Us to Sign Up
+  </a>
+</div>
+
 
 
 <!-- Grid of item categories -->

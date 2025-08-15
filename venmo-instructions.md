@@ -8,7 +8,7 @@ permalink: /venmo-instructions/
 
   <h2 style="color:#fc78b5;margin-bottom:1rem;">Almost Done!</h2>
   <p style="font-size:1.1rem;color:#333;margin-bottom:2rem;">
-    Thanks for placing your order! To complete it, please send your payment via Venmo to:
+    Thanks for sending your message! If you have placed an order, please send your payment via Venmo to:
   </p>
 
   <p style="font-weight:700;font-size:1.3rem;color:#fc78b5;margin-bottom:2rem;">@Teisha-Poteat</p>
