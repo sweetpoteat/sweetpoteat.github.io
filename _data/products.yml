@@ -1,33 +1,3 @@
-- name: Chocolate Chip Cookie
-  price: 20
-  category: cookies
-  image: /assets/images/products/choco_chip.png
-  slug: choco-chip
-
-- name: Red Velvet Cupcake
-  price: 20
-  category: cupcakes
-  image: /assets/images/products/red_velvet.png
-  slug: red-velvet
-
-- name: Salted Caramel Truffle
-  price: 20
-  category: truffles
-  image: /assets/images/products/salted_caramel.png
-  slug: sugar-cookie
-
-- name: Sugar Cookie
-  price: 20
-  category: cookies
-  image: /assets/images/products/sugar_cookie.png
-  slug: sugar-cookie
-
-- name: Snickerdoodle
-  price: 20
-  category: cookies
-  image: /assets/images/products/snickerdoodle.png
-  slug: snickerdoodle
-
 - name: Pecan Pie
   price: 34
   category: pies
@@ -69,6 +39,12 @@
     - /assets/images/products/pumpkinpie/pumpkinpie2.png
   slug: p-pie
 
+- name: Oreo Pie
+  price: 30
+  category: pies
+  images:
+    - /assets/images/products/oreopie/oreopie.png
+  slug: oreo-pie
 
 
 
