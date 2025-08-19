@@ -43,9 +43,9 @@
   price: 34
   category: truffles
   images:
-    - /assets/images/products/strawberrytruffle/strawberrytruffle1.png
-    - /assets/images/products/strawberrytruffle/strawberrytruffle2.png
-    - /assets/images/products/strawberrytruffle/strawberrytruffle3.png
+    - /assets/images/products/strawberrytruffle/strawberrytruffle1.jpg
+    - /assets/images/products/strawberrytruffle/strawberrytruffle2.jpg
+    - /assets/images/products/strawberrytruffle/strawberrytruffle3.jpg
   slug: strawberry-truffle
 
 
