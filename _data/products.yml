@@ -69,7 +69,14 @@
     - /assets/images/products/pumpkinpie/pumpkinpie2.png
   slug: p-pie
 
-
+- name: Strawberry Truffle
+  price: 20
+  category: truffles
+  images:
+    - /assets/images/products/strawberrytruffle/strawberrytruffle1.png
+    - /assets/images/products/strawberrytruffle/strawberrytruffle2.png
+    - /assets/images/products/strawberrytruffle/strawberrytruffle3.png
+  slug: strawberry-truffle
 
 
 
