@@ -10,17 +10,12 @@ layout: home
 <h1 class="page-title">{{ page.title }}</h1>
 
 <div class="product-grid">
-  {% assign category = page.category | default: 'all' %}
+  {% assign category = page.category %}
   {% for product in site.data.products %}
     {% if product.category == category or category == 'all' %}
-      <a href="{{ site.baseurl }}/products/{{ product.slug }}/" class="product-card">
+      <a href="{{ '/products/' | append: product.slug | append: '/' | relative_url }}" class="product-card">
         <div class="product-image">
-          {% assign card_img = product.image | default: product.images[0] %}
-          {% if card_img %}
-            <img src="{{ site.baseurl }}{{ card_img }}" alt="{{ product.name }}" loading="lazy">
-          {% else %}
-            <div class="img-placeholder">Image coming soon</div>
-          {% endif %}
+          <img src="{{ product.image | relative_url }}" alt="{{ product.name }}">
         </div>
         <h3>{{ product.name }}</h3>
         <p class="price">${{ product.price }}</p>
