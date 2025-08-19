@@ -15,7 +15,7 @@ layout: home
     {% if product.category == category or category == 'all' %}
       <a href="{{ '/products/' | append: product.slug | append: '/' | relative_url }}" class="product-card">
         <div class="product-image">
-          <img src="{{ product.image | relative_url }}" alt="{{ product.name }}">
+          <img src="{{ product.image | default: product.images[0] | relative_url }}" alt="{{ product.name }}">
         </div>
         <h3>{{ product.name }}</h3>
         <p class="price">${{ product.price }}</p>
