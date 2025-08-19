@@ -3,9 +3,6 @@ layout: home
 title: Welcome to Sweet Poteat Bakery
 ---
 
-
-<!-- fc78b5 -->
-
 <!-- Carousel with Shop Now Button -->
 
 <link
@@ -29,7 +26,7 @@ title: Welcome to Sweet Poteat Bakery
   >
     <!-- Centered Shop Now Button -->
     <a
-      href="/all"
+      href="{{ '/all/' | relative_url }}"
       style="
         position: absolute;
         top: 50%;
@@ -56,21 +53,21 @@ title: Welcome to Sweet Poteat Bakery
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img
-          src="assets/images/banner1.jpg"
+          src="{{ '/assets/images/banner1.jpg' | relative_url }}"
           alt="Delicious treats"
           style="width: 100%; height: 100%; object-fit: cover"
         />
       </div>
       <div class="swiper-slide">
         <img
-          src="assets/images/banner2.jpg"
+          src="{{ '/assets/images/banner2.jpg' | relative_url }}"
           alt="Cookies"
           style="width: 100%; height: 100%; object-fit: cover"
         />
       </div>
       <div class="swiper-slide">
         <img
-          src="assets/images/banner3.jpg"
+          src="{{ '/assets/images/banner3.jpg' | relative_url }}"
           alt="Cupcakes"
           style="width: 100%; height: 100%; object-fit: cover"
         />
@@ -101,28 +98,23 @@ title: Welcome to Sweet Poteat Bakery
   });
 </script>
 
-
 <!-- Ribbon with slogan -->
-
 <div class="slogan-ribbon">
   <p>The Sweet Poteat Difference</p>
 </div>
 
-<!-- Holiday Specials Banner -->
 <!-- Holiday Specials Banner -->
 <div style="background: #ffe3f0; border-radius: 12px; margin: 2rem auto; max-width: 900px; padding: 2rem; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <h2 style="color: #fc78b5; font-size: 2rem; margin-bottom: 0.5rem;">Celebrate With Sweet Poteat Bakery!</h2>
   <p style="color: #333; font-size: 1.1rem; margin-bottom: 1rem;">
     Our seasonal treats are perfect for making the holidays extra special. Check out our limited-time goodies and order early to sweeten your celebrations!
   </p>
-  <a href="/holiday/" style="display:inline-block; background-color: #fc78b5; color: #fff; padding: 12px 24px; border-radius: 999px; font-weight: bold; font-size: 1.1rem; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: background-color 0.3s ease; min-width: 200px;"
+  <a href="{{ '/holiday/' | relative_url }}" style="display:inline-block; background-color: #fc78b5; color: #fff; padding: 12px 24px; border-radius: 999px; font-weight: bold; font-size: 1.1rem; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: background-color 0.3s ease; min-width: 200px;"
      onmouseover="this.style.backgroundColor='#ffc4ea'" 
      onmouseout="this.style.backgroundColor='#fc78b5'">
     Reserve Your Holiday Treats
   </a>
 </div>
-
-
 
 <!-- Baking Classes Banner -->
 <div style="background: #ffe3f0; border-radius: 12px; margin: 2rem auto; max-width: 900px; padding: 2rem; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
@@ -133,32 +125,29 @@ title: Welcome to Sweet Poteat Bakery
   <p style="color: #333; font-size: 0.95rem; margin-bottom: 1.5rem;">
     Simply fill out our contact form to express your interest, and we’ll coordinate over email or text with all the details.
   </p>
-  <a href="/contact/" style="display:inline-block; background-color: #fc78b5; color: #fff; padding: 12px 24px; border-radius: 999px; font-weight: bold; font-size: 1.1rem; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: background-color 0.3s ease; min-width: 200px;" 
+  <a href="{{ '/contact/' | relative_url }}" style="display:inline-block; background-color: #fc78b5; color: #fff; padding: 12px 24px; border-radius: 999px; font-weight: bold; font-size: 1.1rem; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: background-color 0.3s ease; min-width: 200px;" 
      onmouseover="this.style.backgroundColor='#ffc4ea'" 
      onmouseout="this.style.backgroundColor='#fc78b5'">
     Contact Us to Sign Up
   </a>
 </div>
 
-
-
 <!-- Grid of item categories -->
-
 <div class="category-grid">
-  <a href="/cookies/" class="category-card">
-    <img src="{{ site.baseurl }}/assets/images/icons/cookie.png" alt="Cookies" />
+  <a href="{{ '/cookies/' | relative_url }}" class="category-card">
+    <img src="{{ '/assets/images/icons/cookie.png' | relative_url }}" alt="Cookies" />
     <span>Cookies</span>
   </a>
-  <a href="/truffles/" class="category-card">
-    <img src="{{ site.baseurl }}/assets/images/icons/truffle.png" alt="Truffles" />
+  <a href="{{ '/truffles/' | relative_url }}" class="category-card">
+    <img src="{{ '/assets/images/icons/truffle.png' | relative_url }}" alt="Truffles" />
     <span>Truffles</span>
   </a>
-  <a href="/cupcakes/" class="category-card">
-    <img src="{{ site.baseurl }}/assets/images/icons/cupcake.png" alt="Cupcakes" />
+  <a href="{{ '/cupcakes/' | relative_url }}" class="category-card">
+    <img src="{{ '/assets/images/icons/cupcake.png' | relative_url }}" alt="Cupcakes" />
     <span>Cupcakes</span>
   </a>
-  <a href="/holiday/" class="category-card">
-    <img src="{{ site.baseurl }}/assets/images/icons/holiday.png" alt="Pies" />
+  <a href="{{ '/holiday/' | relative_url }}" class="category-card">
+    <img src="{{ '/assets/images/icons/holiday.png' | relative_url }}" alt="Holiday" />
     <span>Holiday</span>
   </a>
 </div>

@@ -4,27 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title | default: site.title }}</title>
+
+  <!-- Local CSS -->
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+  <!-- Google Fonts (external, leave as-is) -->
   <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (external, leave as-is) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<!-- Floating Mini Cart -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<div id="floating-cart">
-  <button id="cart-toggle">
-    <i class="fas fa-shopping-cart"></i>
-    <span id="cart-count">0</span>
-  </button>
-  <div id="cart-dropdown">
-    <p>Your cart is empty</p>
-  </div>
-</div>
-
-
 <body>
+  <!-- Floating Mini Cart -->
+  <div id="floating-cart">
+    <button id="cart-toggle">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cart-count">0</span>
+    </button>
+    <div id="cart-dropdown">
+      <p>Your cart is empty</p>
+    </div>
+  </div>
+
   {% include top-nav.html %}
 
   <main>
@@ -34,8 +38,12 @@
   <footer>
     <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
   </footer>
+
+  <!-- Local JS -->
+  <script>
+  const BASEURL = "{{ site.baseurl }}";
+  </script>
+  <script src="{{ '/assets/js/cart.js' | relative_url }}"></script>
+
 </body>
-
-<script src="{{ '/assets/js/cart.js' | relative_url }}"></script>
-
 </html>

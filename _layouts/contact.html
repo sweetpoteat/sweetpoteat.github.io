@@ -18,7 +18,7 @@ permalink: /contact/
     <!-- Form Fields -->
     <label for="name">Name*</label>
     <input type="text" id="name" name="name" required>
-    
+
     <label for="phone">Phone*</label>
     <input type="tel" id="phone" name="phone">
 
@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
             body: data,
         })
         .then(res => {
-            // No need to parse JSON; redirect anyway
-            window.location.href = '/venmo-instructions';
+            // Redirect using relative_url
+            window.location.href = "{{ '/venmo-instructions/' | relative_url }}";
         })
         .catch(err => {
             alert('There was a problem submitting the form.');
@@ -58,3 +58,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+

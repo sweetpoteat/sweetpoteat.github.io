@@ -21,7 +21,7 @@ function addToCart(itemName, qty = 1, price = 0) {
 // --- Remove item from cart ---
 function removeFromCart(itemName) {
     cart = cart.filter(i => i.item !== itemName);
-    localStorage.setItem('sweetPoteatCart', JSON.stringify(cart));
+    saveCart();
     updateCartDisplay();
 }
 
@@ -38,14 +38,13 @@ function updateCartDisplay() {
     countSpan.textContent = totalItems;
 
     // Update dropdown
+    dropdown.innerHTML = '';
     if (cart.length === 0) {
         dropdown.innerHTML = '<p>Your cart is empty</p>';
         return;
     }
 
-    dropdown.innerHTML = '';
     let totalPrice = 0;
-
     cart.forEach(i => {
         totalPrice += i.qty * i.price;
         const div = document.createElement('div');
@@ -65,36 +64,37 @@ function updateCartDisplay() {
 
     // Add "Go to Cart" button
     const goToCartBtn = document.createElement('a');
-    goToCartBtn.href = '/contact';
+    goToCartBtn.href = BASEURL + '/contact/';
     goToCartBtn.textContent = 'Go to Cart';
     goToCartBtn.className = 'go-to-cart-btn';
     goToCartBtn.addEventListener('click', () => {
-        if (cartEl) {
-            cartEl.classList.remove('open');
-        }
+        if (cartEl) cartEl.classList.remove('open');
     });
     dropdown.appendChild(goToCartBtn);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Floating cart toggle ---
     const toggle = document.getElementById('cart-toggle');
     const cartEl = document.getElementById('floating-cart');
+    const dropdown = document.getElementById('cart-dropdown');
+
     if (toggle && cartEl) {
-        toggle.addEventListener('click', () => {
+        // Toggle dropdown
+        toggle.addEventListener('click', (e) => {
             cartEl.classList.toggle('open');
         });
 
-        // Close cart if mouse leaves the floating cart area
-        cartEl.addEventListener('mouseleave', () => {
-            cartEl.classList.remove('open');
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!cartEl.contains(e.target) && cartEl.classList.contains('open')) {
+                cartEl.classList.remove('open');
+            }
         });
     }
 
-    // --- Update cart display ---
     updateCartDisplay();
 
-    // --- Prefill Contact page textarea ---
+    // Prefill Contact page textarea if it exists
     const orderField = document.getElementById('order');
     if (orderField && cart.length > 0) {
         const orderLines = cart.map(i => `${i.qty} x ${i.item}`);
@@ -102,14 +102,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
+// --- Add to cart buttons ---
 document.querySelectorAll('.add-to-cart-button').forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    const parent = btn.closest('.product-actions');
-    const qtyInput = parent.querySelector('input[type="number"]');
-    const qty = parseInt(qtyInput.value) || 1;
-    const itemName = btn.dataset.name;
-    const price = Number(btn.dataset.price);
-    addToCart(itemName, qty, price);
-  });
+    btn.addEventListener('click', () => {
+        const parent = btn.closest('.product-actions');
+        const qtyInput = parent.querySelector('input[type="number"]');
+        const qty = parseInt(qtyInput.value) || 1;
+        const itemName = btn.dataset.name;
+        const price = Number(btn.dataset.price);
+        addToCart(itemName, qty, price);
+    });
 });
