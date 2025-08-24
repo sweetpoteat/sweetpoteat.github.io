@@ -66,4 +66,12 @@
     - /assets/images/products/lemon-truffle/lemon-truffle3.jpg
   slug: lemon-truffle
 
+- name: Mint Truffle
+  price: 34
+  category: truffles
+  images:
+    - /assets/images/products/mint-truffle/mint-truffle1.jpg
+    - /assets/images/products/mint-truffle/mint-truffle2.jpg
+    - /assets/images/products/mint-truffle/mint-truffle3.jpg
+  slug: mint-truffle
 
