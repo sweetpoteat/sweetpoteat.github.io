@@ -57,4 +57,13 @@
     - /assets/images/products/biscofftruffle/biscoff-truffle3.jpg
   slug: biscoff-truffle
 
+- name: Lemon Truffle
+  price: 34
+  category: truffles
+  images:
+    - /assets/images/products/lemon-truffle/lemon-truffle1.jpg
+    - /assets/images/products/lemon-truffle/lemon-truffle2.jpg
+    - /assets/images/products/lemon-truffle/lemon-truffle3.jpg
+  slug: lemon-truffle
+
 
