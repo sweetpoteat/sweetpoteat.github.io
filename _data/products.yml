@@ -48,3 +48,13 @@
     - /assets/images/products/strawberrytruffle/strawberrytruffle3.jpg
   slug: strawberry-truffle
 
+- name: Biscoff Truffle
+  price: 34
+  category: truffles
+  images:
+    - /assets/images/products/biscofftruffle/biscoff-truffle1.jpg
+    - /assets/images/products/biscofftruffle/biscoff-truffle2.jpg
+    - /assets/images/products/biscofftruffle/biscoff-truffle3.jpg
+  slug: biscoff-truffle
+
+
