@@ -75,3 +75,20 @@
     - /assets/images/products/mint-truffle/mint-truffle3.jpg
   slug: mint-truffle
 
+- name: Oreo Truffle
+  price: 34
+  category: truffles
+  images:
+    - /assets/images/products/oreo-truffle/oreo-truffle1.jpg
+    - /assets/images/products/oreo-truffle/oreo-truffle2.jpg
+    - /assets/images/products/oreo-truffle/oreo-truffle3.jpg
+  slug: oreo-truffle
+
+- name: Peanut Butter Truffle
+  price: 34
+  category: truffles
+  images:
+    - /assets/images/products/pb-truffle/pb-truffle1.jpg
+    - /assets/images/products/pb-truffle/pb-truffle2.jpg
+    - /assets/images/products/pb-truffle/pb-truffle3.jpg
+  slug: pb-truffle
