@@ -211,8 +211,15 @@
 
 - name: Salted Caramel Rice Krispie
   price: 15
-  category: bars
+  category: bars-and-breads
   images:
     - /assets/images/products/salted-caramel-rice-krispie/scrk1.jpg
     - /assets/images/products/salted-caramel-rice-krispie/scrk2.jpg
   slug: salted-caramel-rice-krispie
+
+- name: Pumpkin Spice Bread
+  price: 15
+  category: bars-and-breads
+  images:
+    - /assets/images/products/pumpkin-spice-bread/psb1.jpg
+  slug: pumpkin-spice-bread
