@@ -92,3 +92,10 @@
     - /assets/images/products/pb-truffle/pb-truffle2.jpg
     - /assets/images/products/pb-truffle/pb-truffle3.jpg
   slug: pb-truffle
+
+- name: Oreo Pie
+  price: 34
+  category: pies
+  images:
+    - /assets/images/products/oreo-pie/oreo-pie1.jpg
+  slug: oreo-pie
