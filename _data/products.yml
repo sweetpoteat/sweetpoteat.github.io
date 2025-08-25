@@ -172,3 +172,39 @@
     - /assets/images/products/peanut-butter-blossom/pbb2.jpg
     - /assets/images/products/peanut-butter-blossom/pbb3.jpg
   slug: peanut-butter-blossom
+
+- name: Gingerbread Cookie
+  price: 20
+  category: cookies
+  images:
+    - /assets/images/products/gingerbread-cookie/gingerbread1.jpg
+    - /assets/images/products/gingerbread-cookie/gingerbread2.jpg
+    - /assets/images/products/gingerbread-cookie/gingerbread3.jpg
+  slug: gingerbread-cookie
+
+- name: Double Chocolate White Chocolate Chip Cookie
+  price: 20
+  category: cookies
+  images:
+    - /assets/images/products/double-choc-white-choc-chip-cookie/dcwccc1.jpg
+    - /assets/images/products/double-choc-white-choc-chip-cookie/dcwccc2.jpg
+    - /assets/images/products/double-choc-white-choc-chip-cookie/dcwccc3.jpg
+  slug: double-choc-white-choc-chip-cookie
+
+- name: Cookies and Cream Cookie
+  price: 20
+  category: cookies
+  images:
+    - /assets/images/products/cookies-and-cream-cookie/ccc1.jpg
+    - /assets/images/products/cookies-and-cream-cookie/ccc2.jpg
+    - /assets/images/products/cookies-and-cream-cookie/ccc3.jpg
+  slug: cookies-and-cream-cookie
+
+- name:  Chocolate Chip Cookie
+  price: 20
+  category: cookies
+  images:
+    - /assets/images/products/choc-chip-cookie/cc1.jpg
+    - /assets/images/products/choc-chip-cookie/cc2.jpg
+    - /assets/images/products/choc-chip-cookie/cc3.jpg
+  slug: choc-chip-cookie
