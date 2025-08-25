@@ -99,3 +99,11 @@
   images:
     - /assets/images/products/oreo-pie/oreo-pie1.jpg
   slug: oreo-pie
+
+- name: Chocolate Pecan Pie
+  price: 34
+  category: pies
+  images:
+    - /assets/images/products/choc-pecan-pie/choc-pecan-pie1.jpg
+  slug: choc-pecan-pie
+
