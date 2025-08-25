@@ -148,3 +148,27 @@
     - /assets/images/products/pumpkin-spice-blossom/psb1.jpg
     - /assets/images/products/pumpkin-spice-blossom/psb2.jpg
   slug: pumpkin-spice-blossom
+
+- name: Pumpkin Spice Snickerdoodle
+  price: 20
+  category: cookies
+  images:
+    - /assets/images/products/pumpkin-spice-snickerdoodle/pss1.jpg
+    - /assets/images/products/pumpkin-spice-snickerdoodle/pss2.jpg
+  slug: pumpkin-spice-snickerdoodle
+
+- name: Peanut Butter Cookie
+  price: 20
+  category: cookies
+  images:
+    - /assets/images/products/peanut-butter-cookie/pbc1.jpg
+  slug: peanut-butter-cookie
+
+- name: Peanut Butter Blossom
+  price: 20
+  category: cookies
+  images:
+    - /assets/images/products/peanut-butter-blossom/pbb1.jpg
+    - /assets/images/products/peanut-butter-blossom/pbb2.jpg
+    - /assets/images/products/peanut-butter-blossom/pbb3.jpg
+  slug: peanut-butter-blossom
