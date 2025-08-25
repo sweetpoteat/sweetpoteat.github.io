@@ -107,3 +107,11 @@
     - /assets/images/products/choc-pecan-pie/choc-pecan-pie1.jpg
   slug: choc-pecan-pie
 
+- name: Strawberry White Chocolate Chip Cookie
+  price: 20
+  category: cookies
+  images:
+    - /assets/images/products/straw-white-choc-cookie/swcc1.jpg
+    - /assets/images/products/straw-white-choc-cookie/swcc2.jpg
+    - /assets/images/products/straw-white-choc-cookie/swcc3.jpg
+  slug: straw-white-choc-cookie
