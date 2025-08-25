@@ -115,3 +115,36 @@
     - /assets/images/products/straw-white-choc-cookie/swcc2.jpg
     - /assets/images/products/straw-white-choc-cookie/swcc3.jpg
   slug: straw-white-choc-cookie
+
+- name: Snickerdoodle
+  price: 20
+  category: cookies
+  images:
+    - /assets/images/products/snickerdoodle/snickerdoodle1.jpg
+    - /assets/images/products/snickerdoodle/snickerdoodle2.jpg
+  slug: snickerdoodle
+
+- name: S'mores Cookie
+  price: 20
+  category: cookies
+  images:
+    - /assets/images/products/smores-cookie/smores-cookie1.jpg
+    - /assets/images/products/smores-cookie/smores-cookie2.jpg
+  slug: smores-cookie
+
+- name: Pumpkin Spice Cookie
+  price: 20
+  category: cookies
+  images:
+    - /assets/images/products/pumpkin-spice-cookie/pspice1.jpg
+    - /assets/images/products/pumpkin-spice-cookie/pspice2.jpg
+    - /assets/images/products/pumpkin-spice-cookie/pspice3.jpg
+  slug: pumpkin-spice-cookie
+
+- name: Pumpkin Spice Blossom
+  price: 20
+  category: cookies
+  images:
+    - /assets/images/products/pumpkin-spice-blossom/psb1.jpg
+    - /assets/images/products/pumpkin-spice-blossom/psb2.jpg
+  slug: pumpkin-spice-blossom
