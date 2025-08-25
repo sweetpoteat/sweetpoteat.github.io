@@ -223,3 +223,16 @@
   images:
     - /assets/images/products/pumpkin-spice-bread/psb1.jpg
   slug: pumpkin-spice-bread
+
+- name: Sugar Cookie
+  price: 15
+  category: cookies
+  images:
+    - /assets/images/products/sugar-cookie/sugar1.jpg
+    - /assets/images/products/sugar-cookie/sugar2.jpg
+    - /assets/images/products/sugar-cookie/sugar3.jpg
+    - /assets/images/products/sugar-cookie/sugar4.jpg
+    - /assets/images/products/sugar-cookie/sugar5.jpg
+  slug: sugar-cookie
+  description: >
+    Our classic sugar cookie, perfect for any occasion. Soft, chewy, and deliciously sweet, these cookies are a crowd favorite. Decorate them with icing or sprinkles for a festive touch!
