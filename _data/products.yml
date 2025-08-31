@@ -259,3 +259,30 @@
     - /assets/images/products/double-choc-white-choc-chip-cookie-dough/double-choc-cd1.jpg
     - /assets/images/products/double-choc-white-choc-chip-cookie-dough/double-choc-cd2.jpg
   slug: double-choc-white-choc-chip-cookie-dough
+
+- name: Chocolate Chip Cookie Dough
+  price: 15
+  category: cookie-dough
+  images:
+    - /assets/images/products/choc-chip-cookie-dough/choc-chip-cd1.jpg
+    - /assets/images/products/choc-chip-cookie-dough/choc-chip-cd2.jpg
+    - /assets/images/products/choc-chip-cookie-dough/choc-chip-cd3.jpg
+  slug: choc-chip-cookie-dough
+
+- name: Cookies and Cream Cookie Dough
+  price: 15
+  category: cookie-dough
+  images:
+    - /assets/images/products/cookies-and-cream-cookie-dough/cac-cd1.jpg
+    - /assets/images/products/cookies-and-cream-cookie-dough/cac-cd2.jpg
+    - /assets/images/products/cookies-and-cream-cookie-dough/cac-cd3.jpg
+  slug: cookies-and-cream-cookie-dough
+
+- name: S'mores Cookie Dough
+  price: 15
+  category: cookie-dough
+  images:
+    - /assets/images/products/smores-cookie-dough/smores-cd1.jpg
+    - /assets/images/products/smores-cookie-dough/smores-cd2.jpg
+    - /assets/images/products/smores-cookie-dough/smores-cd3.jpg
+  slug: smores-cookie-dough
