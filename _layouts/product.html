@@ -34,9 +34,14 @@ layout: home
     </div>
 
     <div class="product-detail-info">
-      <h1 class="product-name">{{ product.name }}</h1>
-      <p class="product-price">${{ product.price }}</p>
-      <p class="product-description">{{ product.description }}</p>
+    <h1 class="product-name">{{ product.name }}</h1>
+    <p class="product-price">
+      ${{ product.price }}
+      {% if product.quantity %}
+        / {{ product.quantity }}
+      {% endif %}
+    </p>
+    <p class="product-description">{{ product.description }}</p>
 
       <div class="product-actions">
         <label for="quantity">Quantity:</label>

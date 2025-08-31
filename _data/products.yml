@@ -1,5 +1,5 @@
 - name: Pecan Pie
-  price: 34
+  price: 30
   category: pies
   images:
     - /assets/images/products/pecanpie/pecanpie1.png
@@ -7,7 +7,7 @@
   slug: pecan-pie
 
 - name: Chocolate Pie
-  price: 34
+  price: 25
   category: pies
   images:
     - /assets/images/products/chocopie/chocopie1.png
@@ -15,7 +15,7 @@
   slug: choco-pie
 
 - name: Pumpkin Streusel Pie
-  price: 34
+  price: 30
   category: pies
   images:
     - /assets/images/products/pspie/pspie1.png
@@ -23,7 +23,7 @@
   slug: ps-pie
 
 - name: Dutch Apple Pie
-  price: 34
+  price: 35
   category: pies
   images:
     - /assets/images/products/dapie/dapie1.png
@@ -32,7 +32,7 @@
   slug: da-pie
 
 - name: Pumpkin Pie
-  price: 34
+  price: 25
   category: pies
   images:
     - /assets/images/products/pumpkinpie/pumpkinpie1.png
@@ -40,7 +40,8 @@
   slug: p-pie
 
 - name: Strawberry Truffle
-  price: 34
+  price: 32
+  quantity: 36 ct.
   category: truffles
   images:
     - /assets/images/products/strawberrytruffle/strawberrytruffle1.jpg
@@ -49,8 +50,11 @@
   slug: strawberry-truffle
 
 - name: Biscoff Truffle
-  price: 34
+  price: 32
+  quantity: 36 ct.
   category: truffles
+  description: >
+    A soft Biscoff center, dipped in white chocolate, topped with Biscoff butter drizzle.
   images:
     - /assets/images/products/biscofftruffle/biscoff-truffle1.jpg
     - /assets/images/products/biscofftruffle/biscoff-truffle2.jpg
@@ -58,7 +62,8 @@
   slug: biscoff-truffle
 
 - name: Lemon Truffle
-  price: 34
+  price: 32
+  quantity: 36 ct.
   category: truffles
   images:
     - /assets/images/products/lemon-truffle/lemon-truffle1.jpg
@@ -67,7 +72,8 @@
   slug: lemon-truffle
 
 - name: Mint Truffle
-  price: 34
+  price: 32
+  quantity: 36 ct.
   category: truffles
   images:
     - /assets/images/products/mint-truffle/mint-truffle1.jpg
@@ -76,7 +82,8 @@
   slug: mint-truffle
 
 - name: Oreo Truffle
-  price: 34
+  price: 32
+  quantity: 36 ct.
   category: truffles
   images:
     - /assets/images/products/oreo-truffle/oreo-truffle1.jpg
@@ -85,7 +92,8 @@
   slug: oreo-truffle
 
 - name: Peanut Butter Truffle
-  price: 34
+  price: 32
+  quantity: 36 ct.
   category: truffles
   images:
     - /assets/images/products/pb-truffle/pb-truffle1.jpg
@@ -94,21 +102,22 @@
   slug: pb-truffle
 
 - name: Oreo Pie
-  price: 34
+  price: 30
   category: pies
   images:
     - /assets/images/products/oreo-pie/oreo-pie1.jpg
   slug: oreo-pie
 
 - name: Chocolate Pecan Pie
-  price: 34
+  price: 30
   category: pies
   images:
     - /assets/images/products/choc-pecan-pie/choc-pecan-pie1.jpg
   slug: choc-pecan-pie
 
 - name: Strawberry White Chocolate Chip Cookie
-  price: 20
+  price: 28
+  quantity: 36 ct.
   category: cookies
   images:
     - /assets/images/products/straw-white-choc-cookie/swcc1.jpg
@@ -117,7 +126,8 @@
   slug: straw-white-choc-cookie
 
 - name: Snickerdoodle
-  price: 20
+  price: 30
+  quantity: 36 ct.
   category: cookies
   images:
     - /assets/images/products/snickerdoodle/snickerdoodle1.jpg
@@ -125,7 +135,8 @@
   slug: snickerdoodle
 
 - name: S'mores Cookie
-  price: 20
+  price: 30
+  quantity: 36 ct.
   category: cookies
   images:
     - /assets/images/products/smores-cookie/smores-cookie1.jpg
@@ -133,7 +144,8 @@
   slug: smores-cookie
 
 - name: Pumpkin Spice Cookie
-  price: 20
+  price: 30
+  quantity: 36 ct.
   category: cookies
   images:
     - /assets/images/products/pumpkin-spice-cookie/pspice1.jpg
@@ -142,7 +154,8 @@
   slug: pumpkin-spice-cookie
 
 - name: Pumpkin Spice Blossom
-  price: 20
+  price: 30
+  quantity: 36 ct.
   category: cookies
   images:
     - /assets/images/products/pumpkin-spice-blossom/psb1.jpg
@@ -150,7 +163,8 @@
   slug: pumpkin-spice-blossom
 
 - name: Pumpkin Spice Snickerdoodle
-  price: 20
+  price: 28
+  quantity: 36 ct.
   category: cookies
   images:
     - /assets/images/products/pumpkin-spice-snickerdoodle/pss1.jpg
@@ -158,14 +172,16 @@
   slug: pumpkin-spice-snickerdoodle
 
 - name: Peanut Butter Cookie
-  price: 20
+  price: 28
+  quantity: 36 ct.
   category: cookies
   images:
     - /assets/images/products/peanut-butter-cookie/pbc1.jpg
   slug: peanut-butter-cookie
 
 - name: Peanut Butter Blossom
-  price: 20
+  price: 30
+  quantity: 36 ct.
   category: cookies
   images:
     - /assets/images/products/peanut-butter-blossom/pbb1.jpg
@@ -174,7 +190,8 @@
   slug: peanut-butter-blossom
 
 - name: Gingerbread Cookie
-  price: 20
+  price: 30
+  quantity: 24-36 ct.
   category: cookies
   images:
     - /assets/images/products/gingerbread-cookie/gingerbread1.jpg
@@ -192,7 +209,8 @@
   slug: double-choc-white-choc-chip-cookie
 
 - name: Cookies and Cream Cookie
-  price: 20
+  price: 30
+  quantity: 36 ct.
   category: cookies
   images:
     - /assets/images/products/cookies-and-cream-cookie/ccc1.jpg
@@ -201,7 +219,8 @@
   slug: cookies-and-cream-cookie
 
 - name:  Chocolate Chip Cookie
-  price: 20
+  price: 28
+  quantity: 36 ct.
   category: cookies
   images:
     - /assets/images/products/choc-chip-cookie/cc1.jpg
@@ -210,7 +229,8 @@
   slug: choc-chip-cookie
 
 - name: Salted Caramel Rice Krispie
-  price: 15
+  price: 20
+  quantity: 12 ct.
   category: bars-and-breads
   images:
     - /assets/images/products/salted-caramel-rice-krispie/scrk1.jpg
@@ -219,13 +239,15 @@
 
 - name: Pumpkin Spice Bread
   price: 15
+  quantity: 3 mini loaves
   category: bars-and-breads
   images:
     - /assets/images/products/pumpkin-spice-bread/psb1.jpg
   slug: pumpkin-spice-bread
 
 - name: Sugar Cookie
-  price: 15
+  price: 35
+  quantity: 24-36 ct.
   category: cookies
   images:
     - /assets/images/products/sugar-cookie/sugar1.jpg
@@ -236,7 +258,8 @@
   slug: sugar-cookie
 
 - name: Snickerdoodle Cookie Dough
-  price: 15
+  price: 25
+  quantity: 36 ct.
   category: cookie-dough
   images:
     - /assets/images/products/snickerdoodle-cookie-dough/snickerdoodle-cd1.jpg
@@ -245,7 +268,8 @@
   slug: snickerdoodle-cookie-dough
 
 - name: Peanut Butter Cookie Dough
-  price: 15
+  price: 25
+  quantity: 36 ct.
   category: cookie-dough
   images:
     - /assets/images/products/peanut-butter-cookie-dough/pb-cd1.jpg
@@ -253,7 +277,8 @@
   slug: peanut-butter-cookie-dough
 
 - name: Double Chocolate White Chocolate Chip Cookie Dough
-  price: 15
+  price: 25
+  quantity: 36 ct.
   category: cookie-dough
   images:
     - /assets/images/products/double-choc-white-choc-chip-cookie-dough/double-choc-cd1.jpg
@@ -261,7 +286,8 @@
   slug: double-choc-white-choc-chip-cookie-dough
 
 - name: Chocolate Chip Cookie Dough
-  price: 15
+  price: 25
+  quantity: 36 ct.
   category: cookie-dough
   images:
     - /assets/images/products/choc-chip-cookie-dough/choc-chip-cd1.jpg
@@ -270,7 +296,8 @@
   slug: choc-chip-cookie-dough
 
 - name: Cookies and Cream Cookie Dough
-  price: 15
+  price: 25
+  quantity: 36 ct.
   category: cookie-dough
   images:
     - /assets/images/products/cookies-and-cream-cookie-dough/cac-cd1.jpg
@@ -279,7 +306,8 @@
   slug: cookies-and-cream-cookie-dough
 
 - name: S'mores Cookie Dough
-  price: 15
+  price: 25
+  quantity: 36 ct.
   category: cookie-dough
   images:
     - /assets/images/products/smores-cookie-dough/smores-cd1.jpg

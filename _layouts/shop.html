@@ -61,7 +61,12 @@ layout: home
           <img src="{{ product.image | default: product.images[0] | relative_url }}" alt="{{ product.name }}">
         </div>
         <h3>{{ product.name }}</h3>
-        <p class="price">${{ product.price }}</p>
+        <p class="price">
+          ${{ product.price }}
+          {% if product.quantity %}
+            / {{ product.quantity }}
+          {% endif %}
+        </p>
       </a>
     {% endif %}
   {% endfor %}
