@@ -234,5 +234,28 @@
     - /assets/images/products/sugar-cookie/sugar4.jpg
     - /assets/images/products/sugar-cookie/sugar5.jpg
   slug: sugar-cookie
-  description: >
-    Our classic sugar cookie, perfect for any occasion. Soft, chewy, and deliciously sweet, these cookies are a crowd favorite. Decorate them with icing or sprinkles for a festive touch!
+
+- name: Snickerdoodle Cookie Dough
+  price: 15
+  category: cookie-dough
+  images:
+    - /assets/images/products/snickerdoodle-cookie-dough/snickerdoodle-cd1.jpg
+    - /assets/images/products/snickerdoodle-cookie-dough/snickerdoodle-cd2.jpg
+    - /assets/images/products/snickerdoodle-cookie-dough/snickerdoodle-cd3.jpg
+  slug: snickerdoodle-cookie-dough
+
+- name: Peanut Butter Cookie Dough
+  price: 15
+  category: cookie-dough
+  images:
+    - /assets/images/products/peanut-butter-cookie-dough/pb-cd1.jpg
+    - /assets/images/products/peanut-butter-cookie-dough/pb-cd2.jpg
+  slug: peanut-butter-cookie-dough
+
+- name: Double Chocolate White Chocolate Chip Cookie Dough
+  price: 15
+  category: cookie-dough
+  images:
+    - /assets/images/products/double-choc-white-choc-chip-cookie-dough/double-choc-cd1.jpg
+    - /assets/images/products/double-choc-white-choc-chip-cookie-dough/double-choc-cd2.jpg
+  slug: double-choc-white-choc-chip-cookie-dough

@@ -53,21 +53,49 @@ title: Welcome to Sweet Poteat Bakery
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img
-          src="{{ '/assets/images/banner1.jpg' | relative_url }}"
+          src="{{ '/assets/images/banner/biscoff-truffle-banner.jpg' | relative_url }}"
           alt="Delicious treats"
           style="width: 100%; height: 100%; object-fit: cover"
         />
       </div>
       <div class="swiper-slide">
         <img
-          src="{{ '/assets/images/banner2.jpg' | relative_url }}"
+          src="{{ '/assets/images/banner/pb-blossom-banner.jpg' | relative_url }}"
           alt="Cookies"
           style="width: 100%; height: 100%; object-fit: cover"
         />
       </div>
       <div class="swiper-slide">
         <img
-          src="{{ '/assets/images/banner3.jpg' | relative_url }}"
+          src="{{ '/assets/images/banner/cookie-dough-banner.jpg' | relative_url }}"
+          alt="Cupcakes"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="{{ '/assets/images/banner/snickerdoodle-banner.jpg' | relative_url }}"
+          alt="Cookies"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="{{ '/assets/images/banner/lemon-truffle-banner.jpg' | relative_url }}"
+          alt="Cupcakes"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="{{ '/assets/images/banner/sugar-cookie-banner.jpg' | relative_url }}"
+          alt="Cupcakes"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="{{ '/assets/images/banner/strawberry-truffle-banner.jpg' | relative_url }}"
           alt="Cupcakes"
           style="width: 100%; height: 100%; object-fit: cover"
         />
