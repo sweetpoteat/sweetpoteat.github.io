@@ -100,6 +100,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const orderLines = cart.map(i => `${i.qty} x ${i.item}`);
         orderField.value = orderLines.join("\n");
     }
+    // Add the total price to the order field if it exists
+    if (orderField && cart.length > 0) {
+    const orderLines = cart.map(i => 
+        `${i.qty} x ${i.item} — $${(i.qty * i.price).toFixed(2)}`
+    );
+    const totalPrice = cart.reduce((sum, i) => sum + i.qty * i.price, 0);
+    orderLines.push(`Total: $${totalPrice.toFixed(2)}`);
+    orderField.value = orderLines.join("\n");
+}
+
 });
 
 // --- Add to cart buttons ---
