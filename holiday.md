@@ -1,6 +1,6 @@
 ---
 layout: shop
-title: Holidy
+title: Holiday
 permalink: /holiday/
 category: holiday
 ---
