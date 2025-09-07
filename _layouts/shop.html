@@ -13,29 +13,38 @@ layout: home
 {% if page.category == "cupcakes" %}
 <div class="favors-wrapper">
 
-  <p class="favors-intro">Sweet Poteat Cupcakes are perfect for any occasion, from birthdays to weddings to just because!
-    We offer a variety of flavors and only take custom orders. If you are interested in ordering cupcakes, please contact us and we will work with you to create the perfect treat for your needs.
-  </p>
+<p class="favors-intro">
+  Sweet Poteat Cupcakes are perfect for any occasion, from birthdays to weddings to just because! 
+  We offer a variety of flavors and only take custom orders. If you are interested in ordering cupcakes, 
+  please contact us and we will work with you to create the perfect treat for your needs. 
+</p>
 
-  <!-- Contact CTA Box -->
-  <a href="{{ '/contact/' | relative_url }}" class="contact-cta" style="display:block;margin:2rem auto;padding:1rem 2rem;background:#fc78b5;color:#fff;font-weight:700;text-align:center;border-radius:12px;width:200px;text-decoration:none;transition:0.2s;">
-    Contact Us
-  </a>
+<div class="favors-details" style="max-width:600px;margin:1.5rem auto;padding:1rem 1.5rem;background:#fff7fb;border:1px solid #f9c5dd;border-radius:12px;line-height:1.6;">
+  <h3 style="margin-top:0;color:#fc78b5;font-size:1.25rem;">Custom Cupcakes</h3>
+  <p><strong>Cake Flavors:</strong> Pumpkin, strawberry, chocolate, lemon, vanilla, and funfetti</p>
+  <p><strong>Frosting Types:</strong> Buttercream or cream cheese</p>
+  <p><strong>Frosting Flavors:</strong> Vanilla, almond, coconut, lemon, or chocolate</p>
+  <p><strong>Price:</strong> 24 cupcakes for $35</p>
+</div>
 
-  <!-- Carousel -->
+<!-- Contact CTA Box -->
+<a href="{{ '/contact/' | relative_url }}" class="contact-cta" 
+   style="display:block;margin:2rem auto;padding:1rem 2rem;background:#fc78b5;color:#fff;
+          font-weight:700;text-align:center;border-radius:12px;width:200px;text-decoration:none;
+          transition:0.2s;">
+  Contact Us
+</a>
+
+<!-- Carousel -->
 <div class="favors-carousel-wrapper" style="max-width:600px;margin:0 auto;position:relative;">
   <div class="carousel-main" style="position:relative;">
     <div class="carousel-main-img-wrapper">
-      <img id="carousel-main-img" 
-           src="{{ '/assets/images/products/cupcake/cupcake1.jpg' | relative_url }}" 
-           alt="Favor">
+      <img id="carousel-main-img" src="{{ '/assets/images/products/cupcake/cupcake1.jpg' | relative_url }}" alt="Favor">
     </div>
-    
     <!-- Left/Right arrows -->
     <button id="prev-arrow" class="carousel-arrow">‹</button>
     <button id="next-arrow" class="carousel-arrow right">›</button>
   </div>
-
   <div class="carousel-thumbnails">
     <img class="thumb" src="{{ '/assets/images/products/cupcake/cupcake1.jpg' | relative_url }}" alt="Favor 1">
     <img class="thumb" src="{{ '/assets/images/products/cupcake/cupcake2.jpg' | relative_url }}" alt="Favor 2">
