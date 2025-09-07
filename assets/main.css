@@ -320,7 +320,7 @@ body {
 
 .add-to-cart-button {
   padding: 0.6rem 1.4rem;
-  background-color: #ffc4ea;
+  background-color: #fc78b5;
   color: white;
   border: none;
   border-radius: 8px;
@@ -330,7 +330,7 @@ body {
   transition: background-color 0.2s ease;
 }
 
-.add-to-cart-button:hover { background-color: #fc78b5; }
+.add-to-cart-button:hover { background-color: #ffc4ea; }
 
 /* === Responsive for Mobile === */
 @media (max-width: 900px) {
@@ -602,60 +602,65 @@ body {
 }
 
 
-/* Floating Cart */
-
+/* Floating Cart - Always Bottom Right, Consistent Across Devices */
 #floating-cart {
-    position: absolute;
-    top: 5%;
-    right: 1px; /* was 1px */
-    width: 260px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     z-index: 1000;
     font-family: inherit;
 }
 
+/* Bubble Toggle Button */
 #cart-toggle {
-    margin-left: 28%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 50%;
-    padding: 0.75rem 1rem;
+    justify-content: center;
+    gap: 0.5rem;                     /* spacing for icon + text */
     background-color: #fc78b5;
     color: #fff;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;             /* smooth pill shape */
+    padding: 0.75rem 1.5rem;
     font-weight: 600;
+    font-size: 0.95rem;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: background-color 0.2s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    transition: background-color 0.25s ease, transform 0.2s ease;
+    white-space: nowrap;
 }
 
 #cart-toggle:hover {
     background-color: #ff90c3;
+    transform: translateY(-2px);     /* subtle lift */
 }
 
+/* Dropdown expands upward from the bubble */
 #cart-dropdown {
     display: none;
-    margin-top: 0.5rem;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+    position: absolute;
+    bottom: 100%;                    /* anchored above the button */
+    right: 0;
+    margin-bottom: 0.75rem;
+    width: 320px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
     padding: 1rem;
     max-height: 400px;
     overflow-y: auto;
+    transform: translateY(10px);
+    opacity: 0;
     transition: all 0.3s ease;
-
-    position: absolute;  
-    right: 0; 
-    transform: translateX(-15%); 
-    z-index: 1000;
 }
 
 #floating-cart.open #cart-dropdown {
     display: block;
+    transform: translateY(0);
+    opacity: 1;
 }
 
-/* Individual Cart Items */
+/* Cart Items */
 #cart-dropdown > div {
     display: flex;
     justify-content: space-between;
@@ -671,7 +676,7 @@ body {
     margin-bottom: 0;
 }
 
-/* Remove button */
+/* Remove Button */
 #cart-dropdown button {
     background: transparent;
     border: none;
@@ -685,22 +690,23 @@ body {
     color: #ff90c3;
 }
 
-/* "Go to Cart" button style */
+/* "Go to Cart" CTA */
 .go-to-cart-btn {
     display: block;
     margin-top: 0.75rem;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     background-color: #fc78b5;
     color: #fff;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.25s ease, transform 0.2s ease;
 }
 
 .go-to-cart-btn:hover {
     background-color: #ff90c3;
+    transform: translateY(-1px);
 }
 
 /* Total Price */
@@ -711,7 +717,7 @@ body {
     text-align: right;
 }
 
-/* Scrollbar for cart dropdown */
+/* Scrollbar Styling */
 #cart-dropdown::-webkit-scrollbar {
     width: 6px;
 }
@@ -720,6 +726,7 @@ body {
     background-color: rgba(252, 120, 181, 0.5);
     border-radius: 3px;
 }
+
 
 /*slides */
 
