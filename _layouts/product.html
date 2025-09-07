@@ -1,7 +1,9 @@
 ---
 layout: home
-# make sure the page that renders this sets product_ref: pecan-pie
 ---
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 {% assign product = site.data.products | where: "slug", page.product_ref | first %}
 
