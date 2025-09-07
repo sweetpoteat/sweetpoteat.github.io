@@ -5,6 +5,8 @@
     - /assets/images/products/pecanpie/pecanpie1.png
     - /assets/images/products/pecanpie/pecanpie2.png
   slug: pecan-pie
+  description: >
+    A flakey, buttery pie crust filled with a gooey caramel, custard pecan filling. The pecans bring out a bold nutty flavor that is sure to please everyone.
 
 - name: Chocolate Pie
   price: 25
@@ -13,6 +15,8 @@
     - /assets/images/products/chocopie/chocopie1.png
     - /assets/images/products/chocopie/chocopie2.png
   slug: choco-pie
+  description: >
+    Chocolate Oreo crust or pastry crust filled with a rich homemade chocolate pudding filling. Topped with mini chocolate chips.
 
 - name: Pumpkin Streusel Pie
   price: 30
@@ -21,6 +25,8 @@
     - /assets/images/products/pspie/pspie1.png
     - /assets/images/products/pspie/pspie2.png
   slug: ps-pie
+  description: >
+    A new twist on pumpkin pie. A graham cracker crust, a sweet pumpkin pie filling, and a pecan streusel topping.
 
 - name: Dutch Apple Pie
   price: 35
@@ -30,6 +36,8 @@
     - /assets/images/products/dapie/dapie2.png
     - /assets/images/products/dapie/dapie3.png
   slug: da-pie
+  description: > 
+    A flaky pastry crust filled with cinnamon sugar tossed apples and topped with a brown sugar crumble. 
 
 - name: Pumpkin Pie
   price: 25
@@ -38,6 +46,8 @@
     - /assets/images/products/pumpkinpie/pumpkinpie1.png
     - /assets/images/products/pumpkinpie/pumpkinpie2.png
   slug: p-pie
+  description: >
+    Classic pumpkin pie in a flakey, buttery, pastry crust.
 
 - name: Strawberry Truffle
   price: 32
@@ -48,18 +58,20 @@
     - /assets/images/products/strawberrytruffle/strawberrytruffle2.jpg
     - /assets/images/products/strawberrytruffle/strawberrytruffle3.jpg
   slug: strawberry-truffle
+  description: >
+    A soft, strawberry center dipped in white chocolate and drizzled with bright pink chocolate.
 
 - name: Biscoff Truffle
   price: 32
   quantity: 36 ct.
   category: truffles
-  description: >
-    A soft Biscoff center, dipped in white chocolate, topped with Biscoff butter drizzle.
   images:
     - /assets/images/products/biscofftruffle/biscoff-truffle1.jpg
     - /assets/images/products/biscofftruffle/biscoff-truffle2.jpg
     - /assets/images/products/biscofftruffle/biscoff-truffle3.jpg
   slug: biscoff-truffle
+  description: >
+    A soft Biscoff center, dipped in white chocolate, topped with Biscoff butter drizzle.
 
 - name: Lemon Truffle
   price: 32
@@ -70,6 +82,8 @@
     - /assets/images/products/lemon-truffle/lemon-truffle2.jpg
     - /assets/images/products/lemon-truffle/lemon-truffle3.jpg
   slug: lemon-truffle
+  description: >
+    A soft lemon center, dipped and drizzled in white chocolate.
 
 - name: Mint Truffle
   price: 32
@@ -80,6 +94,8 @@
     - /assets/images/products/mint-truffle/mint-truffle2.jpg
     - /assets/images/products/mint-truffle/mint-truffle3.jpg
   slug: mint-truffle
+  description: >
+    A soft, minty, chocolate center dipped in milk or semi sweet chocolate and topped with drizzle and a minty fudge striped piece. Absolutely delicious!
 
 - name: Oreo Truffle
   price: 32
@@ -90,6 +106,8 @@
     - /assets/images/products/oreo-truffle/oreo-truffle2.jpg
     - /assets/images/products/oreo-truffle/oreo-truffle3.jpg
   slug: oreo-truffle
+  description: > 
+    Cream cheese, Oreo center dipped in white or semi sweet chocolate, topped with white chocolate or chocolate drizzle.
 
 - name: Peanut Butter Truffle
   price: 32
@@ -100,6 +118,8 @@
     - /assets/images/products/pb-truffle/pb-truffle2.jpg
     - /assets/images/products/pb-truffle/pb-truffle3.jpg
   slug: pb-truffle
+  description: >
+    Soft, sweet, peanut butter center, dipped in white or semi sweet chocolate, topped with chocolate drizzle.
 
 - name: Oreo Pie
   price: 30
@@ -107,6 +127,8 @@
   images:
     - /assets/images/products/oreo-pie/oreo-pie1.jpg
   slug: oreo-pie
+  description: >
+    Chocolate crust with a rich chocolate pudding layer on the bottom and a cream layer on top. Topped with oreo crumbles.
 
 - name: Chocolate Pecan Pie
   price: 30
@@ -114,6 +136,8 @@
   images:
     - /assets/images/products/choc-pecan-pie/choc-pecan-pie1.jpg
   slug: choc-pecan-pie
+  description: >
+    Calling all chocolate lovers. We took a chocolatey twist on traditional pecan pie. Chocolate is melted into the caramel, custard filling as the pie bakes, making this pie to die for. You may never go back to regular, it’s that good.
 
 - name: Strawberry White Chocolate Chip Cookie
   price: 28
@@ -124,6 +148,8 @@
     - /assets/images/products/straw-white-choc-cookie/swcc2.jpg
     - /assets/images/products/straw-white-choc-cookie/swcc3.jpg
   slug: straw-white-choc-cookie
+  description: >
+    Think pink! A sweet, strawberry flavored cookie with white chocolate chips.
 
 - name: Snickerdoodle
   price: 30
@@ -133,6 +159,8 @@
     - /assets/images/products/snickerdoodle/snickerdoodle1.jpg
     - /assets/images/products/snickerdoodle/snickerdoodle2.jpg
   slug: snickerdoodle
+  description: >
+    A classic cream of tartar snickerdoodle cookie rolled in cinnamon sugar.
 
 - name: S'mores Cookie
   price: 30
@@ -142,6 +170,8 @@
     - /assets/images/products/smores-cookie/smores-cookie1.jpg
     - /assets/images/products/smores-cookie/smores-cookie2.jpg
   slug: smores-cookie
+  description: >
+    If there was a cookie that epitomizes summer, this would be it! With graham cracker pieces, marshmallows, and chocolate mixed into the batter, then topped with more marshmallows and grahams, who needs a camp fire?
 
 - name: Pumpkin Spice Cookie
   price: 30
@@ -152,6 +182,8 @@
     - /assets/images/products/pumpkin-spice-cookie/pspice2.jpg
     - /assets/images/products/pumpkin-spice-cookie/pspice3.jpg
   slug: pumpkin-spice-cookie
+  description: >
+    Classic, Chewy Pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
 
 - name: Pumpkin Spice Blossom
   price: 30
@@ -161,6 +193,8 @@
     - /assets/images/products/pumpkin-spice-blossom/psb1.jpg
     - /assets/images/products/pumpkin-spice-blossom/psb2.jpg
   slug: pumpkin-spice-blossom
+  description: >
+    Classic Chewy pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Complete with a Chocolate Kiss pressed into the center.
 
 - name: Pumpkin Spice Snickerdoodle
   price: 28
@@ -170,6 +204,8 @@
     - /assets/images/products/pumpkin-spice-snickerdoodle/pss1.jpg
     - /assets/images/products/pumpkin-spice-snickerdoodle/pss2.jpg
   slug: pumpkin-spice-snickerdoodle
+  description: >
+    Classic snickerdoodles with a twist! Pumpkin and spices are added into the batter, to create a new fall favorite cookie!
 
 - name: Peanut Butter Cookie
   price: 28
@@ -178,6 +214,8 @@
   images:
     - /assets/images/products/peanut-butter-cookie/pbc1.jpg
   slug: peanut-butter-cookie
+  description: >
+    Classic, soft and chewy, melt in your mouth, peanut butter cookies.
 
 - name: Peanut Butter Blossom
   price: 30
@@ -188,6 +226,8 @@
     - /assets/images/products/peanut-butter-blossom/pbb2.jpg
     - /assets/images/products/peanut-butter-blossom/pbb3.jpg
   slug: peanut-butter-blossom
+  description: >
+    Classic , soft and chewy, melt in your mouth peanut butter cookie with a Chocolate Kiss or Reese's Peanut Butter Cup (chocolate or white chocolate) pressed into the middle.
 
 - name: Gingerbread Cookie
   price: 30
@@ -198,6 +238,8 @@
     - /assets/images/products/gingerbread-cookie/gingerbread2.jpg
     - /assets/images/products/gingerbread-cookie/gingerbread3.jpg
   slug: gingerbread-cookie
+  description: >
+    Classic ginger spice cookies. Their soft and chewy texture is ideal for these gingerbread cookie cutouts.
 
 - name: Double Chocolate White Chocolate Chip Cookie
   price: 20
@@ -207,6 +249,8 @@
     - /assets/images/products/double-choc-white-choc-chip-cookie/dcwccc2.jpg
     - /assets/images/products/double-choc-white-choc-chip-cookie/dcwccc3.jpg
   slug: double-choc-white-choc-chip-cookie
+  description: >
+    Soft and chewy chocolate cookies with white and semi chocolate chips.
 
 - name: Cookies and Cream Cookie
   price: 30
@@ -217,6 +261,8 @@
     - /assets/images/products/cookies-and-cream-cookie/ccc2.jpg
     - /assets/images/products/cookies-and-cream-cookie/ccc3.jpg
   slug: cookies-and-cream-cookie
+  description: >
+    A twist on our classic cookie. We’ve added cream cheese into the batter for a more creamy flavor. But the real surprise? We also added crushed Oreo pieces and white chocolate chips. These cookies are heavenly!
 
 - name:  Chocolate Chip Cookie
   price: 28
@@ -227,6 +273,8 @@
     - /assets/images/products/choc-chip-cookie/cc2.jpg
     - /assets/images/products/choc-chip-cookie/cc3.jpg
   slug: choc-chip-cookie
+  description: >
+  The OG Sweet Poteat! A soft and chewy chocolate chip cookie with a combination of milk and semi sweet chocolate chips. And don’t miss that hint of heath bits.
 
 - name: Salted Caramel Rice Krispie
   price: 20
@@ -236,6 +284,8 @@
     - /assets/images/products/salted-caramel-rice-krispie/scrk1.jpg
     - /assets/images/products/salted-caramel-rice-krispie/scrk2.jpg
   slug: salted-caramel-rice-krispie
+  description: >
+    Combination of marshmallow, salted caramel, and Rice Krispies topped with salted caramel topping and sea salt.
 
 - name: Pumpkin Spice Bread
   price: 15
@@ -244,6 +294,8 @@
   images:
     - /assets/images/products/pumpkin-spice-bread/psb1.jpg
   slug: pumpkin-spice-bread
+  description: >
+    Soft pumpkin bread spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
 
 - name: Sugar Cookie
   price: 35
@@ -256,6 +308,8 @@
     - /assets/images/products/sugar-cookie/sugar4.jpg
     - /assets/images/products/sugar-cookie/sugar5.jpg
   slug: sugar-cookie
+  description: >
+    Soft, almond sugar cookie cutouts frosted with almond buttercream frosting.
 
 - name: Snickerdoodle Cookie Dough
   price: 25
@@ -266,6 +320,8 @@
     - /assets/images/products/snickerdoodle-cookie-dough/snickerdoodle-cd2.jpg
     - /assets/images/products/snickerdoodle-cookie-dough/snickerdoodle-cd3.jpg
   slug: snickerdoodle-cookie-dough
+  description: >
+    A classic cream of tartar snickerdoodle cookie rolled in cinnamon sugar. Complete with baking instructions.
 
 - name: Peanut Butter Cookie Dough
   price: 25
@@ -275,6 +331,8 @@
     - /assets/images/products/peanut-butter-cookie-dough/pb-cd1.jpg
     - /assets/images/products/peanut-butter-cookie-dough/pb-cd2.jpg
   slug: peanut-butter-cookie-dough
+  description: >
+    Classic, soft and chewy, melt in your mouth, peanut butter cookies. Complete with baking instructions.
 
 - name: Double Chocolate White Chocolate Chip Cookie Dough
   price: 25
@@ -284,6 +342,8 @@
     - /assets/images/products/double-choc-white-choc-chip-cookie-dough/double-choc-cd1.jpg
     - /assets/images/products/double-choc-white-choc-chip-cookie-dough/double-choc-cd2.jpg
   slug: double-choc-white-choc-chip-cookie-dough
+  description: >
+    Soft and chewy chocolate cookies with white and semi chocolate chips. Complete with baking instructions.
 
 - name: Chocolate Chip Cookie Dough
   price: 25
@@ -294,6 +354,8 @@
     - /assets/images/products/choc-chip-cookie-dough/choc-chip-cd2.jpg
     - /assets/images/products/choc-chip-cookie-dough/choc-chip-cd3.jpg
   slug: choc-chip-cookie-dough
+  description: >
+    The OG Sweet Poteat! A soft and chewy chocolate chip cookie with a combination of milk and semi sweet chocolate chips. And don’t miss that hint of heath bits. Complete with baking instructions.
 
 - name: Cookies and Cream Cookie Dough
   price: 25
@@ -304,6 +366,8 @@
     - /assets/images/products/cookies-and-cream-cookie-dough/cac-cd2.jpg
     - /assets/images/products/cookies-and-cream-cookie-dough/cac-cd3.jpg
   slug: cookies-and-cream-cookie-dough
+  description: >
+    A twist on our classic cookie. We’ve added cream cheese into the batter for a more creamy flavor. But the real surprise? We also added crushed Oreo pieces and white chocolate chips. These cookies are heavenly! Complete with baking instructions.
 
 - name: S'mores Cookie Dough
   price: 25
@@ -314,3 +378,5 @@
     - /assets/images/products/smores-cookie-dough/smores-cd2.jpg
     - /assets/images/products/smores-cookie-dough/smores-cd3.jpg
   slug: smores-cookie-dough
+  description: >
+    If there was a cookie that epitomizes summer, this would be it! With graham cracker pieces, marshmallows, and chocolate mixed into the batter, then topped with more marshmallows and grahams, who needs a camp fire? Complete with baking instructions.
