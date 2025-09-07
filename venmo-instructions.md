@@ -13,6 +13,9 @@ permalink: /venmo-instructions/
 
   <p style="font-weight:700;font-size:1.3rem;color:#fc78b5;margin-bottom:2rem;">@Teisha-Poteat</p>
 
+    <!-- Venmo QR Code Image -->
+  <img src="/assets/images/teisha-qr.jpg" alt="Venmo QR Code" style="max-width:300px;width:100%;margin:1rem auto;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+
   <!-- Cart Summary Card -->
   <div style="background: #fff0f6; border: 2px solid #fc78b5; border-radius: 16px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 4px 16px rgba(252,120,181,0.2); text-align:left;">
     <h3 style="color:#fc78b5; margin-bottom:1rem;">Your Order</h3>
@@ -28,9 +31,6 @@ permalink: /venmo-instructions/
       I’ve Paid / Clear Cart
     </button>
   </div>
-
-  <!-- Venmo QR Code Image -->
-  <img src="/assets/images/venmo-qr.png" alt="Venmo QR Code" style="max-width:300px;width:100%;margin:1rem auto;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
 
   <p style="color:#333;font-size:0.95rem;margin-top:1rem;">
     Make sure to include your name and order details in the Venmo note so we can confirm your order quickly.
