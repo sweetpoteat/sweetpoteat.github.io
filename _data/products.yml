@@ -159,7 +159,7 @@
     - /assets/images/products/snickerdoodle/snickerdoodle2.jpg
   slug: snickerdoodle
   description: >
-    A classic cream of tartar snickerdoodle cookie rolled in cinnamon sugar.
+    You'll be shocked at how fast you eat these soft and chewy snickerdoodles! Between their cream of tartar tang and their cinnamon sugar coating, you won't be able to resist!
 
 - name: S'mores Cookie
   price: 30
@@ -249,7 +249,7 @@
     - /assets/images/products/double-choc-white-choc-chip-cookie/dcwccc3.jpg
   slug: double-choc-white-choc-chip-cookie
   description: >
-    Soft and chewy chocolate cookies with white and semi chocolate chips.
+    Calling all chocolate lovers! Our rich, melt-in-your-mouth chocolate cookies are fluffy soft. The white chocolate chips create a delicious contrast that will keep you coming back for more.
 
 - name: Cookies and Cream Cookie
   price: 30
@@ -273,7 +273,7 @@
     - /assets/images/products/choc-chip-cookie/cc3.jpg
   slug: choc-chip-cookie
   description: >
-    The OG Sweet Poteat! A soft and chewy chocolate chip cookie with a combination of milk and semi sweet chocolate chips. And don’t miss that hint of heath bits.
+    The OG Sweet Poteat! A soft and chewy chocolate chip cookie with a combination of milk and semi sweet chocolate chips. And don’t miss that hint of toffee.
 
 - name: Salted Caramel Rice Krispie
   price: 20
@@ -284,7 +284,7 @@
     - /assets/images/products/salted-caramel-rice-krispie/scrk2.jpg
   slug: salted-caramel-rice-krispie
   description: >
-    Combination of marshmallow, salted caramel, and Rice Krispies topped with salted caramel topping and sea salt.
+    A combination of marshmallow, salted caramel, and Rice Krispies topped with salted caramel topping and sea salt.
 
 - name: Pumpkin Spice Bread
   price: 15
@@ -308,7 +308,7 @@
     - /assets/images/products/sugar-cookie/sugar5.jpg
   slug: sugar-cookie
   description: >
-    Soft, almond sugar cookie cutouts frosted with almond buttercream frosting.
+    Soft, almond sugar cookie cutouts frosted with almond buttercream frosting. Perfect for any event or holiday. Contact us about our available shapes and frosting colors.
 
 - name: Snickerdoodle Cookie Dough
   price: 25
@@ -320,7 +320,7 @@
     - /assets/images/products/snickerdoodle-cookie-dough/snickerdoodle-cd3.jpg
   slug: snickerdoodle-cookie-dough
   description: >
-    A classic cream of tartar snickerdoodle cookie rolled in cinnamon sugar. Complete with baking instructions.
+    You'll be shocked at how fast you eat these soft and chewy snickerdoodles! Between their cream of tartar tang and their cinnamon sugar coating, you won't be able to resist! Complete with baking instructions.
 
 - name: Peanut Butter Cookie Dough
   price: 25
@@ -342,7 +342,7 @@
     - /assets/images/products/double-choc-white-choc-chip-cookie-dough/double-choc-cd2.jpg
   slug: double-choc-white-choc-chip-cookie-dough
   description: >
-    Soft and chewy chocolate cookies with white and semi chocolate chips. Complete with baking instructions.
+    Calling all chocolate lovers! Our rich, melt-in-your-mouth chocolate cookies are fluffy soft. The white chocolate chips create a delicious contrast that will keep you coming back for more. Complete with baking instructions.
 
 - name: Chocolate Chip Cookie Dough
   price: 25
@@ -354,7 +354,7 @@
     - /assets/images/products/choc-chip-cookie-dough/choc-chip-cd3.jpg
   slug: choc-chip-cookie-dough
   description: >
-    The OG Sweet Poteat! A soft and chewy chocolate chip cookie with a combination of milk and semi sweet chocolate chips. And don’t miss that hint of heath bits. Complete with baking instructions.
+    The OG Sweet Poteat! A soft and chewy chocolate chip cookie with a combination of milk and semi sweet chocolate chips. And don’t miss that hint of toffee. Complete with baking instructions.
 
 - name: Cookies and Cream Cookie Dough
   price: 25
