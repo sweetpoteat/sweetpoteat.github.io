@@ -69,8 +69,20 @@ layout: home
     {% assign category_products = site.data.products | where: "category", category %}
   {% endif %}
 
-  {% if category_products.size > 0 %}
+  {% if category_products.size > 0 or category == "all" %}
     <div class="product-grid">
+
+      {% if category == "all" %}
+        <!-- Special Cupcakes card (always first in 'all') -->
+        <a href="{{ '/cupcakes/' | relative_url }}" class="product-card">
+          <div class="product-image">
+            <img src="{{ '/assets/images/products/cupcake/cupcake1.jpg' | relative_url }}" alt="Cupcakes">
+          </div>
+          <h3>Cupcakes</h3>
+          <p class="price">Custom Orders!</p>
+        </a>
+      {% endif %}
+
       {% for product in category_products %}
         <a href="{{ '/products/' | append: product.slug | append: '/' | relative_url }}" class="product-card">
           <div class="product-image">
@@ -85,6 +97,7 @@ layout: home
           </p>
         </a>
       {% endfor %}
+
     </div>
   {% else %}
     <!-- Fallback content for when there are no products in this category -->
