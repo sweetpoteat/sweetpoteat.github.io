@@ -141,9 +141,9 @@ title: Welcome to Sweet Poteat Bakery
     <img src="{{ '/assets/images/icons/truffle.png' | relative_url }}" alt="Truffles" />
     <span>Truffles</span>
   </a>
-  <a href="{{ '/cupcakes/' | relative_url }}" class="category-card">
-    <img src="{{ '/assets/images/icons/cupcake.png' | relative_url }}" alt="Cupcakes" />
-    <span>Cupcakes</span>
+  <a href="{{ '/all/' | relative_url }}" class="category-card">
+    <img src="{{ '/assets/images/icons/cupcake.png' | relative_url }}" alt="All-Treats" />
+    <span>All Treats</span>
   </a>
   <a href="{{ '/holiday/' | relative_url }}" class="category-card">
     <img src="{{ '/assets/images/icons/holiday.png' | relative_url }}" alt="Holiday" />
