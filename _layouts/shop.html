@@ -82,7 +82,10 @@ layout: home
       {% endfor %}
     </div>
   {% else %}
-    {{ content }}
+  <!-- This if-else checks if there are any products with the given tag.
+   It was designed for the holiday page in mind.
+   Loading content allows for whatever is found in holiday.md to render. -->
+    {{ content }}. 
   {% endif %}
 {% endif %}
 
