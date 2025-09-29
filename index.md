@@ -131,6 +131,26 @@ title: Welcome to Sweet Poteat Bakery
   <p>The Sweet Poteat Difference</p>
 </div>
 
+<!-- Grid of item categories -->
+<div class="category-grid">
+  <a href="{{ '/cookies/' | relative_url }}" class="category-card">
+    <img src="{{ '/assets/images/icons/cookie.png' | relative_url }}" alt="Cookies" />
+    <span>Cookies</span>
+  </a>
+  <a href="{{ '/truffles/' | relative_url }}" class="category-card">
+    <img src="{{ '/assets/images/icons/truffle.png' | relative_url }}" alt="Truffles" />
+    <span>Truffles</span>
+  </a>
+  <a href="{{ '/cupcakes/' | relative_url }}" class="category-card">
+    <img src="{{ '/assets/images/icons/cupcake.png' | relative_url }}" alt="Cupcakes" />
+    <span>Cupcakes</span>
+  </a>
+  <a href="{{ '/holiday/' | relative_url }}" class="category-card">
+    <img src="{{ '/assets/images/icons/holiday.png' | relative_url }}" alt="Holiday" />
+    <span>Holiday</span>
+  </a>
+</div>
+
 <!-- Holiday Specials Banner -->
 <div style="background: #ffe3f0; border-radius: 12px; margin: 2rem auto; max-width: 900px; padding: 2rem; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <h2 style="color: #fc78b5; font-size: 2rem; margin-bottom: 0.5rem;">Celebrate With Sweet Poteat Bakery!</h2>
@@ -157,26 +177,6 @@ title: Welcome to Sweet Poteat Bakery
      onmouseover="this.style.backgroundColor='#ffc4ea'" 
      onmouseout="this.style.backgroundColor='#fc78b5'">
     Contact Us to Sign Up
-  </a>
-</div>
-
-<!-- Grid of item categories -->
-<div class="category-grid">
-  <a href="{{ '/cookies/' | relative_url }}" class="category-card">
-    <img src="{{ '/assets/images/icons/cookie.png' | relative_url }}" alt="Cookies" />
-    <span>Cookies</span>
-  </a>
-  <a href="{{ '/truffles/' | relative_url }}" class="category-card">
-    <img src="{{ '/assets/images/icons/truffle.png' | relative_url }}" alt="Truffles" />
-    <span>Truffles</span>
-  </a>
-  <a href="{{ '/cupcakes/' | relative_url }}" class="category-card">
-    <img src="{{ '/assets/images/icons/cupcake.png' | relative_url }}" alt="Cupcakes" />
-    <span>Cupcakes</span>
-  </a>
-  <a href="{{ '/holiday/' | relative_url }}" class="category-card">
-    <img src="{{ '/assets/images/icons/holiday.png' | relative_url }}" alt="Holiday" />
-    <span>Holiday</span>
   </a>
 </div>
 
