@@ -61,34 +61,36 @@ layout: home
 </div>
 
 {% else %}
-  {% if data.products.size > 0 %}
+  {% assign category = page.category %}
+
+  {% if category == "all" %}
+    {% assign category_products = site.data.products %}
+  {% else %}
+    {% assign category_products = site.data.products | where: "category", category %}
+  {% endif %}
+
+  {% if category_products.size > 0 %}
     <div class="product-grid">
-      {% assign category = page.category %}
-      {% for product in site.data.products %}
-        {% if product.category == category or category == 'all' %}
-          <a href="{{ '/products/' | append: product.slug | append: '/' | relative_url }}" class="product-card">
-            <div class="product-image">
-              <img src="{{ product.image | default: product.images[0] | relative_url }}" alt="{{ product.name }}">
-            </div>
-            <h3>{{ product.name }}</h3>
-            <p class="price">
-              ${{ product.price }}
-              {% if product.quantity %}
-                / {{ product.quantity }}
-              {% endif %}
-            </p>
-          </a>
-        {% endif %}
+      {% for product in category_products %}
+        <a href="{{ '/products/' | append: product.slug | append: '/' | relative_url }}" class="product-card">
+          <div class="product-image">
+            <img src="{{ product.image | default: product.images[0] | relative_url }}" alt="{{ product.name }}">
+          </div>
+          <h3>{{ product.name }}</h3>
+          <p class="price">
+            ${{ product.price }}
+            {% if product.quantity %}
+              / {{ product.quantity }}
+            {% endif %}
+          </p>
+        </a>
       {% endfor %}
     </div>
   {% else %}
-  <!-- This if-else checks if there are any products with the given tag.
-   It was designed for the holiday page in mind.
-   Loading content allows for whatever is found in holiday.md to render. -->
-    {{ content }}. 
+    <!-- Fallback content for when there are no products in this category -->
+    {{ content }}
   {% endif %}
 {% endif %}
-
 
 
 
