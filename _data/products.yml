@@ -40,7 +40,7 @@
     A flaky pastry crust filled with cinnamon sugar tossed apples and topped with a brown sugar crumble. 
 
 - name: Pumpkin Pie
-  price: 25
+  price: 30
   category: pies
   images:
     - /assets/images/products/pumpkinpie/pumpkinpie1.png
@@ -173,7 +173,7 @@
     If there was a cookie that epitomizes summer, this would be it! With graham cracker pieces, marshmallows, and chocolate mixed into the batter, then topped with more marshmallows and grahams, who needs a camp fire?
 
 - name: Pumpkin Spice Cookie
-  price: 30
+  price: 28
   quantity: 36 ct.
   category: cookies
   images:
@@ -185,7 +185,7 @@
     Classic, Chewy Pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
 
 - name: Pumpkin Spice Blossom
-  price: 30
+  price: 32
   quantity: 36 ct.
   category: cookies
   images:
@@ -217,7 +217,7 @@
     Classic, soft and chewy, melt in your mouth, peanut butter cookies.
 
 - name: Peanut Butter Blossom
-  price: 30
+  price: 32
   quantity: 36 ct.
   category: cookies
   images:
@@ -229,7 +229,7 @@
     Classic , soft and chewy, melt in your mouth peanut butter cookie with a Chocolate Kiss or Reese's Peanut Butter Cup (chocolate or white chocolate) pressed into the middle.
 
 - name: Gingerbread Cookie
-  price: 30
+  price: 32
   quantity: 24-36 ct.
   category: cookies
   images:
@@ -241,7 +241,7 @@
     Classic ginger spice cookies. Their soft and chewy texture is ideal for these gingerbread cookie cutouts.
 
 - name: Double Chocolate White Chocolate Chip Cookie
-  price: 30
+  price: 28
   category: cookies
   images:
     - /assets/images/products/double-choc-white-choc-chip-cookie/dcwccc1.jpg
