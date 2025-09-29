@@ -1,5 +1,6 @@
 - name: Pecan Pie
   price: 30
+  quantity: 1 ct.
   category: pies
   images:
     - /assets/images/products/pecanpie/pecanpie1.png
@@ -10,6 +11,7 @@
 
 - name: Chocolate Pie
   price: 25
+  quantity: 1 ct.
   category: pies
   images:
     - /assets/images/products/chocopie/chocopie1.png
@@ -20,6 +22,7 @@
 
 - name: Pumpkin Streusel Pie
   price: 30
+  quantity: 1 ct.
   category: pies
   images:
     - /assets/images/products/pspie/pspie1.png
@@ -30,6 +33,7 @@
 
 - name: Dutch Apple Pie
   price: 35
+  quantity: 1 ct.
   category: pies
   images:
     - /assets/images/products/dapie/dapie1.png
@@ -41,6 +45,7 @@
 
 - name: Pumpkin Pie
   price: 30
+  quantity: 1 ct.
   category: pies
   images:
     - /assets/images/products/pumpkinpie/pumpkinpie1.png
@@ -122,6 +127,7 @@
 
 - name: Oreo Pie
   price: 30
+  quantity: 1 ct.
   category: pies
   images:
     - /assets/images/products/oreo-pie/oreo-pie1.jpg
@@ -131,6 +137,7 @@
 
 - name: Chocolate Pecan Pie
   price: 30
+  quantity: 1 ct.
   category: pies
   images:
     - /assets/images/products/choc-pecan-pie/choc-pecan-pie1.jpg
@@ -242,6 +249,7 @@
 
 - name: Double Chocolate White Chocolate Chip Cookie
   price: 28
+  quantity: 36 ct.
   category: cookies
   images:
     - /assets/images/products/double-choc-white-choc-chip-cookie/dcwccc1.jpg
