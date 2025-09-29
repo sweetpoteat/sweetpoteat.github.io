@@ -171,7 +171,7 @@ title: Welcome to Sweet Poteat Bakery
     Join Sweet Poteat Homemade Treats for hands-on baking classes. From truffles to cupcakes, we’ll guide you step by step.
   </p>
   <p style="color: #333; font-size: 0.95rem; margin-bottom: 1.5rem;">
-    Simply fill out our contact form to express your interest, and we’ll coordinate over email or text with all the details.
+    Simply fill out our contact form to express your interest, and we’ll coordinate over e-mail or text with all the details.
   </p>
   <a href="{{ '/contact/' | relative_url }}" style="display:inline-block; background-color: #fc78b5; color: #fff; padding: 12px 24px; border-radius: 999px; font-weight: bold; font-size: 1.1rem; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: background-color 0.3s ease; min-width: 200px;" 
      onmouseover="this.style.backgroundColor='#ffc4ea'" 
