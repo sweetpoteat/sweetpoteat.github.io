@@ -389,7 +389,13 @@
   quantity: 18 ct.
   category: holiday
   images:
-    - 
+    - /assets/images/holiday-products/halloween/htruff1.jpg
+    - /assets/images/holiday-products/halloween/htruff2.jpg
+    - /assets/images/holiday-products/halloween/htruff3.jpg
+    - /assets/images/holiday-products/halloween/htruff4.jpg
+    - /assets/images/holiday-products/halloween/htruff5.jpg
+    - /assets/images/holiday-products/halloween/htruff6.jpg
+    - /assets/images/holiday-products/halloween/htruff7.jpg
   slug: halloween-truffle
   description: >
     A spooky twist on our Oreo Truffles. Witches and Ghosts, and Monsters OH MY. A cream cheese, Oreo center dipped in white or semi sweet chocolate, decorated for Halloween.
@@ -399,13 +405,8 @@
   quantity: 18 ct.
   category: holiday
   images:
-    - /assets/images/holiday-products/halloween/htruff1.jpg
-    - /assets/images/holiday-products/halloween/htruff2.jpg
-    - /assets/images/holiday-products/halloween/htruff3.jpg
-    - /assets/images/holiday-products/halloween/htruff4.jpg
-    - /assets/images/holiday-products/halloween/htruff5.jpg
-    - /assets/images/holiday-products/halloween/htruff6.jpg
-    - /assets/images/holiday-products/halloween/htruff7.jpg
+    - /assets/images/holiday-products/halloween/wht1.jpg
+    - /assets/images/holiday-products/halloween/wht2.jpg
   slug: witch-hat-truffles
   description: >
     A bewitching twist on our Oreo Truffles! They might even put a spell on you. A cream cheese, Oreo center dipped in white or semi sweet chocolate, decorated for Halloween.
