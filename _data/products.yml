@@ -380,3 +380,99 @@
   description: >
     If there was a cookie that epitomizes summer, this would be it! With graham cracker pieces, marshmallows, and chocolate mixed into the batter, then topped with more marshmallows and grahams, who needs a camp fire? Complete with baking instructions.
 
+
+################################################################
+###################### Halloween Specials ######################
+
+- name: Halloween Truffle
+  price: 18
+  quantity: 18 ct.
+  category: holiday
+  images:
+    - 
+  slug: halloween-truffle
+  description: >
+    A spooky twist on our Oreo Truffles. Witches and Ghosts, and Monsters OH MY. A cream cheese, Oreo center dipped in white or semi sweet chocolate, decorated for Halloween.
+
+- name: Witch Hat Truffles
+  price: 18
+  quantity: 18 ct.
+  category: holiday
+  images:
+    - /assets/images/holiday-products/halloween/htruff1.jpg
+    - /assets/images/holiday-products/halloween/htruff2.jpg
+    - /assets/images/holiday-products/halloween/htruff3.jpg
+    - /assets/images/holiday-products/halloween/htruff4.jpg
+    - /assets/images/holiday-products/halloween/htruff5.jpg
+    - /assets/images/holiday-products/halloween/htruff6.jpg
+    - /assets/images/holiday-products/halloween/htruff7.jpg
+  slug: witch-hat-truffles
+  description: >
+    A bewitching twist on our Oreo Truffles! They might even put a spell on you. A cream cheese, Oreo center dipped in white or semi sweet chocolate, decorated for Halloween.
+
+- name: Pumpkin Bread
+  price: 15
+  quantity: 3 mini loaves
+  category: holiday
+  images:
+    - /assets/images/products/pumpkin-spice-bread/psb1.jpg
+  slug: pumpkin-bread
+  description: >
+    Soft pumpkin bread spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
+
+- name: Pumpkin Snickerdoodle
+  price: 14
+  quantity: 32 ct.
+  category: holiday
+  images:
+    - /assets/images/products/pumpkin-spice-snickerdoodle/pss1.jpg
+    - /assets/images/products/pumpkin-spice-snickerdoodle/pss2.jpg
+  slug: pumpkin-snickerdoodle
+  description: >
+    Classic snickerdoodles with a twist! Pumpkin and spices are added into the batter, to create a new fall favorite cookie!
+
+- name: Pumpkin Spice Blossom
+  price: 15
+  quantity: 12 ct.
+  category: holiday
+  images:
+    - /assets/images/products/pumpkin-spice-blossom/psb1.jpg
+    - /assets/images/products/pumpkin-spice-blossom/psb2.jpg
+  slug: pumpkin-spice-blossom
+  description: >
+    Classic Chewy pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Complete with a Chocolate Kiss pressed into the center.
+
+- name: Pumpkin Spice Cookie
+  price: 14
+  quantity: 12 ct.
+  category: holiday
+  images:
+    - /assets/images/products/pumpkin-spice-cookie/pspice1.jpg
+    - /assets/images/products/pumpkin-spice-cookie/pspice2.jpg
+    - /assets/images/products/pumpkin-spice-cookie/pspice3.jpg
+  slug: pumpkin-spice-cookie
+  description: >
+    Classic, Chewy Pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
+
+- name: Halloween Double Chocolate White Chocolate Chip Cookie
+  price: 15
+  quantity: 12 ct.
+  category: holiday
+  images:
+    - 
+  slug: halloween-double-chocolate-white-chocolate-chip-cookie
+  description: >
+    Is Halloween always this tasty? Soft and chewy chocolate cookies with white chocolate chips AND Reese's Pieces. So good, it’s haunting!
+
+- name: Halloween Double Chocolate White Chocolate Chip Cookie Dough
+  price: 26
+  quantity: 36 ct.
+  category: holiday
+  images:
+    - 
+  slug: halloween-double-chocolate-white-chocolate-chip-cookie-dough
+  description: >
+    Is Halloween always this tasty? Soft and chewy chocolate cookies with white chocolate chips AND Reese's Pieces. So good, it’s haunting! Complete with baking instructions.
+
+################################################################
+################################################################
