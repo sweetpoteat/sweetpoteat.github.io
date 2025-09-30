@@ -416,7 +416,7 @@
   quantity: 3 mini loaves
   category: holiday
   images:
-    - /assets/images/products/pumpkin-spice-bread/psb1.jpg
+    - /assets/images/holiday-products/pumpkin-bread/hw-pbread.jpg
   slug: pumpkin-bread
   description: >
     Soft pumpkin bread spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
@@ -426,6 +426,7 @@
   quantity: 32 ct.
   category: holiday
   images:
+    - /assets/images/holiday-products/pumpkin-snickerdoodle/hw-snick.jpg
     - /assets/images/products/pumpkin-spice-snickerdoodle/pss1.jpg
     - /assets/images/products/pumpkin-spice-snickerdoodle/pss2.jpg
   slug: pumpkin-snickerdoodle
@@ -448,9 +449,9 @@
   quantity: 12 ct.
   category: holiday
   images:
+    - /assets/images/holiday-products/pumpkin-spice-cookie/hw-pspice.jpg
     - /assets/images/products/pumpkin-spice-cookie/pspice1.jpg
     - /assets/images/products/pumpkin-spice-cookie/pspice2.jpg
-    - /assets/images/products/pumpkin-spice-cookie/pspice3.jpg
   slug: pumpkin-spice-cookie
   description: >
     Classic, Chewy Pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
