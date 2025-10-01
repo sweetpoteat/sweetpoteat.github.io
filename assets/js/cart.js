@@ -112,14 +112,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// --- Add to cart buttons ---
 document.querySelectorAll('.add-to-cart-button').forEach(btn => {
     btn.addEventListener('click', () => {
-        const parent = btn.closest('.product-actions');
+        const parent = btn.closest('.product-detail-info');
         const qtyInput = parent.querySelector('input[type="number"]');
         const qty = parseInt(qtyInput.value) || 1;
         const itemName = btn.dataset.name;
-        const price = Number(btn.dataset.price);
-        addToCart(itemName, qty, price);
+
+        let price, optionLabel;
+
+        if (btn.dataset.hasOptions === "true") {
+            const select = parent.querySelector('#product-option');
+            price = Number(select.value);
+            optionLabel = select.options[select.selectedIndex].dataset.quantity;
+        } else {
+            price = Number(btn.dataset.price);
+            optionLabel = btn.dataset.quantityLabel || "";
+        }
+
+        addToCart(`${itemName} (${optionLabel})`, qty, price);
     });
 });
+

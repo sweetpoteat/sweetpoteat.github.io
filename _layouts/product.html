@@ -36,19 +36,39 @@ layout: home
     </div>
 
     <div class="product-detail-info">
-    <h1 class="product-name">{{ product.name }}</h1>
-    <p class="product-price">
-      ${{ product.price }}
-      {% if product.quantity %}
-        / {{ product.quantity }}
+      <h1 class="product-name">{{ product.name }}</h1>
+
+      {% if product.options %}
+        <label for="product-option">Choose size:</label>
+        <select id="product-option">
+          {% for opt in product.options %}
+            <option value="{{ opt.price }}" data-quantity="{{ opt.quantity }}">
+              ${{ opt.price }} / {{ opt.quantity }}
+            </option>
+          {% endfor %}
+        </select>
+      {% else %}
+        <p class="product-price">
+          ${{ product.price }}
+          {% if product.quantity %}
+            / {{ product.quantity }}
+          {% endif %}
+        </p>
       {% endif %}
-    </p>
-    <p class="product-description">{{ product.description }}</p>
+
+      <p class="product-description">{{ product.description }}</p>
 
       <div class="product-actions">
         <label for="quantity">Quantity:</label>
         <input type="number" id="quantity" name="quantity" min="1" value="1" />
-        <button class="add-to-cart-button" data-name="{{ product.name }}" data-price="{{ product.price }}">
+        <button class="add-to-cart-button" 
+                data-name="{{ product.name }}"
+                {% if product.options %}
+                  data-has-options="true"
+                {% else %}
+                  data-price="{{ product.price }}" 
+                  data-quantity-label="{{ product.quantity }}"
+                {% endif %}>
           Add to Cart
         </button>
       </div>

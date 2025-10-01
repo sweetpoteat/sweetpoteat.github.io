@@ -423,7 +423,7 @@
 
 - name: Pumpkin Snickerdoodle
   price: 14
-  quantity: 32 ct.
+  quantity: 12 ct.
   category: holiday
   images:
     - /assets/images/holiday-products/halloween/pumpkin-snickerdoodle/hw-snick.jpg
@@ -432,6 +432,11 @@
   slug: halloween-pumpkin-snickerdoodle
   description: >
     Classic snickerdoodles with a twist! Pumpkin and spices are added into the batter, to create a new fall favorite cookie!
+  options:
+    - price: 14
+      quantity: 12 ct.
+    - price: 30
+      quantity: 36 ct.
 
 - name: Pumpkin Spice Blossom
   price: 15

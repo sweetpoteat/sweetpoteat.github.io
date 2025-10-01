@@ -90,9 +90,10 @@ layout: home
           </div>
           <h3>{{ product.name }}</h3>
           <p class="price">
-            ${{ product.price }}
-            {% if product.quantity %}
-              / {{ product.quantity }}
+            {% if product.options %}
+              From ${{ product.options[0].price }}
+            {% else %}
+              ${{ product.price }}{% if product.quantity %} / {{ product.quantity }}{% endif %}
             {% endif %}
           </p>
         </a>
