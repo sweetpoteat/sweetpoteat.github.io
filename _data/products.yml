@@ -424,7 +424,7 @@
 - name: Pumpkin Spice Snickerdoodle
   category: holiday
   images:
-    - /assets/images/holiday-products/halloween/pumpkin-snickerdoodle/hw-snick.jpg
+    # - /assets/images/holiday-products/halloween/pumpkin-snickerdoodle/hw-snick.jpg
     - /assets/images/products/pumpkin-spice-snickerdoodle/pss1.jpg
     - /assets/images/products/pumpkin-spice-snickerdoodle/pss2.jpg
   slug: halloween-pumpkin-snickerdoodle
