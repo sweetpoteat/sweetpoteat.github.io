@@ -7,7 +7,9 @@ layout: home
 
 {% include secondary-nav.html %}
 
-<h1 class="page-title">{{ page.title }}</h1>
+{% if page.title != "Holiday" %}
+  <h1 class="page-title">{{ page.title }}</h1>
+{% endif %}
 
 
 {% if page.category == "cupcakes" %}
