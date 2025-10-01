@@ -421,9 +421,7 @@
   description: >
     Soft pumpkin bread spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
 
-- name: Pumpkin Snickerdoodle
-  price: 14
-  quantity: 12 ct.
+- name: Pumpkin Spice Snickerdoodle
   category: holiday
   images:
     - /assets/images/holiday-products/halloween/pumpkin-snickerdoodle/hw-snick.jpg
@@ -439,8 +437,6 @@
       quantity: 36 ct.
 
 - name: Pumpkin Spice Blossom
-  price: 15
-  quantity: 12 ct.
   category: holiday
   images:
     - /assets/images/products/pumpkin-spice-blossom/psb1.jpg
@@ -448,10 +444,13 @@
   slug: halloween-pumpkin-spice-blossom
   description: >
     Classic Chewy pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Complete with a Chocolate Kiss pressed into the center.
+  options:
+    - price: 15
+      quantity: 12 ct.
+    - price: 32
+      quantity: 36 ct.
 
 - name: Pumpkin Spice Cookie
-  price: 14
-  quantity: 12 ct.
   category: holiday
   images:
     - /assets/images/holiday-products/halloween/pumpkin-spice-cookie/hw-pspice.jpg
@@ -460,10 +459,13 @@
   slug: halloween-pumpkin-spice-cookie
   description: >
     Classic, Chewy Pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
+  options: 
+    - price: 14
+      quantity: 12 ct.
+    - price: 28
+      quantity: 36 ct.
 
 - name: Halloween Double Chocolate White Chocolate Chip Cookie
-  price: 15
-  quantity: 12 ct.
   category: holiday
   images:
     - /assets/images/holiday-products/halloween/double-chocolate-reeses-cookie/double-choc-reeses1.jpg
@@ -471,6 +473,11 @@
   slug: halloween-double-chocolate-white-chocolate-chip-cookie
   description: >
     Is Halloween always this tasty? Soft and chewy chocolate cookies with white chocolate chips AND Reese's Pieces. So good, it’s haunting!
+  options:
+    - price: 15
+      quantity: 12 ct.
+    - price: 28
+      quantity: 36 ct.
 
 - name: Halloween Double Chocolate White Chocolate Chip Cookie Dough
   price: 26
