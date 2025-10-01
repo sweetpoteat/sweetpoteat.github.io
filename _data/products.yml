@@ -389,13 +389,13 @@
   quantity: 18 ct.
   category: holiday
   images:
-    - /assets/images/holiday-products/halloween/htruff1.jpg
-    - /assets/images/holiday-products/halloween/htruff2.jpg
-    - /assets/images/holiday-products/halloween/htruff3.jpg
-    - /assets/images/holiday-products/halloween/htruff4.jpg
-    - /assets/images/holiday-products/halloween/htruff5.jpg
-    - /assets/images/holiday-products/halloween/htruff6.jpg
-    - /assets/images/holiday-products/halloween/htruff7.jpg
+    - /assets/images/holiday-products/halloween/halloween-truffle/htruff1.jpg
+    - /assets/images/holiday-products/halloween/halloween-truffle/htruff2.jpg
+    - /assets/images/holiday-products/halloween/halloween-truffle/htruff3.jpg
+    - /assets/images/holiday-products/halloween/halloween-truffle/htruff4.jpg
+    - /assets/images/holiday-products/halloween/halloween-truffle/htruff5.jpg
+    - /assets/images/holiday-products/halloween/halloween-truffle/htruff6.jpg
+    - /assets/images/holiday-products/halloween/halloween-truffle/htruff7.jpg
   slug: halloween-truffle
   description: >
     A spooky twist on our Oreo Truffles. Witches and Ghosts, and Monsters OH MY. A cream cheese, Oreo center dipped in white or semi sweet chocolate, decorated for Halloween.
@@ -405,9 +405,9 @@
   quantity: 18 ct.
   category: holiday
   images:
-    - /assets/images/holiday-products/halloween/wht1.jpg
-    - /assets/images/holiday-products/halloween/wht2.jpg
-  slug: witch-hat-truffles
+    - /assets/images/holiday-products/halloween/witch-hat-truffle/wht1.jpg
+    - /assets/images/holiday-products/halloween/witch-hat-truffle/wht2.jpg
+  slug: witch-hat-truffle
   description: >
     A bewitching twist on our Oreo Truffles! They might even put a spell on you. A cream cheese, Oreo center dipped in white or semi sweet chocolate, decorated for Halloween.
 
@@ -416,8 +416,8 @@
   quantity: 3 mini loaves
   category: holiday
   images:
-    - /assets/images/holiday-products/pumpkin-bread/hw-pbread.jpg
-  slug: pumpkin-bread
+    - /assets/images/holiday-products/halloween/pumpkin-bread/hw-pbread.jpg
+  slug: halloween-pumpkin-bread
   description: >
     Soft pumpkin bread spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
 
@@ -426,10 +426,10 @@
   quantity: 32 ct.
   category: holiday
   images:
-    - /assets/images/holiday-products/pumpkin-snickerdoodle/hw-snick.jpg
+    - /assets/images/holiday-products/halloween/pumpkin-snickerdoodle/hw-snick.jpg
     - /assets/images/products/pumpkin-spice-snickerdoodle/pss1.jpg
     - /assets/images/products/pumpkin-spice-snickerdoodle/pss2.jpg
-  slug: pumpkin-snickerdoodle
+  slug: halloween-pumpkin-snickerdoodle
   description: >
     Classic snickerdoodles with a twist! Pumpkin and spices are added into the batter, to create a new fall favorite cookie!
 
@@ -440,7 +440,7 @@
   images:
     - /assets/images/products/pumpkin-spice-blossom/psb1.jpg
     - /assets/images/products/pumpkin-spice-blossom/psb2.jpg
-  slug: pumpkin-spice-blossom
+  slug: halloween-pumpkin-spice-blossom
   description: >
     Classic Chewy pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Complete with a Chocolate Kiss pressed into the center.
 
@@ -449,10 +449,10 @@
   quantity: 12 ct.
   category: holiday
   images:
-    - /assets/images/holiday-products/pumpkin-spice-cookie/hw-pspice.jpg
+    - /assets/images/holiday-products/halloween/pumpkin-spice-cookie/hw-pspice.jpg
     - /assets/images/products/pumpkin-spice-cookie/pspice1.jpg
     - /assets/images/products/pumpkin-spice-cookie/pspice2.jpg
-  slug: pumpkin-spice-cookie
+  slug: halloween-pumpkin-spice-cookie
   description: >
     Classic, Chewy Pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
 
