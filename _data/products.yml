@@ -461,7 +461,8 @@
   quantity: 12 ct.
   category: holiday
   images:
-    - 
+    - /assets/images/holiday-products/halloween/double-chocolate-reeses-cookie/double-choc-reeses1.jpg
+    - /assets/images/holiday-products/halloween/double-chocolate-reeses-cookie/double-choc-reeses2.jpg
   slug: halloween-double-chocolate-white-chocolate-chip-cookie
   description: >
     Is Halloween always this tasty? Soft and chewy chocolate cookies with white chocolate chips AND Reese's Pieces. So good, it’s haunting!
@@ -471,7 +472,8 @@
   quantity: 36 ct.
   category: holiday
   images:
-    - 
+    - /assets/images/holiday-products/halloween/double-chocolate-reeses-cookie-dough/2choc-reeses-cd1.jpg
+    - /assets/images/holiday-products/halloween/double-chocolate-reeses-cookie-dough/2choc-reeses-cd2.jpg
   slug: halloween-double-chocolate-white-chocolate-chip-cookie-dough
   description: >
     Is Halloween always this tasty? Soft and chewy chocolate cookies with white chocolate chips AND Reese's Pieces. So good, it’s haunting! Complete with baking instructions.
