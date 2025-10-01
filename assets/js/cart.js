@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+// --- Handle Add to Cart button clicks ---
 document.querySelectorAll('.add-to-cart-button').forEach(btn => {
     btn.addEventListener('click', () => {
         const parent = btn.closest('.product-detail-info');
@@ -130,7 +131,27 @@ document.querySelectorAll('.add-to-cart-button').forEach(btn => {
             optionLabel = btn.dataset.quantityLabel || "";
         }
 
-        addToCart(`${itemName} (${optionLabel})`, qty, price);
+        const cartItemName = `${itemName} (${optionLabel})`;
+        addToCart(cartItemName, qty, price);
+
+        // Show toast notification
+        showCartToast(`${qty} x ${cartItemName} added to cart`);
     });
 });
+
+
+// --- Toast notification ---
+function showCartToast(message) {
+    const toast = document.getElementById('cart-toast');
+    const msg = document.getElementById('cart-toast-message');
+    if (!toast || !msg) return;
+
+    msg.textContent = message;
+    toast.classList.add('show');
+
+    // Hide after 2 seconds
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 2000);
+}
 
