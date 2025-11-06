@@ -49,6 +49,17 @@
   description: >
     Classic pumpkin pie in a flakey, buttery, pastry crust.
 
+- name: Biscoff Pie
+  price: 32
+  category: pies
+  images:
+    - /assets/images/products/biscoff-pie/biscoff-pie1.jpg
+    - /assets/images/products/biscoff-pie/biscoff-pie2.jpg
+    - /assets/images/products/biscoff-pie/biscoff-pie3.jpg
+  slug: biscoff-pie
+  description: >
+    A dreamy Biscoff cream inside a Biscoff cookie crust, topped with Biscoff butter drizzle and Biscoff cookies! Talk about Biscoff Heaven! 
+
 - name: Strawberry Truffle
   price: 32
   quantity: 36 ct.
@@ -384,111 +395,220 @@
 ################################################################
 ###################### Halloween Specials ######################
 
-- name: Halloween Truffle
-  price: 18
-  quantity: 18 ct.
-  category: holiday
-  images:
-    - /assets/images/holiday-products/halloween/halloween-truffle/htruff1.jpg
-    - /assets/images/holiday-products/halloween/halloween-truffle/htruff2.jpg
-    - /assets/images/holiday-products/halloween/halloween-truffle/htruff3.jpg
-    - /assets/images/holiday-products/halloween/halloween-truffle/htruff4.jpg
-    - /assets/images/holiday-products/halloween/halloween-truffle/htruff5.jpg
-    - /assets/images/holiday-products/halloween/halloween-truffle/htruff6.jpg
-    - /assets/images/holiday-products/halloween/halloween-truffle/htruff7.jpg
-  slug: halloween-truffle
-  description: >
-    A spooky twist on our Oreo Truffles. Witches and Ghosts, and Monsters OH MY. A cream cheese, Oreo center dipped in white or semi sweet chocolate, decorated for Halloween.
+# - name: Halloween Truffle
+#   price: 18
+#   quantity: 18 ct.
+#   category: holiday
+#   images:
+#     - /assets/images/holiday-products/halloween/halloween-truffle/htruff1.jpg
+#     - /assets/images/holiday-products/halloween/halloween-truffle/htruff2.jpg
+#     - /assets/images/holiday-products/halloween/halloween-truffle/htruff3.jpg
+#     - /assets/images/holiday-products/halloween/halloween-truffle/htruff4.jpg
+#     - /assets/images/holiday-products/halloween/halloween-truffle/htruff5.jpg
+#     - /assets/images/holiday-products/halloween/halloween-truffle/htruff6.jpg
+#     - /assets/images/holiday-products/halloween/halloween-truffle/htruff7.jpg
+#   slug: halloween-truffle
+#   description: >
+#     A spooky twist on our Oreo Truffles. Witches and Ghosts, and Monsters OH MY. A cream cheese, Oreo center dipped in white or semi sweet chocolate, decorated for Halloween.
 
-- name: Witch Hat Truffles
-  price: 18
-  quantity: 18 ct.
-  category: holiday
-  images:
-    - /assets/images/holiday-products/halloween/witch-hat-truffle/wht1.jpg
-    - /assets/images/holiday-products/halloween/witch-hat-truffle/wht2.jpg
-  slug: witch-hat-truffle
-  description: >
-    A bewitching twist on our Oreo Truffles! They might even put a spell on you. A cream cheese, Oreo center dipped in white or semi sweet chocolate, decorated for Halloween.
+# - name: Witch Hat Truffles
+#   price: 18
+#   quantity: 18 ct.
+#   category: holiday
+#   images:
+#     - /assets/images/holiday-products/halloween/witch-hat-truffle/wht1.jpg
+#     - /assets/images/holiday-products/halloween/witch-hat-truffle/wht2.jpg
+#   slug: witch-hat-truffle
+#   description: >
+#     A bewitching twist on our Oreo Truffles! They might even put a spell on you. A cream cheese, Oreo center dipped in white or semi sweet chocolate, decorated for Halloween.
 
-- name: Pumpkin Bread
+# - name: Pumpkin Bread
+#   price: 15
+#   quantity: 3 mini loaves
+#   category: holiday
+#   images:
+#     - /assets/images/holiday-products/halloween/pumpkin-bread/hw-pbread.jpg
+#   slug: halloween-pumpkin-bread
+#   description: >
+#     Soft pumpkin bread spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
+
+# - name: Pumpkin Spice Snickerdoodle
+#   category: holiday
+#   images:
+#     # - /assets/images/holiday-products/halloween/pumpkin-snickerdoodle/hw-snick.jpg
+#     - /assets/images/products/pumpkin-spice-snickerdoodle/pss1.jpg
+#     - /assets/images/products/pumpkin-spice-snickerdoodle/pss2.jpg
+#   slug: halloween-pumpkin-snickerdoodle
+#   description: >
+#     Classic snickerdoodles with a twist! Pumpkin and spices are added into the batter, to create a new fall favorite cookie!
+#   options:
+#     - price: 14
+#       quantity: 12 ct.
+#     - price: 30
+#       quantity: 36 ct.
+
+# - name: Pumpkin Spice Blossom
+#   category: holiday
+#   images:
+#     - /assets/images/products/pumpkin-spice-blossom/psb1.jpg
+#     - /assets/images/products/pumpkin-spice-blossom/psb2.jpg
+#   slug: halloween-pumpkin-spice-blossom
+#   description: >
+#     Classic Chewy pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Complete with a Chocolate Kiss pressed into the center.
+#   options:
+#     - price: 15
+#       quantity: 12 ct.
+#     - price: 32
+#       quantity: 36 ct.
+
+# - name: Pumpkin Spice Cookie
+#   category: holiday
+#   images:
+#     - /assets/images/holiday-products/halloween/pumpkin-spice-cookie/hw-pspice.jpg
+#     - /assets/images/products/pumpkin-spice-cookie/pspice1.jpg
+#     - /assets/images/products/pumpkin-spice-cookie/pspice2.jpg
+#   slug: halloween-pumpkin-spice-cookie
+#   description: >
+#     Classic, Chewy Pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
+#   options: 
+#     - price: 14
+#       quantity: 12 ct.
+#     - price: 28
+#       quantity: 36 ct.
+
+# - name: Halloween Double Chocolate White Chocolate Chip Cookie
+#   category: holiday
+#   images:
+#     - /assets/images/holiday-products/halloween/double-chocolate-reeses-cookie/double-choc-reeses1.jpg
+#     - /assets/images/holiday-products/halloween/double-chocolate-reeses-cookie/double-choc-reeses2.jpg
+#   slug: halloween-double-chocolate-white-chocolate-chip-cookie
+#   description: >
+#     Is Halloween always this tasty? Soft and chewy chocolate cookies with white chocolate chips AND Reese's Pieces. So good, it’s haunting!
+#   options:
+#     - price: 15
+#       quantity: 12 ct.
+#     - price: 30
+#       quantity: 36 ct.
+
+# - name: Halloween Double Chocolate White Chocolate Chip Cookie Dough
+#   price: 26
+#   quantity: 36 ct.
+#   category: holiday
+#   images:
+#     - /assets/images/holiday-products/halloween/double-chocolate-reeses-cookie-dough/2choc-reeses-cd1.jpg
+#     - /assets/images/holiday-products/halloween/double-chocolate-reeses-cookie-dough/2choc-reeses-cd2.jpg
+#   slug: halloween-double-chocolate-white-chocolate-chip-cookie-dough
+#   description: >
+#     Is Halloween always this tasty? Soft and chewy chocolate cookies with white chocolate chips AND Reese's Pieces. So good, it’s haunting! Complete with baking instructions.
+
+################################################################
+################################################################
+
+
+################################################################
+###################### Thanksgiving Specials ######################
+
+- name: Pumpkin Spice Bread
   price: 15
   quantity: 3 mini loaves
   category: holiday
   images:
-    - /assets/images/holiday-products/halloween/pumpkin-bread/hw-pbread.jpg
-  slug: halloween-pumpkin-bread
+    - /assets/images/products/pumpkin-spice-bread/psb1.jpg
+  slug: pumpkin-spice-bread
   description: >
     Soft pumpkin bread spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
 
-- name: Pumpkin Spice Snickerdoodle
-  category: holiday
-  images:
-    # - /assets/images/holiday-products/halloween/pumpkin-snickerdoodle/hw-snick.jpg
-    - /assets/images/products/pumpkin-spice-snickerdoodle/pss1.jpg
-    - /assets/images/products/pumpkin-spice-snickerdoodle/pss2.jpg
-  slug: halloween-pumpkin-snickerdoodle
-  description: >
-    Classic snickerdoodles with a twist! Pumpkin and spices are added into the batter, to create a new fall favorite cookie!
-  options:
-    - price: 14
-      quantity: 12 ct.
-    - price: 30
-      quantity: 36 ct.
-
-- name: Pumpkin Spice Blossom
-  category: holiday
-  images:
-    - /assets/images/products/pumpkin-spice-blossom/psb1.jpg
-    - /assets/images/products/pumpkin-spice-blossom/psb2.jpg
-  slug: halloween-pumpkin-spice-blossom
-  description: >
-    Classic Chewy pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Complete with a Chocolate Kiss pressed into the center.
-  options:
-    - price: 15
-      quantity: 12 ct.
-    - price: 32
-      quantity: 36 ct.
-
 - name: Pumpkin Spice Cookie
-  category: holiday
-  images:
-    - /assets/images/holiday-products/halloween/pumpkin-spice-cookie/hw-pspice.jpg
-    - /assets/images/products/pumpkin-spice-cookie/pspice1.jpg
-    - /assets/images/products/pumpkin-spice-cookie/pspice2.jpg
-  slug: halloween-pumpkin-spice-cookie
-  description: >
-    Classic, Chewy Pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
-  options: 
-    - price: 14
-      quantity: 12 ct.
-    - price: 28
-      quantity: 36 ct.
-
-- name: Halloween Double Chocolate White Chocolate Chip Cookie
-  category: holiday
-  images:
-    - /assets/images/holiday-products/halloween/double-chocolate-reeses-cookie/double-choc-reeses1.jpg
-    - /assets/images/holiday-products/halloween/double-chocolate-reeses-cookie/double-choc-reeses2.jpg
-  slug: halloween-double-chocolate-white-chocolate-chip-cookie
-  description: >
-    Is Halloween always this tasty? Soft and chewy chocolate cookies with white chocolate chips AND Reese's Pieces. So good, it’s haunting!
-  options:
-    - price: 15
-      quantity: 12 ct.
-    - price: 30
-      quantity: 36 ct.
-
-- name: Halloween Double Chocolate White Chocolate Chip Cookie Dough
-  price: 26
+  price: 28
   quantity: 36 ct.
   category: holiday
   images:
-    - /assets/images/holiday-products/halloween/double-chocolate-reeses-cookie-dough/2choc-reeses-cd1.jpg
-    - /assets/images/holiday-products/halloween/double-chocolate-reeses-cookie-dough/2choc-reeses-cd2.jpg
-  slug: halloween-double-chocolate-white-chocolate-chip-cookie-dough
+    - /assets/images/products/pumpkin-spice-cookie/pspice1.jpg
+    - /assets/images/products/pumpkin-spice-cookie/pspice2.jpg
+    - /assets/images/products/pumpkin-spice-cookie/pspice3.jpg
+  slug: pumpkin-spice-cookie
   description: >
-    Is Halloween always this tasty? Soft and chewy chocolate cookies with white chocolate chips AND Reese's Pieces. So good, it’s haunting! Complete with baking instructions.
+    Classic, Chewy Pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
+
+- name: Pecan Pie
+  price: 30
+  category: holiday
+  images:
+    - /assets/images/products/pecanpie/pecanpie1.png
+    - /assets/images/products/pecanpie/pecanpie2.png
+  slug: pecan-pie
+  description: >
+    A flakey, buttery pie crust filled with a gooey caramel, custard pecan filling. The pecans bring out a bold nutty flavor that is sure to please everyone.
+
+- name: Chocolate Pie
+  price: 25
+  category: holiday
+  images:
+    - /assets/images/products/chocopie/chocopie1.png
+    - /assets/images/products/chocopie/chocopie2.png
+  slug: choco-pie
+  description: >
+    Chocolate Oreo crust or pastry crust filled with a rich homemade chocolate pudding filling. Topped with mini chocolate chips.
+
+- name: Pumpkin Streusel Pie
+  price: 30
+  category: holiday
+  images:
+    - /assets/images/products/pspie/pspie1.png
+    - /assets/images/products/pspie/pspie2.png
+  slug: ps-pie
+  description: >
+    A new twist on pumpkin pie. A graham cracker crust, a sweet pumpkin pie filling, and a pecan streusel topping.
+
+- name: Dutch Apple Pie
+  price: 35
+  category: holiday
+  images:
+    - /assets/images/products/dapie/dapie1.png
+    - /assets/images/products/dapie/dapie2.png
+    - /assets/images/products/dapie/dapie3.png
+  slug: da-pie
+  description: > 
+    A flaky pastry crust filled with cinnamon sugar tossed apples and topped with a brown sugar crumble. 
+
+- name: Pumpkin Pie
+  price: 30
+  category: holiday
+  images:
+    - /assets/images/products/pumpkinpie/pumpkinpie1.png
+    - /assets/images/products/pumpkinpie/pumpkinpie2.png
+  slug: p-pie
+  description: >
+    Classic pumpkin pie in a flakey, buttery, pastry crust.
+
+- name: Oreo Pie
+  price: 30
+  category: holiday
+  images:
+    - /assets/images/products/oreo-pie/oreo-pie1.jpg
+  slug: oreo-pie
+  description: >
+    Chocolate crust with a rich chocolate pudding layer on the bottom and a cream layer on top. Topped with oreo crumbles.
+
+- name: Chocolate Pecan Pie
+  price: 30
+  category: holiday
+  images:
+    - /assets/images/products/choc-pecan-pie/choc-pecan-pie1.jpg
+  slug: choc-pecan-pie
+  description: >
+    Calling all chocolate lovers. We took a chocolatey twist on traditional pecan pie. Chocolate is melted into the caramel, custard filling as the pie bakes, making this pie to die for. You may never go back to regular, it’s that good.
+
+- name: Biscoff Pie
+  price: 32
+  category: holiday
+  images:
+    - /assets/images/products/biscoff-pie/biscoff-pie1.jpg
+    - /assets/images/products/biscoff-pie/biscoff-pie2.jpg
+    - /assets/images/products/biscoff-pie/biscoff-pie3.jpg
+  slug: biscoff-pie
+  description: >
+    A dreamy Biscoff cream inside a Biscoff cookie crust, topped with Biscoff butter drizzle and Biscoff cookies! Talk about Biscoff Heaven! 
 
 ################################################################
 ################################################################
