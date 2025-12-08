@@ -21,7 +21,7 @@ category: holiday
             box-shadow: 0 10px 24px rgba(0,0,0,0.35);
             color: #fff;">
 
-  <h1 style="font-size: 2.8rem; margin-bottom: 0.6rem; color: #ffd700; text-shadow: 3px 3px 10px rgba(0,0,0,0.6);">
+  <h1 style="font-size: 2.8rem; margin-bottom: 0.6rem; color: rgba(255, 253, 253, 1); text-shadow: 3px 3px 10px rgba(0,0,0,0.6);">
     🎄 Merry Christmas 🎄
   </h1>
 
