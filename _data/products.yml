@@ -620,9 +620,7 @@
 - name: Christmas Treat Box
   category: holiday
   images: 
-    - /assets/images/holiday-products/christmas/xmas-box/xmas-box1.png
-    - /assets/images/holiday-products/christmas/xmas-box/xmas-box2.png
-    - /assets/images/holiday-products/christmas/xmas-box/xmas-box3.png
+    - /assets/images/holiday-products/christmas/xmas-box/xmas-box.png
   slug: christmas-treat-box
   description: | 
     A festive assortment of Sweet Poteat holiday goodies.  
@@ -639,14 +637,12 @@
   quantity: 12 ct.
   category: holiday
   images: 
-    - /assets/images/holiday-products/christmas/xmas-cookies/xmas-cookie1.jpg
-    - /assets/images/holiday-products/christmas/xmas-cookies/xmas-cookie2.jpg
-    - /assets/images/holiday-products/christmas/xmas-cookies/xmas-cookie3.jpg
+    - /assets/images/holiday-products/christmas/xmas-cookies/xmas-cookie.png
   slug: xmas-cookies
   description: |
     Festive sugar or gingerbread cookies. Includes 12 cookies, frosting, and small candies.
   options:
-    - price: 15
+    - price: 20
       quantity: Sugar Cookies - 12 ct.
-    - price: 15
+    - price: 20
       quantity: Gingerbread Cookies - 12 ct.
