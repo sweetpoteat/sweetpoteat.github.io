@@ -71,7 +71,7 @@ layout: home
     {% assign category_products = site.data.products | where: "category", category %}
   {% endif %}
 
-  {% if category == "holiday" %}
+  {% if category == "holiday" and page.show_content != false%}
     <div class="holiday-content" style="margin: 2rem auto; max-width: 800px; text-align: center;">
       {{ content }}
     </div>
