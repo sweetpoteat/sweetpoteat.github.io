@@ -646,3 +646,53 @@
 #       quantity: Sugar Cookies - 12 ct.
 #     - price: 20
 #       quantity: Gingerbread Cookies - 12 ct.
+
+################################################################
+################################################################
+
+################################################################
+###################### Valentine's Day Specials ################
+
+- name: Valentine Truffle Box
+  price: 16
+  quantity: 12 ct.
+  category: holiday
+  images:
+    - /assets/images/holiday-products/valentines/valentine_truffle/valentine_truffle1.jpg
+    - /assets/images/holiday-products/valentines/valentine_truffle/valentine_truffle2.jpg
+    - /assets/images/holiday-products/valentines/valentine_truffle/valentine_truffle3.jpg
+    - /assets/images/holiday-products/valentines/valentine_truffle/valentine_truffle4.jpg
+    - /assets/images/holiday-products/valentines/valentine_truffle/valentine_truffle5.jpg
+  slug: valentines-truffle-box
+  description: >
+    Get your valentine a variety box of delicious Sweet Poteat truffles. Boxes will include two of each of the following: Strawberry, Lemon, Chocolate Oreo, White Chocolate Oreo, Biscoff and Mint. It's sure to make their day sweet!
+
+- name: Valentine Peanut Butter Blossom
+  price: 16
+  quantity: 12 ct.
+  category: holiday
+  images:
+    - /assets/images/holiday-products/valentines/heart_pb_blossom/heart_blossom1.jpg
+    - /assets/images/holiday-products/valentines/heart_pb_blossom/heart_blossom2.jpg
+  slug: heart-peanut-butter-blossom
+  description: >
+    Now with a heart shaped Reese's!
+    Classic, soft and chewy, melt in your mouth peanut butter cookie with a Reese's PB cup pressed into the middle.
+
+- name: Valentine Strawberry White Chocolate Chip Cookie
+  price: 16
+  quantity: 12 ct.
+  category: holiday
+  images:
+    - /assets/images/holiday-products/valentines/valentine-straw-white-choc-cookie/vswcc.jpg
+    - /assets/images/products/straw-white-choc-cookie/swcc1.jpg
+    - /assets/images/products/straw-white-choc-cookie/swcc2.jpg
+    - /assets/images/products/straw-white-choc-cookie/swcc3.jpg
+  slug: val-straw-white-choc-cookie
+  description: >
+    Think pink! A sweet, strawberry flavored cookie with white chocolate chips.
+
+
+
+################################################################
+################################################################
