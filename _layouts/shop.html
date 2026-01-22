@@ -13,56 +13,41 @@ layout: home
 
 
 {% if page.category == "cupcakes" %}
-<div class="favors-wrapper">
+  <!-- CUPCAKE SPECIFIC LAYOUT -->
+  <div class="favors-wrapper">
+    <p class="favors-intro">
+      Sweet Poteat Cupcakes are perfect for any occasion...
+    </p>
 
-<p class="favors-intro">
-  Sweet Poteat Cupcakes are perfect for any occasion, from birthdays to weddings to just because! 
-  We offer a variety of flavors and only take custom orders. If you are interested in ordering cupcakes, 
-  please contact us and we will work with you to create the perfect treat for your needs. 
-</p>
-
-<div class="favors-details" style="max-width:600px;margin:1.5rem auto;padding:1rem 1.5rem;background:#fff7fb;border:1px solid #f9c5dd;border-radius:12px;line-height:1.6;">
-  <h3 style="margin-top:0;color:#fc78b5;font-size:1.25rem;">Custom Cupcakes</h3>
-  <p><strong>Cake Flavors:</strong> Pumpkin, strawberry, chocolate, lemon, vanilla, and funfetti</p>
-  <p><strong>Frosting Types:</strong> Buttercream or cream cheese</p>
-  <p><strong>Frosting Flavors:</strong> Vanilla, almond, coconut, lemon, or chocolate</p>
-  <p><strong>Price:</strong> 24 cupcakes for $35</p>
-</div>
-
-<!-- Contact CTA Box -->
-<a href="{{ '/contact/' | relative_url }}" class="contact-cta" 
-   style="display:block;margin:2rem auto;padding:1rem 2rem;background:#fc78b5;color:#fff;
-          font-weight:700;text-align:center;border-radius:12px;width:200px;text-decoration:none;
-          transition:0.2s;">
-  Contact Us
-</a>
-
-<!-- Carousel -->
-<div class="favors-carousel-wrapper" style="max-width:600px;margin:0 auto;position:relative;">
-  <div class="carousel-main" style="position:relative;">
-    <div class="carousel-main-img-wrapper">
-      <img id="carousel-main-img" src="{{ '/assets/images/products/cupcake/cupcake1.jpg' | relative_url }}" alt="Favor">
+    <div class="favors-details" style="max-width:600px;margin:1.5rem auto;padding:1rem 1.5rem;background:#fff7fb;border:1px solid #f9c5dd;border-radius:12px;line-height:1.6;">
+      <h3 style="margin-top:0;color:#fc78b5;font-size:1.25rem;">Custom Cupcakes</h3>
+      <p><strong>Cake Flavors:</strong> Pumpkin, strawberry, chocolate, lemon, vanilla, and funfetti</p>
+      <p><strong>Frosting Types:</strong> Buttercream or cream cheese</p>
+      <p><strong>Price:</strong> 24 cupcakes for $35</p>
     </div>
-    <!-- Left/Right arrows -->
-    <button id="prev-arrow" class="carousel-arrow">‹</button>
-    <button id="next-arrow" class="carousel-arrow right">›</button>
-  </div>
-  <div class="carousel-thumbnails">
-    <img class="thumb" src="{{ '/assets/images/products/cupcake/cupcake1.jpg' | relative_url }}" alt="Favor 1">
-    <img class="thumb" src="{{ '/assets/images/products/cupcake/cupcake2.jpg' | relative_url }}" alt="Favor 2">
-    <img class="thumb" src="{{ '/assets/images/products/cupcake/cupcake3.jpg' | relative_url }}" alt="Favor 3">
-    <img class="thumb" src="{{ '/assets/images/products/cupcake/cupcake4.jpg' | relative_url }}" alt="Favor 4">
-    <img class="thumb" src="{{ '/assets/images/products/cupcake/cupcake5.jpg' | relative_url }}" alt="Favor 5">
-    <img class="thumb" src="{{ '/assets/images/products/cupcake/cupcake6.jpg' | relative_url }}" alt="Favor 6">
-    <img class="thumb" src="{{ '/assets/images/products/cupcake/cupcake7.jpg' | relative_url }}" alt="Favor 7">
-    <img class="thumb" src="{{ '/assets/images/products/cupcake/cupcake8.jpg' | relative_url }}" alt="Favor 8">
-  </div>
-</div>
 
+    <a href="{{ '/contact/' | relative_url }}" class="contact-cta" style="display:block;margin:2rem auto;padding:1rem 2rem;background:#fc78b5;color:#fff;font-weight:700;text-align:center;border-radius:12px;width:200px;text-decoration:none;">Contact Us</a>
 
-</div>
+    <!-- Cupcake Carousel -->
+    <div class="favors-carousel-wrapper" style="max-width:600px;margin:0 auto;position:relative;">
+      <div class="carousel-main" style="position:relative;">
+        <div class="carousel-main-img-wrapper">
+          <img id="carousel-main-img" src="{{ '/assets/images/products/cupcake/cupcake1.jpg' | relative_url }}" alt="Favor">
+        </div>
+        <button id="prev-arrow" class="carousel-arrow">‹</button>
+        <button id="next-arrow" class="carousel-arrow right">›</button>
+      </div>
+      <div class="carousel-thumbnails">
+        <img class="thumb" src="{{ '/assets/images/products/cupcake/cupcake1.jpg' | relative_url }}">
+        <img class="thumb" src="{{ '/assets/images/products/cupcake/cupcake2.jpg' | relative_url }}">
+        <img class="thumb" src="{{ '/assets/images/products/cupcake/cupcake3.jpg' | relative_url }}">
+        <!-- Add more cupcake images here if needed -->
+      </div>
+    </div>
+  </div>
 
 {% else %}
+  <!-- STANDARD / HOLIDAY LAYOUT -->
   {% assign category = page.category %}
 
   {% if category == "all" %}
@@ -71,17 +56,17 @@ layout: home
     {% assign category_products = site.data.products | where: "category", category %}
   {% endif %}
 
+  <!-- 1. Top Content (Intro Text from Markdown Body) -->
   {% if category == "holiday" and page.show_content != false%}
-    <div class="holiday-content" style="margin: 2rem auto; max-width: 800px; text-align: center;">
+    <div class="holiday-content" style="margin: 2rem auto; max-width: 800px;">
       {{ content }}
     </div>
   {% endif %}
 
+  <!-- 2. Product Grid -->
   {% if category_products.size > 0 or category == "all" %}
     <div class="product-grid">
-
       {% if category == "all" %}
-        <!-- Special Cupcakes card (always first in 'all') -->
         <a href="{{ '/cupcakes/' | relative_url }}" class="product-card">
           <div class="product-image">
             <img src="{{ '/assets/images/products/cupcake/cupcake1.jpg' | relative_url }}" alt="Cupcakes">
@@ -98,77 +83,135 @@ layout: home
           </div>
           <h3>{{ product.name }}</h3>
           <p class="price">
-            {% if product.options %}
-              From ${{ product.options[0].price }}
-            {% else %}
-              ${{ product.price }}{% if product.quantity %} / {{ product.quantity }}{% endif %}
-            {% endif %}
+            {% if product.options %}From ${{ product.options[0].price }}{% else %}${{ product.price }}{% endif %}
           </p>
         </a>
       {% endfor %}
-
     </div>
   {% else %}
-    <!-- Fallback content for when there are no products in this category -->
     {{ content }}
   {% endif %}
+
+  <!-- 3. Dynamic Classes/Events Carousel (Only shows if images exist in Front Matter) -->
+  {% if category == "holiday" and page.classes_images %}
+    
+    <!-- Banner Title -->
+    <div style="background: #ffe3f0; border-radius: 12px; margin: 4rem auto 2rem auto; max-width: 900px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+      <h2 style="color: #fc78b5; font-size: 2rem; margin: 0;">
+        {{ page.classes_title | default: "Classes and Experiences" }}
+      </h2>
+    </div>
+
+    <!-- Carousel Container -->
+    <div class="val-carousel-container">
+      <button class="val-carousel-arrow left" onclick="prevValSlide()">‹</button>
+
+      <div class="val-carousel-main-img-wrapper">
+        <!-- Load the first image by default -->
+        <img id="val-carousel-img"
+             src="{{ page.classes_images[0] | relative_url }}"
+             alt="Carousel image">
+      </div>
+
+      <button class="val-carousel-arrow right" onclick="nextValSlide()">›</button>
+    </div>
+
+    <!-- Thumbnails Loop -->
+    <div class="val-carousel-thumbnails">
+      {% for img in page.classes_images %}
+        <img src="{{ img | relative_url }}"
+             class="val-thumb {% if forloop.first %}active{% endif %}" 
+             onclick="setValSlide({{ forloop.index0 }})">
+      {% endfor %}
+    </div>
+
+    <style>
+      .val-carousel-container { position: relative; max-width: 900px; margin: 0 auto; }
+      .val-carousel-main-img-wrapper {
+        width: 100%; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: linear-gradient(#fff, #f3f3f3);
+      }
+      .val-carousel-main-img-wrapper img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
+      .val-carousel-thumbnails { display: flex; justify-content: center; margin-top: 1rem; gap: 0.5rem; flex-wrap: wrap; }
+      .val-carousel-thumbnails img.val-thumb {
+        width: 60px; height: 60px; object-fit: cover; border-radius: 8px;
+        cursor: pointer; border: 2px solid transparent; transition: 0.2s;
+      }
+      .val-carousel-thumbnails img.val-thumb.active { border-color: #fc78b5; }
+      .val-carousel-arrow {
+        position: absolute; top: 50%; transform: translateY(-50%);
+        background: rgba(252,120,181,0.85); border: none; border-radius: 50%;
+        width: 35px; height: 35px; color: #fff; font-size: 20px; cursor: pointer; z-index: 10;
+      }
+      .val-carousel-arrow.left { left: 10px; }
+      .val-carousel-arrow.right { right: 10px; }
+    </style>
+
+    <script>
+      // Dynamically build the list of images from Jekyll Front Matter
+      const valImages = [
+        {% for img in page.classes_images %}
+          "{{ img | relative_url }}"{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ];
+
+      let valCurrentIndex = 0;
+      const valMainImg = document.getElementById("val-carousel-img");
+      const valThumbs = document.querySelectorAll(".val-carousel-thumbnails .val-thumb");
+
+      function updateValCarousel() {
+        valMainImg.src = valImages[valCurrentIndex];
+        valThumbs.forEach((t, i) => t.classList.toggle("active", i === valCurrentIndex));
+      }
+
+      function nextValSlide() {
+        valCurrentIndex = (valCurrentIndex + 1) % valImages.length;
+        updateValCarousel();
+      }
+
+      function prevValSlide() {
+        valCurrentIndex = (valCurrentIndex - 1 + valImages.length) % valImages.length;
+        updateValCarousel();
+      }
+
+      function setValSlide(index) {
+        valCurrentIndex = index;
+        updateValCarousel();
+      }
+    </script>
+  {% endif %} 
+  <!-- End Holiday Special Content -->
+
 {% endif %}
 
 
-
-
+<!-- Cupcake Page Script (Legacy) -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const mainImg = document.getElementById('carousel-main-img');
-  const thumbs = document.querySelectorAll('.thumb');
+  if (!mainImg) return; 
+
+  const thumbs = document.querySelectorAll('.thumb'); // Note: Specific to cupcake class
   const images = Array.from(thumbs).map(t => t.src);
   let currentIndex = 0;
-  const intervalTime = 4000; // 4 seconds
-  let interval;
-
+  
   function showImage(index) {
     mainImg.src = images[index];
     thumbs.forEach(t => t.style.border = '2px solid transparent');
     thumbs[index].style.border = '2px solid #fc78b5';
     currentIndex = index;
   }
-
-  // Thumbnail clicks
+  
   thumbs.forEach((thumb, i) => {
-    thumb.addEventListener('click', () => {
-      showImage(i);
-      resetInterval();
-    });
+    thumb.addEventListener('click', () => showImage(i));
   });
 
-  // Arrows
-  document.getElementById('prev-arrow').addEventListener('click', () => {
-    const newIndex = (currentIndex - 1 + images.length) % images.length;
-    showImage(newIndex);
-    resetInterval();
-  });
-
-  document.getElementById('next-arrow').addEventListener('click', () => {
-    const newIndex = (currentIndex + 1) % images.length;
-    showImage(newIndex);
-    resetInterval();
-  });
-
-  // Autoplay
-  function startInterval() {
-    interval = setInterval(() => {
-      const nextIndex = (currentIndex + 1) % images.length;
-      showImage(nextIndex);
-    }, intervalTime);
-  }
-
-  function resetInterval() {
-    clearInterval(interval);
-    startInterval();
-  }
-
-  // Initialize
+  const prev = document.getElementById('prev-arrow');
+  const next = document.getElementById('next-arrow');
+  
+  if(prev) prev.addEventListener('click', () => showImage((currentIndex - 1 + images.length) % images.length));
+  if(next) next.addEventListener('click', () => showImage((currentIndex + 1) % images.length));
+  
   showImage(0);
-  startInterval();
 });
 </script>
