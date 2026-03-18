@@ -41,6 +41,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     form.addEventListener('submit', function(e) {
         e.preventDefault(); // stop default submission
+
+        const receiptMeta = {
+            name: document.getElementById('name')?.value || '',
+            phone: document.getElementById('phone')?.value || '',
+            email: document.getElementById('email')?.value || '',
+            submittedAt: new Date().toISOString()
+        };
+        localStorage.setItem('sweetPoteatReceiptMeta', JSON.stringify(receiptMeta));
+
         const data = new FormData(form);
 
         fetch(form.action, {

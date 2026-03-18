@@ -3,6 +3,15 @@ let cart = JSON.parse(localStorage.getItem('sweetPoteatCart')) || [];
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    const TAX_RATE = 0.03;
+
+    function getCartTotals() {
+        const subtotal = cart.reduce((sum, i) => sum + i.qty * i.price, 0);
+        const tax = subtotal * TAX_RATE;
+        const total = subtotal + tax;
+        return { subtotal, tax, total };
+    }
+
     const toggle = document.getElementById('cart-toggle');
     const cartEl = document.getElementById('floating-cart');
     const dropdown = document.getElementById('cart-dropdown');
@@ -62,9 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        let totalPrice = 0;
         cart.forEach(i => {
-            totalPrice += i.qty * i.price;
             const div = document.createElement('div');
             div.textContent = `${i.qty} x ${i.item} — $${(i.qty * i.price).toFixed(2)}`;
             const removeBtn = document.createElement('button');
@@ -74,10 +81,20 @@ document.addEventListener('DOMContentLoaded', () => {
             dropdown.appendChild(div);
         });
 
+        const { subtotal, tax, total } = getCartTotals();
+
+        const subtotalDiv = document.createElement('div');
+        subtotalDiv.style.marginTop = '0.5rem';
+        subtotalDiv.textContent = `Subtotal: $${subtotal.toFixed(2)}`;
+        dropdown.appendChild(subtotalDiv);
+
+        const taxDiv = document.createElement('div');
+        taxDiv.textContent = `Tax (3%): $${tax.toFixed(2)}`;
+        dropdown.appendChild(taxDiv);
+
         const totalDiv = document.createElement('div');
         totalDiv.style.fontWeight = '600';
-        totalDiv.style.marginTop = '0.5rem';
-        totalDiv.textContent = `Total: $${totalPrice.toFixed(2)}`;
+        totalDiv.textContent = `Total: $${total.toFixed(2)}`;
         dropdown.appendChild(totalDiv);
 
         const goToCartBtn = document.createElement('a');
@@ -158,8 +175,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const orderField = document.getElementById('order');
     if (orderField && cart.length > 0) {
         const orderLines = cart.map(i => `${i.qty} x ${i.item} — $${(i.qty * i.price).toFixed(2)}`);
-        const totalPrice = cart.reduce((sum, i) => sum + i.qty * i.price, 0);
-        orderLines.push(`Total: $${totalPrice.toFixed(2)}`);
+        const { subtotal, tax, total } = getCartTotals();
+        orderLines.push(`Subtotal: $${subtotal.toFixed(2)}`);
+        orderLines.push(`Tax (3%): $${tax.toFixed(2)}`);
+        orderLines.push(`Total: $${total.toFixed(2)}`);
         orderField.value = orderLines.join("\n");
     }
 

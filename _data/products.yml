@@ -61,7 +61,7 @@
     A dreamy Biscoff cream inside a Biscoff cookie crust, topped with Biscoff butter drizzle and Biscoff cookies! Talk about Biscoff Heaven! 
 
 - name: Strawberry Truffle
-  price: 32
+  price: 36
   quantity: 36 ct.
   category: truffles
   images:
@@ -73,7 +73,7 @@
     A soft, strawberry center dipped in white chocolate and drizzled with bright pink chocolate.
 
 - name: Biscoff Truffle
-  price: 32
+  price: 36
   quantity: 36 ct.
   category: truffles
   images:
@@ -85,7 +85,7 @@
     A soft Biscoff center, dipped in white chocolate, topped with Biscoff butter drizzle.
 
 - name: Lemon Truffle
-  price: 32
+  price: 36
   quantity: 36 ct.
   category: truffles
   images:
@@ -97,7 +97,7 @@
     A soft lemon center, dipped and drizzled in white chocolate.
 
 - name: Mint Truffle
-  price: 32
+  price: 36
   quantity: 36 ct.
   category: truffles
   images:
@@ -108,7 +108,7 @@
     A soft, minty, chocolate center dipped in milk or semi sweet chocolate and topped with drizzle and a minty fudge striped piece. Absolutely delicious!
 
 - name: Oreo Truffle
-  price: 32
+  price: 36
   quantity: 36 ct.
   category: truffles
   images:
@@ -120,7 +120,7 @@
     Cream cheese, Oreo center dipped in white or semi sweet chocolate, topped with white chocolate or chocolate drizzle.
 
 - name: Peanut Butter Truffle
-  price: 32
+  price: 36
   quantity: 36 ct.
   category: truffles
   images:
@@ -150,7 +150,7 @@
     Calling all chocolate lovers. We took a chocolatey twist on traditional pecan pie. Chocolate is melted into the caramel, custard filling as the pie bakes, making this pie to die for. You may never go back to regular, it’s that good.
 
 - name: Strawberry White Chocolate Chip Cookie
-  price: 28
+  price: 32
   quantity: 36 ct.
   category: cookies
   images:
@@ -162,7 +162,7 @@
     Think pink! A sweet, strawberry flavored cookie with white chocolate chips.
 
 - name: Snickerdoodle
-  price: 30
+  price: 32
   quantity: 36 ct.
   category: cookies
   images:
@@ -173,7 +173,7 @@
     You'll be shocked at how fast you eat these soft and chewy snickerdoodles! Between their cream of tartar tang and their cinnamon sugar coating, you won't be able to resist!
 
 - name: S'mores Cookie
-  price: 30
+  price: 32
   quantity: 36 ct.
   category: cookies
   images:
@@ -184,7 +184,7 @@
     If there was a cookie that epitomizes summer, this would be it! With graham cracker pieces, marshmallows, and chocolate mixed into the batter, then topped with more marshmallows and grahams, who needs a camp fire?
 
 - name: Pumpkin Spice Cookie
-  price: 28
+  price: 32
   quantity: 36 ct.
   category: cookies
   images:
@@ -207,7 +207,7 @@
     Classic Chewy pumpkin cookies spiced with nutmeg, allspice, ginger and cinnamon. Complete with a Chocolate Kiss pressed into the center.
 
 - name: Pumpkin Spice Snickerdoodle
-  price: 30
+  price: 32
   quantity: 36 ct.
   category: cookies
   images:
@@ -218,7 +218,7 @@
     Classic snickerdoodles with a twist! Pumpkin and spices are added into the batter, to create a new fall favorite cookie!
 
 - name: Peanut Butter Cookie
-  price: 28
+  price: 32
   quantity: 36 ct.
   category: cookies
   images:
@@ -240,7 +240,7 @@
     Classic , soft and chewy, melt in your mouth peanut butter cookie with a Chocolate Kiss or Reese's Peanut Butter Cup (chocolate or white chocolate) pressed into the middle.
 
 - name: Gingerbread Cookie
-  price: 32
+  price: 45
   quantity: 24-36 ct.
   category: cookies
   images:
@@ -252,7 +252,7 @@
     Classic ginger spice cookies. Their soft and chewy texture is ideal for these gingerbread cookie cutouts.
 
 - name: Double Chocolate White Chocolate Chip Cookie
-  price: 28
+  price: 32
   quantity: 36 ct.
   category: cookies
   images:
@@ -264,7 +264,7 @@
     Calling all chocolate lovers! Our rich, melt-in-your-mouth chocolate cookies are fluffy soft. The white chocolate chips create a delicious contrast that will keep you coming back for more.
 
 - name: Cookies and Cream Cookie
-  price: 30
+  price: 32
   quantity: 36 ct.
   category: cookies
   images:
@@ -276,7 +276,7 @@
     A twist on our classic cookie. We’ve added cream cheese into the batter for a more creamy flavor. But the real surprise? We also added crushed Oreo pieces and white chocolate chips. These cookies are heavenly!
 
 - name:  Chocolate Chip Cookie
-  price: 28
+  price: 32
   quantity: 36 ct.
   category: cookies
   images:
@@ -309,7 +309,7 @@
     Soft pumpkin bread spiced with nutmeg, allspice, ginger and cinnamon. Optional chocolate chips.
 
 - name: Sugar Cookie
-  price: 35
+  price: 45
   quantity: 24-36 ct.
   category: cookies
   images:
@@ -653,42 +653,50 @@
 ################################################################
 ###################### Valentine's Day Specials ################
 
-- name: Valentine Truffle Box
-  price: 16
-  quantity: 12 ct.
-  category: holiday
-  images:
-    - /assets/images/holiday-products/valentines/valentine_truffle/valentine_truffle1.jpg
-    - /assets/images/holiday-products/valentines/valentine_truffle/valentine_truffle2.jpg
-    - /assets/images/holiday-products/valentines/valentine_truffle/valentine_truffle3.jpg
-  slug: valentines-truffle-box
-  description: >
-    Get your valentine a variety box of delicious Sweet Poteat truffles. Boxes will include three of each of the following truffle flavors: Strawberry, Biscoff, Chocolate Oreo and White chocolate Oreo. It's sure to make their day sweet!
+# - name: Valentine Truffle Box
+#   price: 16
+#   quantity: 12 ct.
+#   category: holiday
+#   images:
+#     - /assets/images/holiday-products/valentines/valentine_truffle/valentine_truffle1.jpg
+#     - /assets/images/holiday-products/valentines/valentine_truffle/valentine_truffle2.jpg
+#     - /assets/images/holiday-products/valentines/valentine_truffle/valentine_truffle3.jpg
+#   slug: valentines-truffle-box
+#   description: >
+#     Get your valentine a variety box of delicious Sweet Poteat truffles. Boxes will include three of each of the following truffle flavors: Strawberry, Biscoff, Chocolate Oreo and White chocolate Oreo. It's sure to make their day sweet!
 
-- name: Valentine Peanut Butter Blossom
-  price: 16
-  quantity: 12 ct.
-  category: holiday
-  images:
-    - /assets/images/holiday-products/valentines/heart_pb_blossom/heart_blossom1.jpg
-    - /assets/images/holiday-products/valentines/heart_pb_blossom/heart_blossom2.jpg
-  slug: heart-peanut-butter-blossom
-  description: >
-    Now with a heart shaped Reese's!
-    Classic, soft and chewy, melt in your mouth peanut butter cookie with a Reese's PB cup pressed into the middle.
+# - name: Valentine Peanut Butter Blossom
+#   price: 16
+#   quantity: 12 ct.
+#   category: holiday
+#   images:
+#     - /assets/images/holiday-products/valentines/heart_pb_blossom/heart_blossom1.jpg
+#     - /assets/images/holiday-products/valentines/heart_pb_blossom/heart_blossom2.jpg
+#   slug: heart-peanut-butter-blossom
+#   description: >
+#     Now with a heart shaped Reese's!
+#     Classic, soft and chewy, melt in your mouth peanut butter cookie with a Reese's PB cup pressed into the middle.
 
-- name: Valentine Strawberry White Chocolate Chip Cookie
-  price: 16
-  quantity: 12 ct.
-  category: holiday
-  images:
-    - /assets/images/holiday-products/valentines/valentine-straw-white-choc-cookie/vswcc.jpg
-    - /assets/images/products/straw-white-choc-cookie/swcc1.jpg
-    - /assets/images/products/straw-white-choc-cookie/swcc2.jpg
-    - /assets/images/products/straw-white-choc-cookie/swcc3.jpg
-  slug: val-straw-white-choc-cookie
-  description: >
-    Think pink! A sweet, strawberry flavored cookie with white chocolate chips.
+# - name: Valentine Strawberry White Chocolate Chip Cookie
+#   price: 16
+#   quantity: 12 ct.
+#   category: holiday
+#   images:
+#     - /assets/images/holiday-products/valentines/valentine-straw-white-choc-cookie/vswcc.jpg
+#     - /assets/images/products/straw-white-choc-cookie/swcc1.jpg
+#     - /assets/images/products/straw-white-choc-cookie/swcc2.jpg
+#     - /assets/images/products/straw-white-choc-cookie/swcc3.jpg
+#   slug: val-straw-white-choc-cookie
+#   description: >
+#     Think pink! A sweet, strawberry flavored cookie with white chocolate chips.
+
+################################################################
+################################################################
+
+
+################################################################
+####################### Easter Specials ########################
+
 
 
 
