@@ -6,70 +6,171 @@ category: holiday
 show_content: false
 ---
 
-<!-- Easter Banner Section -->
+<!-- Bake Sale Banner -->
 <div style="
-    text-align: center; 
-    margin: 2rem auto; 
-    max-width: 800px; 
-    padding: 3rem 2rem; 
-    background: linear-gradient(135deg, #fff9e6 0%, #f3e5f5 100%); 
-    border: 4px solid #a389d4; 
-    border-radius: 60px; 
-    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    text-align: center;
+    margin: 2.5rem auto;
+    max-width: 800px;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 100%);
+    border: 4px solid #ce93d8;
+    border-radius: 60px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.07);
     position: relative;
     overflow: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 ">
-  <h2 style="
-    color: #6a4c93; 
-    font-size: 3rem; 
-    margin: 0 0 1rem 0; 
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 0px #ffffff;
-  ">
-    Easter Specials
-  </h2>
+  <!-- Decorative eggs -->
+  <div style="position: absolute; top: 8%; left: 4%; font-size: 1.8rem; opacity: 0.25;">🐣</div>
+  <div style="position: absolute; bottom: 8%; right: 4%; font-size: 1.8rem; opacity: 0.25;">🌷</div>
+  <div style="position: absolute; top: 8%; right: 6%; font-size: 1.4rem; opacity: 0.2;">🐰</div>
 
   <div style="
-    width: 100px; 
-    height: 4px; 
-    background-color: #ffb7b2; 
-    margin: 0 auto 1.5rem; 
+    display: inline-block;
+    background: #a389d4;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    border-radius: 20px;
+    margin-bottom: 1.2rem;
+  ">Spring Event</div>
+
+  <h2 style="
+    color: #6a4c93;
+    font-size: 2.6rem;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 2px 2px 0px #ffffff;
+    letter-spacing: 1px;
+  ">Easter Bake Sale!</h2>
+
+  <div style="
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #ffb7b2, #a389d4);
+    margin: 0.8rem auto 1.5rem;
     border-radius: 10px;
   "></div>
 
   <p style="
-    font-size: 1.2rem; 
-    color: #444; 
-    max-width: 600px; 
-    margin: 0 auto; 
+    font-size: 1.15rem;
+    color: #555;
+    max-width: 560px;
+    margin: 0 auto 2rem;
     line-height: 1.8;
   ">
-    Hop into spring with <span style="color: #6a4c93; font-weight: bold;">Sweet Poteat</span>! 
-    Our festive treats are the perfect addition to your holiday table.
+    Come celebrate spring with us at our <strong style="color: #6a4c93;">Easter Bake Sale</strong>!
+    Browse a table full of handmade holiday treats — perfect for gifting, sharing, or keeping all to yourself. 🐥
   </p>
 
+  <!-- Date/Time Card -->
   <div style="
-    margin-top: 2rem; 
-    display: inline-block; 
-    background: white; 
-    padding: 10px 25px; 
-    border-radius: 30px; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
   ">
-    <span style="font-size: 1.1rem; color: #555;">
-      Final pickup: <strong>Saturday, April 4th at 5:00 PM</strong>
-    </span>
+    <div style="
+      background: white;
+      border-radius: 20px;
+      padding: 18px 36px;
+      box-shadow: 0 4px 12px rgba(106,76,147,0.12);
+      border: 1px solid #e8d5f5;
+      width: 100%;
+      max-width: 420px;
+      box-sizing: border-box;
+    ">
+      <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; color: #a389d4; font-weight: bold; margin-bottom: 6px;">Date &amp; Time</div>
+      <div style="font-size: 1.3rem; color: #444; font-weight: 700;">Thursday, April 2nd</div>
+      <div style="font-size: 1.15rem; color: #777; margin-top: 2px;">3:00 PM – 6:00 PM</div>
+    </div>
+
+    <div style="
+      background: white;
+      border-radius: 20px;
+      padding: 18px 36px;
+      box-shadow: 0 4px 12px rgba(106,76,147,0.12);
+      border: 1px solid #e8d5f5;
+      width: 100%;
+      max-width: 420px;
+      box-sizing: border-box;
+    ">
+      <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; color: #a389d4; font-weight: bold; margin-bottom: 6px;">Location</div>
+      <div style="font-size: 1.15rem; color: #444; font-weight: 600;">On the corner of 245 W 310 S American Fork UT 84003</div>
+    </div>
   </div>
 
-  <!-- Background "Confetti" -->
-  <div style="position: absolute; top: 10%; left: 5%; opacity: 0.3; font-size: 1.5rem;">✨</div>
+  <br>
+  <a href="{{ '/contact/' | relative_url }}" style="
+    display: inline-block;
+    background: #6a4c93;
+    color: white;
+    padding: 13px 32px;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(106,76,147,0.3);
+    transition: background-color 0.3s ease;
+    letter-spacing: 0.5px;
+  "
+  onmouseover="this.style.backgroundColor='#8e6bb5'"
+  onmouseout="this.style.backgroundColor='#6a4c93'">
+    Questions? Contact Us
+  </a>
 </div>
 
 
-<!-- Holiday Specials Banner -->
-<!-- <div style="background: #ffe3f0; border-radius: 12px; margin: 2rem auto; max-width: 900px; padding: 2rem; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <h2 style="color: #fc78b5; font-size: 2rem; margin-bottom: 0.5rem;">Christmas Specials Coming to Website Soon!</h2>
-</div> -->
+<!-- Easter Photo Gallery -->
+<div style="
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+">
+  <h3 style="
+    text-align: center;
+    color: #6a4c93;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+  ">A Peek at Our Easter Treats</h3>
+  <div style="
+    width: 60px;
+    height: 3px;
+    background: #ffb7b2;
+    margin: 0 auto 2rem;
+    border-radius: 10px;
+  "></div>
+
+  <div style="
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+  ">
+    <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 6px 18px rgba(106,76,147,0.12); aspect-ratio: 1;">
+      <img src="{{ '/assets/images/holiday-products/easter/easter1.jpg' | relative_url }}" alt="Easter treat" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+    </div>
+    <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 6px 18px rgba(106,76,147,0.12); aspect-ratio: 1;">
+      <img src="{{ '/assets/images/holiday-products/easter/easter2.jpg' | relative_url }}" alt="Easter treat" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+    </div>
+    <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 6px 18px rgba(106,76,147,0.12); aspect-ratio: 1;">
+      <img src="{{ '/assets/images/holiday-products/easter/easter3.jpg' | relative_url }}" alt="Easter treat" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+    </div>
+    <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 6px 18px rgba(106,76,147,0.12); aspect-ratio: 1;">
+      <img src="{{ '/assets/images/holiday-products/easter/easter4.jpg' | relative_url }}" alt="Easter treat" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+    </div>
+    <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 6px 18px rgba(106,76,147,0.12); aspect-ratio: 1;">
+      <img src="{{ '/assets/images/holiday-products/easter/easter5.jpg' | relative_url }}" alt="Easter treat" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+    </div>
+    <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 6px 18px rgba(106,76,147,0.12); aspect-ratio: 1;">
+      <img src="{{ '/assets/images/holiday-products/easter/easter6.jpg' | relative_url }}" alt="Easter treat" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+    </div>
+    <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 6px 18px rgba(106,76,147,0.12); aspect-ratio: 1;">
+      <img src="{{ '/assets/images/holiday-products/easter/easter7.jpg' | relative_url }}" alt="Easter treat" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+    </div>
+  </div>
+</div>
