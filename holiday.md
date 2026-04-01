@@ -84,7 +84,7 @@ show_content: false
       box-sizing: border-box;
     ">
       <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; color: #a389d4; font-weight: bold; margin-bottom: 6px;">Date &amp; Time</div>
-      <div style="font-size: 1.3rem; color: #444; font-weight: 700;">Thursday, April 2nd</div>
+      <div style="font-size: 1.3rem; color: #444; font-weight: 700;">Friday, April 3rd</div>
       <div style="font-size: 1.15rem; color: #777; margin-top: 2px;">3:00 PM – 6:00 PM</div>
     </div>
 
