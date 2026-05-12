@@ -42,15 +42,17 @@ title: Welcome to Sweet Poteat Bakery
 </div>
 
 <script>
-  new Swiper(".hero-carousel-swiper", {
-    loop: true,
-    slidesPerView: 1,
-    autoplay: { delay: 4000, disableOnInteraction: false },
-    pagination: { el: ".hero-carousel-swiper .swiper-pagination", clickable: true },
-    navigation: {
-      nextEl: ".hero-carousel-swiper .swiper-button-next",
-      prevEl: ".hero-carousel-swiper .swiper-button-prev"
-    }
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper(".hero-carousel-swiper", {
+      loop: true,
+      slidesPerView: 1,
+      autoplay: { delay: 4000, disableOnInteraction: false },
+      pagination: { el: ".hero-carousel-swiper .swiper-pagination", clickable: true },
+      navigation: {
+        nextEl: ".hero-carousel-swiper .swiper-button-next",
+        prevEl: ".hero-carousel-swiper .swiper-button-prev"
+      }
+    });
   });
 </script>
 
