@@ -7,7 +7,7 @@
     </ul>
 
     <a href="{{ site.baseurl }}/" class="nav-logo">
-      <img src="{{ site.baseurl }}/assets/images/sp_logo1-removebg-preview.png" alt="Logo">
+      <img src="{{ site.baseurl }}/assets/images/sp_logo1-removebg-preview.png" alt="Sweet Poteat Logo">
     </a>
 
     <ul class="nav-list right">
@@ -15,5 +15,50 @@
       <li><a href="{{ site.baseurl }}/testimonials">Testimonials</a></li>
       <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
     </ul>
+
+    <!-- Hamburger: only visible on mobile -->
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
+
+<!-- Mobile drawer -->
+<div id="mobile-nav-drawer" class="mobile-nav-drawer" hidden>
+  <ul>
+    <li><a href="{{ site.baseurl }}/">Home</a></li>
+    <li><a href="{{ site.baseurl }}/about">About</a></li>
+    <li><a href="{{ site.baseurl }}/all">Shop</a></li>
+    <li><a href="{{ site.baseurl }}/favors">Favors</a></li>
+    <li><a href="{{ site.baseurl }}/testimonials">Testimonials</a></li>
+    <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+  </ul>
+</div>
+
+<script>
+(function () {
+  var btn = document.querySelector('.nav-hamburger');
+  var drawer = document.getElementById('mobile-nav-drawer');
+  if (!btn || !drawer) return;
+
+  btn.addEventListener('click', function () {
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    btn.classList.toggle('is-open', !open);
+    if (open) {
+      drawer.hidden = true;
+    } else {
+      drawer.hidden = false;
+    }
+  });
+
+  // Close drawer when a link is tapped
+  drawer.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      drawer.hidden = true;
+      btn.setAttribute('aria-expanded', 'false');
+      btn.classList.remove('is-open');
+    });
+  });
+})();
+</script>

@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const goToCartBtn = document.createElement('a');
         goToCartBtn.href = BASEURL + '/contact/';
-        goToCartBtn.textContent = 'Go to Cart';
+        goToCartBtn.textContent = 'Place Your Order →';
         goToCartBtn.className = 'go-to-cart-btn';
         goToCartBtn.addEventListener('click', () => {
             if (cartEl) cartEl.classList.remove('open');

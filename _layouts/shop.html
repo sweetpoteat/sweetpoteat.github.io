@@ -69,7 +69,7 @@ layout: home
       {% if category == "all" %}
         <a href="{{ '/cupcakes/' | relative_url }}" class="product-card">
           <div class="product-image">
-            <img src="{{ '/assets/images/products/cupcake/cupcake1.jpg' | relative_url }}" alt="Cupcakes">
+            <img src="{{ '/assets/images/products/cupcake/cupcake1.jpg' | relative_url }}" alt="Cupcakes" loading="lazy">
           </div>
           <h3>Cupcakes</h3>
           <p class="price">Custom Orders!</p>
@@ -79,7 +79,7 @@ layout: home
       {% for product in category_products %}
         <a href="{{ '/products/' | append: product.slug | append: '/' | relative_url }}" class="product-card">
           <div class="product-image">
-            <img src="{{ product.image | default: product.images[0] | relative_url }}" alt="{{ product.name }}">
+            <img src="{{ product.image | default: product.images[0] | relative_url }}" alt="{{ product.name }}" loading="lazy">
           </div>
           <h3>{{ product.name }}</h3>
           <p class="price">
