@@ -2,9 +2,6 @@
 layout: home
 ---
 
-<div class="shop-label">Treat Menu</div>
-<div class="striped-line"></div>
-
 {% include secondary-nav.html %}
 
 {% if page.title != "Holiday" %}
@@ -124,28 +121,6 @@ layout: home
              onclick="setValSlide({{ forloop.index0 }})">
       {% endfor %}
     </div>
-
-    <style>
-      .val-carousel-container { position: relative; max-width: 900px; margin: 0 auto; }
-      .val-carousel-main-img-wrapper {
-        width: 100%; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: linear-gradient(#fff, #f3f3f3);
-      }
-      .val-carousel-main-img-wrapper img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
-      .val-carousel-thumbnails { display: flex; justify-content: center; margin-top: 1rem; gap: 0.5rem; flex-wrap: wrap; }
-      .val-carousel-thumbnails img.val-thumb {
-        width: 60px; height: 60px; object-fit: cover; border-radius: 8px;
-        cursor: pointer; border: 2px solid transparent; transition: 0.2s;
-      }
-      .val-carousel-thumbnails img.val-thumb.active { border-color: #fc78b5; }
-      .val-carousel-arrow {
-        position: absolute; top: 50%; transform: translateY(-50%);
-        background: rgba(252,120,181,0.85); border: none; border-radius: 50%;
-        width: 35px; height: 35px; color: #fff; font-size: 20px; cursor: pointer; z-index: 10;
-      }
-      .val-carousel-arrow.left { left: 10px; }
-      .val-carousel-arrow.right { right: 10px; }
-    </style>
 
     <script>
       // Dynamically build the list of images from Jekyll Front Matter

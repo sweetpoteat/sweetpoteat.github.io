@@ -1,5 +1,5 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Questrial', sans-serif;
 }
 
 /* Slogan Ribbon */
@@ -45,41 +45,48 @@ body {
 /* Category Grid */
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  padding: 1.5rem 2rem;
   max-width: 900px;
   margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .category-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; padding: 1rem; }
 }
 
 .category-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: #ffc4ea;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  align-items: stretch;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   text-decoration: none;
-  padding: 1rem;
+  overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .category-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.14);
 }
 
 .category-card img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  margin-bottom: 2.0rem;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
 }
 
 .category-card span {
-  font-size: 1.25rem;
-  color: #fafafa;
-  font-weight: bold;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.6rem 0.5rem;
+  background: white;
 }
 
 /* Secondary Navigation Bar */
@@ -129,8 +136,8 @@ body {
 
 .striped-line {
   height: 4px;
-  width: 175px; /* or any width you want */
-  margin: 8px auto 0 auto; /* top margin, center horizontally */
+  width: 175px;
+  margin: 20px auto;
   background: repeating-linear-gradient(
     45deg,
     #fc78b5,
@@ -139,8 +146,6 @@ body {
     #f0f0f0 20px
   );
   border-radius: 2px;
-  margin-top: 20px;
-  margin-bottom: 20px
 }
 
 
@@ -311,7 +316,7 @@ body {
 
 .product-card h3 {
   margin: 1rem 0 0.5rem;
-  font-size: 1.2rem;;
+  font-size: 1.2rem;
 }
 
 .product-card p {
@@ -465,14 +470,16 @@ body {
 }
 .about-cta {
     display: inline-block;
-    padding: .75rem 1rem;
+    padding: .75rem 1.5rem;
     border-radius: 10px;
     text-decoration: none;
-    background: #111;
+    background: #fc78b5;
     color: #fff;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: background-color 0.2s ease;
 }
-.about-cta:hover { filter: brightness(1.05); }
+.about-cta:hover { background-color: #e05a9f; }
 
 @media (max-width: 900px) {
     .about-wrapper { flex-direction: column; }
@@ -992,6 +999,70 @@ body {
   margin: 0;
   line-height: 1.6;
 }
+
+
+/* ── Holiday Classes Carousel ──────────────────── */
+.val-carousel-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.val-carousel-main-img-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: linear-gradient(#fff, #f3f3f3);
+}
+
+.val-carousel-main-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+}
+
+.val-carousel-thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.val-carousel-thumbnails img.val-thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.val-carousel-thumbnails img.val-thumb.active {
+  border-color: #fc78b5;
+}
+
+.val-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(252,120,181,0.85);
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.val-carousel-arrow.left { left: 10px; }
+.val-carousel-arrow.right { right: 10px; }
 
 
 /* ── Hero Carousel ─────────────────────────────── */

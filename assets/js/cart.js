@@ -3,8 +3,6 @@ let cart = JSON.parse(localStorage.getItem('sweetPoteatCart')) || [];
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const TAX_RATE = 0.03;
-
     function getCartTotals() {
         const subtotal = cart.reduce((sum, i) => sum + i.qty * i.price, 0);
         const tax = subtotal * TAX_RATE;

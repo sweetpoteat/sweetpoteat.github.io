@@ -21,3 +21,7 @@ permalink: /about/
   </aside>
 </div>
 
+<div style="text-align:center; margin: 0 0 3rem;">
+  <a href="{{ '/all/' | relative_url }}" class="about-cta">Browse the Treat Menu</a>
+</div>
+
