@@ -64,32 +64,16 @@ title: Welcome to Sweet Poteat Bakery
 <!-- Category Grid -->
 <div class="category-grid">
   <a href="{{ '/cookies/' | relative_url }}" class="category-card">
-    <img src="{{ '/assets/images/products/choc-chip-cookie/cc1.jpg' | relative_url }}" alt="Cookies" loading="lazy">
+    <img src="{{ '/assets/images/icons/cookie.png' | relative_url }}" alt="Cookies" loading="lazy">
     <span>Cookies</span>
   </a>
   <a href="{{ '/truffles/' | relative_url }}" class="category-card">
-    <img src="{{ '/assets/images/products/oreo-truffle/oreo-truffle1.jpg' | relative_url }}" alt="Truffles" loading="lazy">
+    <img src="{{ '/assets/images/icons/truffle.png' | relative_url }}" alt="Truffles" loading="lazy">
     <span>Truffles</span>
   </a>
-  <a href="{{ '/pies/' | relative_url }}" class="category-card">
-    <img src="{{ '/assets/images/products/pecanpie/pecanpie1.png' | relative_url }}" alt="Pies" loading="lazy">
-    <span>Pies</span>
-  </a>
-  <a href="{{ '/cookie-dough/' | relative_url }}" class="category-card">
-    <img src="{{ '/assets/images/products/choc-chip-cookie-dough/choc-chip-cd1.jpg' | relative_url }}" alt="Cookie Dough" loading="lazy">
-    <span>Cookie Dough</span>
-  </a>
-  <a href="{{ '/cupcakes/' | relative_url }}" class="category-card">
-    <img src="{{ '/assets/images/products/cupcake/cupcake1.jpg' | relative_url }}" alt="Cupcakes" loading="lazy">
-    <span>Cupcakes</span>
-  </a>
-  <a href="{{ '/bars-and-breads/' | relative_url }}" class="category-card">
-    <img src="{{ '/assets/images/products/salted-caramel-rice-krispie/scrk1.jpg' | relative_url }}" alt="Bars &amp; Breads" loading="lazy">
-    <span>Bars &amp; Breads</span>
-  </a>
-  <a href="{{ '/favors/' | relative_url }}" class="category-card">
-    <img src="{{ '/assets/images/favors/favor1.jpg' | relative_url }}" alt="Favors" loading="lazy">
-    <span>Favors</span>
+  <a href="{{ '/all/' | relative_url }}" class="category-card">
+    <img src="{{ '/assets/images/icons/cupcake.png' | relative_url }}" alt="All Treats" loading="lazy">
+    <span>All Treats</span>
   </a>
   <a href="{{ '/holiday/' | relative_url }}" class="category-card">
     <img src="{{ '/assets/images/icons/holiday.png' | relative_url }}" alt="Holiday" loading="lazy">

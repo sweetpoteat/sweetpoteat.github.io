@@ -45,48 +45,41 @@ body {
 /* Category Grid */
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
-  padding: 1.5rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
   max-width: 900px;
   margin: 0 auto;
-}
-
-@media (max-width: 600px) {
-  .category-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; padding: 1rem; }
 }
 
 .category-card {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  align-items: center;
+  background: #ffc4ea;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-decoration: none;
-  overflow: hidden;
+  padding: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .category-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.14);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .category-card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: block;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
 }
 
 .category-card span {
-  font-size: 0.95rem;
-  color: #333;
+  font-size: 1.1rem;
+  color: #fff;
   font-weight: 700;
-  text-align: center;
-  padding: 0.6rem 0.5rem;
-  background: white;
 }
 
 /* Secondary Navigation Bar */
