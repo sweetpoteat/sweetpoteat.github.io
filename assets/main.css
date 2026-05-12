@@ -393,7 +393,7 @@ body {
   transition: background-color 0.2s ease;
 }
 
-.add-to-cart-button:hover { background-color: #ffc4ea; }
+.add-to-cart-button:hover { background-color: #e05a9f; }
 
 /* === Responsive for Mobile === */
 @media (max-width: 900px) {
@@ -619,7 +619,7 @@ body {
 }
 
 .submit-button:hover {
-    background-color: #ffc4ea;
+    background-color: #e05a9f;
 }
 
 
@@ -694,8 +694,8 @@ body {
 }
 
 #cart-toggle:hover {
-    background-color: #ff90c3;
-    transform: translateY(-2px);     /* subtle lift */
+    background-color: #e05a9f;
+    transform: translateY(-2px);
 }
 
 /* Dropdown expands upward from the bubble */
@@ -768,7 +768,7 @@ body {
 }
 
 .go-to-cart-btn:hover {
-    background-color: #ff90c3;
+    background-color: #e05a9f;
     transform: translateY(-1px);
 }
 
@@ -991,4 +991,165 @@ body {
   color: #777;
   margin: 0;
   line-height: 1.6;
+}
+
+
+/* ── Hero Carousel ─────────────────────────────── */
+.hero-carousel-wrapper {
+  padding: 2rem 0 0;
+}
+
+.hero-carousel-swiper {
+  max-width: 900px;
+  width: 90%;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero-carousel-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-cta-row {
+  text-align: center;
+  margin: 1.5rem 0 0;
+}
+
+@media (max-width: 600px) {
+  .hero-carousel-swiper { height: 220px; }
+}
+
+
+/* ── Primary Button (pill) ─────────────────────── */
+.btn-primary {
+  display: inline-block;
+  background-color: #fc78b5;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.18);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  min-width: 200px;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #e05a9f;
+  transform: translateY(-2px);
+}
+
+
+/* ── Homepage Banner Cards ─────────────────────── */
+.banner-card {
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.banner-card--pink {
+  background: #ffe3f0;
+}
+
+.banner-card--outline {
+  background: #fff;
+  border: 2px solid #ffc4ea;
+}
+
+.banner-card__title {
+  color: #fc78b5;
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+}
+
+.banner-card__text {
+  color: #333;
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
+
+.banner-card__subtext {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0 0 1.5rem;
+  line-height: 1.6;
+}
+
+
+/* ── Site Footer ───────────────────────────────── */
+.site-footer {
+  background-color: #ffc4ea;
+  margin-top: 4rem;
+  padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+}
+
+.site-footer__logo {
+  height: 80px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.site-footer__tagline {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+.site-footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.site-footer__nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.15s ease;
+}
+
+.site-footer__nav a:hover {
+  color: #e05a9f;
+}
+
+.site-footer__contact p {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.site-footer__copy {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+  border-top: 1px solid rgba(255,255,255,0.5);
+  padding-top: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 1rem;
 }
