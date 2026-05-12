@@ -1089,6 +1089,10 @@ body {
   z-index: 10;
 }
 
+.hero-shop-now:hover {
+  transform: translate(-50%, calc(-50% - 2px));
+}
+
 @media (max-width: 600px) {
   .hero-carousel-swiper { height: 220px; }
 }
