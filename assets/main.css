@@ -1090,7 +1090,7 @@ body {
 }
 
 .hero-shop-now:hover {
-  transform: translate(-50%, calc(-50% - 2px));
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 600px) {
