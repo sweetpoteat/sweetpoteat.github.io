@@ -252,11 +252,29 @@ body {
   background-color: rgba(255,255,255,0.25);
 }
 
-/* Mobile breakpoint */
-@media (max-width: 768px) {
+/* Stacked layout: left nav above logo, right nav below */
+@media (max-width: 900px) {
+  .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem;
+  }
+  .nav-logo img { height: 150px; }
+  .nav-list a { padding: 0.5rem 0.75rem; font-size: 14px; }
+}
+
+/* Hamburger: only for very small screens */
+@media (max-width: 380px) {
+  .nav-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0 1rem;
+  }
   .nav-list { display: none; }
-  .nav-logo img { height: 120px; }
-  .nav-wrapper { display: flex; justify-content: space-between; gap: 0; }
+  .nav-logo img { height: 100px; }
   .nav-hamburger { display: flex; }
 }
 
