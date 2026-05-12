@@ -1081,9 +1081,12 @@ body {
   display: block;
 }
 
-.hero-cta-row {
-  text-align: center;
-  margin: 1.5rem 0 0;
+.hero-shop-now {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 @media (max-width: 600px) {

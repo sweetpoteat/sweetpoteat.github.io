@@ -33,11 +33,9 @@ title: Welcome to Sweet Poteat Bakery
     <div class="swiper-pagination"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-  </div>
 
-  <!-- Shop Now sits below the images, not on top of them -->
-  <div class="hero-cta-row">
-    <a href="{{ '/all/' | relative_url }}" class="btn-primary">Shop Now</a>
+    <!-- Shop Now centered over the banner -->
+    <a href="{{ '/all/' | relative_url }}" class="btn-primary hero-shop-now">Shop Now</a>
   </div>
 </div>
 
