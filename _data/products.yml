@@ -6,7 +6,7 @@
     - /assets/images/products/pecanpie/pecanpie2.png
   slug: pecan-pie
   description: >
-    A flakey, buttery pie crust filled with a gooey caramel, custard pecan filling. The pecans bring out a bold nutty flavor that is sure to please everyone.
+    A flaky, buttery pie crust filled with a gooey caramel, custard pecan filling. The pecans bring out a bold nutty flavor that is sure to please everyone.
 
 - name: Chocolate Pie
   price: 25
@@ -47,7 +47,7 @@
     - /assets/images/products/pumpkinpie/pumpkinpie2.png
   slug: p-pie
   description: >
-    Classic pumpkin pie in a flakey, buttery, pastry crust.
+    Classic pumpkin pie in a flaky, buttery, pastry crust.
 
 - name: Biscoff Pie
   price: 32

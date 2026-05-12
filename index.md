@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome to Sweet Poteat Bakery
+title: Welcome to Sweet Poteat
 ---
 
 <!-- Hero Carousel -->
