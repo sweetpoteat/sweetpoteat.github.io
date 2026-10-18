@@ -27,7 +27,16 @@ show_content: false
     text-align: center;
     padding: 4rem 1.5rem 3.5rem;
     border-radius: 4px;
+    position: relative;
+    overflow: hidden;
   }
+  .hw-hero > *:not(svg) { position: relative; z-index: 1; }
+  .hw-web { position: absolute; top: 0; width: 230px; height: 230px; stroke: #d9a46a; fill: none; stroke-width: 0.8; opacity: 0.4; pointer-events: none; }
+  .hw-web.left { left: 0; }
+  .hw-web.right { right: 0; transform: scaleX(-1); }
+  .hw-spider { position: absolute; top: 0; right: 14%; width: 44px; height: 120px; pointer-events: none; }
+  .hw-spider line, .hw-spider path { stroke: #d9a46a; stroke-width: 1; fill: none; stroke-linecap: round; }
+  .hw-spider ellipse { fill: #d9a46a; }
   .hw-eyebrow {
     font-size: 0.8rem;
     letter-spacing: 0.32em;
@@ -73,6 +82,8 @@ show_content: false
   }
   @media (max-width: 720px) {
     .hw-hero { padding: 3rem 1.25rem 2.75rem; }
+    .hw-web { width: 130px; height: 130px; }
+    .hw-spider { right: 8%; height: 90px; width: 33px; }
     .hw-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
     .hw-row h3 { font-size: 1.3rem; }
   }
@@ -81,6 +92,20 @@ show_content: false
 <div class="hw">
 
   <section class="hw-hero">
+  <svg class="hw-web left" viewBox="0 0 230 230" aria-hidden="true">
+      <path d="M0 0 L230 0 M0 0 L215 85 M0 0 L170 170 M0 0 L85 215 M0 0 L0 230"/>
+      <path d="M46 0 Q34 34 0 46 M92 0 Q70 70 0 92 M138 0 Q104 104 0 138 M184 0 Q140 140 0 184"/>
+  </svg>
+  <svg class="hw-web right" viewBox="0 0 230 230" aria-hidden="true">
+      <path d="M0 0 L230 0 M0 0 L215 85 M0 0 L170 170 M0 0 L85 215 M0 0 L0 230"/>
+      <path d="M46 0 Q34 34 0 46 M92 0 Q70 70 0 92 M138 0 Q104 104 0 138 M184 0 Q140 140 0 184"/>
+  </svg>
+  <svg class="hw-spider" viewBox="0 0 44 120" aria-hidden="true">
+    <line x1="22" y1="0" x2="22" y2="84"/>
+    <ellipse cx="22" cy="104" rx="7" ry="9"/>
+    <ellipse cx="22" cy="90" rx="4" ry="4.5"/>
+    <path d="M17 100 Q8 94 3 100 M17 104 Q8 104 2 111 M27 100 Q36 94 41 100 M27 104 Q36 104 42 111 M18 96 Q10 88 6 90 M26 96 Q34 88 38 90 M18 108 Q10 114 8 118 M26 108 Q34 114 36 118"/>
+  </svg>
     <div class="hw-eyebrow">Sweet Poteat Presents</div>
     <h1>The Halloween<br>Bake Sale</h1>
     <hr>
@@ -95,13 +120,13 @@ show_content: false
     <p class="hw-sub">Everything is baked fresh and available while supplies last.</p>
 
     <div class="hw-item">
-      <div class="hw-row"><h3>Variety Oreo Truffle Box</h3><span class="dots"></span><span class="hw-price">$18.50</span></div>
-      <p>Sixteen Halloween truffles, two of each kind.</p>
+      <div class="hw-row"><h3>Halloween Oreo Truffle Box</h3><span class="dots"></span><span class="hw-price">$18.50</span></div>
+      <p>A box of 16 delicious Halloween Oreo Truffles, with two of each of 8 spooky, hand-decorated designs!</p>
     </div>
 
     <div class="hw-item">
       <div class="hw-row"><h3>Variety Fall Box</h3><span class="dots"></span><span class="hw-price">$14</span></div>
-      <p>Twelve treats, two of each: pumpkin snickerdoodles, pumpkin chocolate chip cookies, double chocolate white chocolate chip cookies, peanut butter blossom spiders, pumpkin spice truffles, and frosted pumpkin cookies.</p>
+      <p>A festive box of 12 treats featuring 6 delicious varieties—two of each: Pumpkin Snickerdoodles, Pumpkin Chocolate Chip Cookies, Double Chocolate White Chocolate Chip Cookies, Peanut Butter Blossom Spiders, Pumpkin Spice Truffles, and Frosted Pumpkin Cookies!</p>
     </div>
 
     <div class="hw-item">
